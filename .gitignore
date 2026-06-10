@@ -26,7 +26,13 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+.env
 .env*.local
+
+# synced garmin data (local copy; public/data/dashboard.json is committed for Pages)
+/data/dashboard.json
+/data/.garmin-tokens
+!.env.example
 
 # vercel
 .vercel

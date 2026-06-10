@@ -4,23 +4,29 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node -e \"require('fs').writeFileSync('out/.nojekyll','')\"",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sync": "python3 scripts/sync_garmin.py && node scripts/generate-coach.mjs",
+    "sync:garmin": "python3 scripts/sync_garmin.py",
+    "coach": "node scripts/generate-coach.mjs"
   },
   "dependencies": {
+    "dotenv": "^17.4.2",
+    "html-to-image": "^1.11.13",
+    "next": "14.2.35",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.35"
+    "recharts": "^2.15.3"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.35",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.35"
+    "typescript": "^5"
   }
 }

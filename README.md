@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Garmin Wellness Dashboard
 
-## Getting Started
+Whoop-style recovery dashboard for **Garmin Venu 2** — Recovery, Strain, Sleep, Body Battery, Stress, Fitness Age.
 
-First, run the development server:
+**Live:** [https://marfa77.github.io/garmin/](https://marfa77.github.io/garmin/)
+
+## Quick start
 
 ```bash
+cd ~/Projects/Garmin/wellness-dashboard
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) — runs with **demo data** until you sync Garmin.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Sync real Garmin data
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Copy env file and add your Garmin Connect credentials:
 
-## Learn More
+```bash
+cp .env.example .env
+```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install Python deps and sync:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pip3 install -r scripts/requirements.txt
+npm run sync
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Refresh the dashboard — it reads `data/dashboard.json` (and copies to `public/data/` for GitHub Pages).
 
-## Deploy on Vercel
+> Uses unofficial [python-garminconnect](https://github.com/cyberjunky/python-garminconnect). For personal use only.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deploy to GitHub Pages
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Pushes to `main` deploy automatically via GitHub Actions.
+
+```bash
+npm run sync          # refresh data
+git add public/data/dashboard.json
+git commit -m "Update dashboard data"
+git push origin main
+```
+
+Site URL: **https://marfa77.github.io/garmin/**
+
+## Stack
+
+- **Next.js 14** — static export, dark Whoop-like UI
+- **Recharts** — Body Battery + Stress curves
+- **Python** — Garmin ETL + scoring engine
+- **TypeScript** — scoring mirror + demo data
+
+## Metrics
+
+| Ring | Source |
+|------|--------|
+| Recovery | HRV, RHR, sleep, prior strain, Body Battery |
+| Strain | Workouts + steps & active calories |
+| Sleep | Garmin sleep score + stages |
+| + | Stress, Body Battery, VO₂ max, Fitness Age |
+
+Coach messages are generated via **OpenRouter** (`google/gemini-2.5-flash` by default).
+
+## Project layout
+
+```
+├── src/
+│   ├── app/           # Next.js pages
+│   ├── components/    # Rings, charts, coach card
+│   └── lib/           # scoring, types, data loader
+├── scripts/
+│   ├── sync_garmin.py # Garmin Connect sync
+│   └── generate-coach.mjs
+├── data/              # local sync output (gitignored)
+└── public/data/       # dashboard.json for Pages build
+```

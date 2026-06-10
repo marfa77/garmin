@@ -1,0 +1,5437 @@
+{
+  "device": "Garmin Venu 2",
+  "syncedAt": "2026-06-10T13:17:48.578065Z",
+  "source": "garmin",
+  "today": {
+    "date": "2026-06-10",
+    "recovery": {
+      "score": 80,
+      "zone": "green",
+      "drivers": [
+        {
+          "factor": "load",
+          "label": "Prior strain",
+          "value": 21,
+          "impact": "high"
+        },
+        {
+          "factor": "hrv",
+          "label": "HRV",
+          "value": 45,
+          "baseline": 45,
+          "delta": "+0%",
+          "impact": "medium"
+        },
+        {
+          "factor": "sleep",
+          "label": "Sleep",
+          "value": "77%",
+          "impact": "medium"
+        },
+        {
+          "factor": "rhr",
+          "label": "Resting HR",
+          "value": 55,
+          "baseline": 59,
+          "delta": "-4 bpm",
+          "impact": "positive"
+        }
+      ]
+    },
+    "strain": {
+      "current": 14.6,
+      "workoutStrain": 7.5,
+      "lifestyleStrain": 7.1,
+      "workoutLoad": 64,
+      "lifestyleLoad": 60.6,
+      "targetMin": 14,
+      "targetMax": 18,
+      "workouts": [
+        {
+          "name": "Jogging em passadeira",
+          "type": "treadmill_running",
+          "durationMin": 32,
+          "strain": 7.5,
+          "avgHr": 145,
+          "activityId": 23198041794,
+          "maxHr": 159,
+          "calories": 366,
+          "distanceKm": 5.02,
+          "paceMinPerKm": 6.54,
+          "startTime": "14:01",
+          "date": "2026-06-10",
+          "hrZones": {
+            "z1": 0.2,
+            "z2": 0.3,
+            "z3": 10.6,
+            "z4": 21.7,
+            "z5": 0
+          },
+          "moderateIntensityMin": 1,
+          "vigorousIntensityMin": 31
+        }
+      ],
+      "dailyActivity": {
+        "steps": 11753,
+        "stepGoal": 10000,
+        "activeCalories": 564,
+        "bmrCalories": 1170,
+        "totalCalories": 1734,
+        "distanceKm": 9.8,
+        "moderateIntensityMin": 9,
+        "vigorousIntensityMin": 34
+      }
+    },
+    "sleep": {
+      "score": 77,
+      "hours": 6.5,
+      "need": 7.5,
+      "deepMin": 79,
+      "remMin": 86,
+      "lightMin": 225,
+      "awakeMin": 1,
+      "hypnogram": [
+        {
+          "level": "light",
+          "minutes": 21,
+          "start": "2026-06-09T18:28"
+        },
+        {
+          "level": "awake",
+          "minutes": 32,
+          "start": "2026-06-09T18:49"
+        },
+        {
+          "level": "light",
+          "minutes": 19,
+          "start": "2026-06-09T19:21"
+        },
+        {
+          "level": "deep",
+          "minutes": 40,
+          "start": "2026-06-09T19:40"
+        },
+        {
+          "level": "light",
+          "minutes": 25,
+          "start": "2026-06-09T20:20"
+        },
+        {
+          "level": "awake",
+          "minutes": 24,
+          "start": "2026-06-09T20:45"
+        },
+        {
+          "level": "light",
+          "minutes": 19,
+          "start": "2026-06-09T21:09"
+        },
+        {
+          "level": "rem",
+          "minutes": 1,
+          "start": "2026-06-09T21:28"
+        },
+        {
+          "level": "light",
+          "minutes": 30,
+          "start": "2026-06-09T21:29"
+        },
+        {
+          "level": "awake",
+          "minutes": 9,
+          "start": "2026-06-09T21:59"
+        },
+        {
+          "level": "light",
+          "minutes": 69,
+          "start": "2026-06-09T22:08"
+        },
+        {
+          "level": "deep",
+          "minutes": 10,
+          "start": "2026-06-09T23:17"
+        },
+        {
+          "level": "light",
+          "minutes": 28,
+          "start": "2026-06-09T23:27"
+        },
+        {
+          "level": "awake",
+          "minutes": 14,
+          "start": "2026-06-09T23:55"
+        },
+        {
+          "level": "light",
+          "minutes": 14,
+          "start": "2026-06-10T00:09"
+        },
+        {
+          "level": "deep",
+          "minutes": 36,
+          "start": "2026-06-10T00:23"
+        }
+      ],
+      "debt7d": 19.9
+    },
+    "vitals": {
+      "hrv": 45,
+      "hrvBaseline": 45,
+      "rhr": 55,
+      "rhrBaseline": 59,
+      "stressAvg": 32,
+      "stressMax": 94,
+      "bodyBatteryNow": 24,
+      "bodyBatteryMin": 20,
+      "bodyBatteryMax": 69,
+      "vo2max": 46,
+      "fitnessAge": 40,
+      "chronologicalAge": 45,
+      "achievableFitnessAge": 39,
+      "fitnessAgeSource": "garmin",
+      "fitnessAgeTips": [
+        "BMI is the top lever — about 1.7 points from Garmin's target.",
+        "Add ~8 vigorous minutes per week to lower fitness age."
+      ],
+      "respirationRate": 14,
+      "readinessScore": 78,
+      "readinessZone": "high",
+      "readinessLabel": "High"
+    },
+    "curves": {
+      "bodyBattery": [
+        {
+          "time": "00:00",
+          "value": 20
+        },
+        {
+          "time": "04:54",
+          "value": 68
+        },
+        {
+          "time": "04:57",
+          "value": 69
+        },
+        {
+          "time": "09:51",
+          "value": 45
+        },
+        {
+          "time": "09:54",
+          "value": 45
+        },
+        {
+          "time": "14:36",
+          "value": 24
+        }
+      ],
+      "stress": [
+        {
+          "time": "00:00",
+          "value": 40
+        },
+        {
+          "time": "00:18",
+          "value": 29
+        },
+        {
+          "time": "00:36",
+          "value": 18
+        },
+        {
+          "time": "01:00",
+          "value": 24
+        },
+        {
+          "time": "01:18",
+          "value": 23
+        },
+        {
+          "time": "01:36",
+          "value": 18
+        },
+        {
+          "time": "01:54",
+          "value": 15
+        },
+        {
+          "time": "02:12",
+          "value": 15
+        },
+        {
+          "time": "02:30",
+          "value": 15
+        },
+        {
+          "time": "02:48",
+          "value": 21
+        },
+        {
+          "time": "03:06",
+          "value": 21
+        },
+        {
+          "time": "03:24",
+          "value": 12
+        },
+        {
+          "time": "03:42",
+          "value": 5
+        },
+        {
+          "time": "04:00",
+          "value": 5
+        },
+        {
+          "time": "04:18",
+          "value": 10
+        },
+        {
+          "time": "04:36",
+          "value": 22
+        },
+        {
+          "time": "04:54",
+          "value": 10
+        },
+        {
+          "time": "05:21",
+          "value": 25
+        },
+        {
+          "time": "05:39",
+          "value": 44
+        },
+        {
+          "time": "05:57",
+          "value": 38
+        },
+        {
+          "time": "06:15",
+          "value": 24
+        },
+        {
+          "time": "06:45",
+          "value": 46
+        },
+        {
+          "time": "07:30",
+          "value": 64
+        },
+        {
+          "time": "08:30",
+          "value": 73
+        },
+        {
+          "time": "08:54",
+          "value": 55
+        },
+        {
+          "time": "09:12",
+          "value": 41
+        },
+        {
+          "time": "09:42",
+          "value": 42
+        },
+        {
+          "time": "10:06",
+          "value": 35
+        },
+        {
+          "time": "10:24",
+          "value": 34
+        },
+        {
+          "time": "12:00",
+          "value": 64
+        },
+        {
+          "time": "12:18",
+          "value": 64
+        },
+        {
+          "time": "12:48",
+          "value": 25
+        }
+      ]
+    },
+    "coach": {
+      "morning": {
+        "headline": "You're in good shape",
+        "insight": "Your recovery is strong today, driven by a significantly lower resting heart rate. Sleep quality was decent, but you still have a noticeable sleep debt accumulated over the week. Your training load is right on track for your goals.",
+        "action": "Prioritize getting to bed earlier tonight to chip away at that sleep debt.",
+        "watchouts": [
+          "You have a significant sleep debt accumulated from prior nights.",
+          "Your current Body Battery is quite low (24%)."
+        ]
+      },
+      "morningRu": {
+        "headline": "Хорошее восстановление, но есть недосып.",
+        "insight": "Вы хорошо восстановились, и ваш пульс в покое значительно ниже обычного. Однако, вы недобрали час сна, а тренировочная нагрузка находится в пределах нормы. Средний уровень стресса сегодня был умеренным.",
+        "action": "Сосредоточьтесь на том, чтобы сегодня хорошо выспаться и пополнить запасы энергии.",
+        "watchouts": [
+          "Сон: Вы спали 6.5 часов вместо необходимых 7.5, что привело к дефициту сна.",
+          "Body Battery: Уровень энергии сейчас составляет 24, что довольно низко."
+        ]
+      },
+      "evening": {
+        "headline": "A balanced day with good recovery, but prioritize sleep tonight.",
+        "insight": "Today was well-paced, hitting your strain target with a good recovery score. Your RHR is down, which is a positive sign. However, your sleep debt is quite high at nearly 20 hours for the week, and last night's sleep was below your need. While your HRV is stable, optimizing sleep will be key to maintaining this positive recovery trend and getting your Body Battery back up.",
+        "action": "Focus on an early and restful night's sleep tonight. Aim for at least 7.5 hours, and consider implementing a relaxing wind-down routine to help you achieve deeper sleep. Minimize screen time before bed and create a dark, cool sleep environment.",
+        "watchouts": [
+          "Your sleep debt is significant. Consistent shortfalls can impact overall recovery and performance.",
+          "Your Body Battery is currently at 24%, indicating you're quite drained. This is likely linked to your sleep debt."
+        ]
+      },
+      "eveningRu": {
+        "headline": "Listen to your body",
+        "insight": "{\"headline\":\"Отличный день! Сегодня ты хорошо поработал и находишься в зеленой зоне восстановления.\",\"insight\":\"Сегодня ты отлично справился с тренировкой, уложившись в целевой диапазон нагрузки, и твоя средняя частота сердечных сокращений во время бега была оптимальной. Учитывая, что ты достиг целевого количества шагов и твое восстановление в зеленой зоне, это был продуктивный день.\",\"watchouts\":",
+        "action": "",
+        "watchouts": []
+      }
+    }
+  },
+  "history": [
+    {
+      "date": "2026-06-10",
+      "recovery": {
+        "score": 80,
+        "zone": "green",
+        "drivers": [
+          {
+            "factor": "load",
+            "label": "Prior strain",
+            "value": 21,
+            "impact": "high"
+          },
+          {
+            "factor": "hrv",
+            "label": "HRV",
+            "value": 45,
+            "baseline": 45,
+            "delta": "+0%",
+            "impact": "medium"
+          },
+          {
+            "factor": "sleep",
+            "label": "Sleep",
+            "value": "77%",
+            "impact": "medium"
+          },
+          {
+            "factor": "rhr",
+            "label": "Resting HR",
+            "value": 55,
+            "baseline": 59,
+            "delta": "-4 bpm",
+            "impact": "positive"
+          }
+        ]
+      },
+      "strain": {
+        "current": 14.6,
+        "workoutStrain": 7.5,
+        "lifestyleStrain": 7.1,
+        "workoutLoad": 64,
+        "lifestyleLoad": 60.6,
+        "targetMin": 14,
+        "targetMax": 18,
+        "workouts": [
+          {
+            "name": "Jogging em passadeira",
+            "type": "treadmill_running",
+            "durationMin": 32,
+            "strain": 7.5,
+            "avgHr": 145,
+            "activityId": 23198041794,
+            "maxHr": 159,
+            "calories": 366,
+            "distanceKm": 5.02,
+            "paceMinPerKm": 6.54,
+            "startTime": "14:01",
+            "date": "2026-06-10",
+            "hrZones": {
+              "z1": 0.2,
+              "z2": 0.3,
+              "z3": 10.6,
+              "z4": 21.7,
+              "z5": 0
+            },
+            "moderateIntensityMin": 1,
+            "vigorousIntensityMin": 31
+          }
+        ],
+        "dailyActivity": {
+          "steps": 11753,
+          "stepGoal": 10000,
+          "activeCalories": 564,
+          "bmrCalories": 1170,
+          "totalCalories": 1734,
+          "distanceKm": 9.8,
+          "moderateIntensityMin": 9,
+          "vigorousIntensityMin": 34
+        }
+      },
+      "sleep": {
+        "score": 77,
+        "hours": 6.5,
+        "need": 7.5,
+        "deepMin": 79,
+        "remMin": 86,
+        "lightMin": 225,
+        "awakeMin": 1,
+        "hypnogram": [
+          {
+            "level": "light",
+            "minutes": 21,
+            "start": "2026-06-09T18:28"
+          },
+          {
+            "level": "awake",
+            "minutes": 32,
+            "start": "2026-06-09T18:49"
+          },
+          {
+            "level": "light",
+            "minutes": 19,
+            "start": "2026-06-09T19:21"
+          },
+          {
+            "level": "deep",
+            "minutes": 40,
+            "start": "2026-06-09T19:40"
+          },
+          {
+            "level": "light",
+            "minutes": 25,
+            "start": "2026-06-09T20:20"
+          },
+          {
+            "level": "awake",
+            "minutes": 24,
+            "start": "2026-06-09T20:45"
+          },
+          {
+            "level": "light",
+            "minutes": 19,
+            "start": "2026-06-09T21:09"
+          },
+          {
+            "level": "rem",
+            "minutes": 1,
+            "start": "2026-06-09T21:28"
+          },
+          {
+            "level": "light",
+            "minutes": 30,
+            "start": "2026-06-09T21:29"
+          },
+          {
+            "level": "awake",
+            "minutes": 9,
+            "start": "2026-06-09T21:59"
+          },
+          {
+            "level": "light",
+            "minutes": 69,
+            "start": "2026-06-09T22:08"
+          },
+          {
+            "level": "deep",
+            "minutes": 10,
+            "start": "2026-06-09T23:17"
+          },
+          {
+            "level": "light",
+            "minutes": 28,
+            "start": "2026-06-09T23:27"
+          },
+          {
+            "level": "awake",
+            "minutes": 14,
+            "start": "2026-06-09T23:55"
+          },
+          {
+            "level": "light",
+            "minutes": 14,
+            "start": "2026-06-10T00:09"
+          },
+          {
+            "level": "deep",
+            "minutes": 36,
+            "start": "2026-06-10T00:23"
+          }
+        ],
+        "debt7d": 19.9
+      },
+      "vitals": {
+        "hrv": 45,
+        "hrvBaseline": 45,
+        "rhr": 55,
+        "rhrBaseline": 59,
+        "stressAvg": 32,
+        "stressMax": 94,
+        "bodyBatteryNow": 24,
+        "bodyBatteryMin": 20,
+        "bodyBatteryMax": 69,
+        "vo2max": 46,
+        "fitnessAge": 40,
+        "chronologicalAge": 45,
+        "achievableFitnessAge": 39,
+        "fitnessAgeSource": "garmin",
+        "fitnessAgeTips": [
+          "BMI is the top lever — about 1.7 points from Garmin's target.",
+          "Add ~8 vigorous minutes per week to lower fitness age."
+        ],
+        "respirationRate": 14,
+        "readinessScore": 78,
+        "readinessZone": "high",
+        "readinessLabel": "High"
+      },
+      "curves": {
+        "bodyBattery": [
+          {
+            "time": "00:00",
+            "value": 20
+          },
+          {
+            "time": "04:54",
+            "value": 68
+          },
+          {
+            "time": "04:57",
+            "value": 69
+          },
+          {
+            "time": "09:51",
+            "value": 45
+          },
+          {
+            "time": "09:54",
+            "value": 45
+          },
+          {
+            "time": "14:36",
+            "value": 24
+          }
+        ],
+        "stress": [
+          {
+            "time": "00:00",
+            "value": 40
+          },
+          {
+            "time": "00:18",
+            "value": 29
+          },
+          {
+            "time": "00:36",
+            "value": 18
+          },
+          {
+            "time": "01:00",
+            "value": 24
+          },
+          {
+            "time": "01:18",
+            "value": 23
+          },
+          {
+            "time": "01:36",
+            "value": 18
+          },
+          {
+            "time": "01:54",
+            "value": 15
+          },
+          {
+            "time": "02:12",
+            "value": 15
+          },
+          {
+            "time": "02:30",
+            "value": 15
+          },
+          {
+            "time": "02:48",
+            "value": 21
+          },
+          {
+            "time": "03:06",
+            "value": 21
+          },
+          {
+            "time": "03:24",
+            "value": 12
+          },
+          {
+            "time": "03:42",
+            "value": 5
+          },
+          {
+            "time": "04:00",
+            "value": 5
+          },
+          {
+            "time": "04:18",
+            "value": 10
+          },
+          {
+            "time": "04:36",
+            "value": 22
+          },
+          {
+            "time": "04:54",
+            "value": 10
+          },
+          {
+            "time": "05:21",
+            "value": 25
+          },
+          {
+            "time": "05:39",
+            "value": 44
+          },
+          {
+            "time": "05:57",
+            "value": 38
+          },
+          {
+            "time": "06:15",
+            "value": 24
+          },
+          {
+            "time": "06:45",
+            "value": 46
+          },
+          {
+            "time": "07:30",
+            "value": 64
+          },
+          {
+            "time": "08:30",
+            "value": 73
+          },
+          {
+            "time": "08:54",
+            "value": 55
+          },
+          {
+            "time": "09:12",
+            "value": 41
+          },
+          {
+            "time": "09:42",
+            "value": 42
+          },
+          {
+            "time": "10:06",
+            "value": 35
+          },
+          {
+            "time": "10:24",
+            "value": 34
+          },
+          {
+            "time": "12:00",
+            "value": 64
+          },
+          {
+            "time": "12:18",
+            "value": 64
+          },
+          {
+            "time": "12:48",
+            "value": 25
+          }
+        ]
+      },
+      "coach": {
+        "morning": "",
+        "evening": ""
+      }
+    },
+    {
+      "date": "2026-06-09",
+      "recovery": {
+        "score": 86,
+        "zone": "green",
+        "drivers": [
+          {
+            "factor": "hrv",
+            "label": "HRV",
+            "value": 45,
+            "baseline": 45,
+            "delta": "+0%",
+            "impact": "medium"
+          },
+          {
+            "factor": "sleep",
+            "label": "Sleep",
+            "value": "81%",
+            "impact": "medium"
+          },
+          {
+            "factor": "load",
+            "label": "Prior strain",
+            "value": 11.3,
+            "impact": "medium"
+          },
+          {
+            "factor": "rhr",
+            "label": "Resting HR",
+            "value": 53,
+            "baseline": 59,
+            "delta": "-6 bpm",
+            "impact": "positive"
+          }
+        ]
+      },
+      "strain": {
+        "current": 21,
+        "workoutStrain": 9.3,
+        "lifestyleStrain": 12.9,
+        "workoutLoad": 80,
+        "lifestyleLoad": 110.2,
+        "targetMin": 14,
+        "targetMax": 18,
+        "workouts": [
+          {
+            "name": "Jogging em passadeira",
+            "type": "treadmill_running",
+            "durationMin": 40,
+            "strain": 9.3,
+            "avgHr": 138,
+            "activityId": 23186506951,
+            "maxHr": 153,
+            "calories": 400,
+            "distanceKm": 6.3,
+            "paceMinPerKm": 6.39,
+            "startTime": "15:17",
+            "date": "2026-06-09",
+            "hrZones": {
+              "z1": 0.4,
+              "z2": 5,
+              "z3": 19.6,
+              "z4": 15.2,
+              "z5": 0
+            },
+            "moderateIntensityMin": 7,
+            "vigorousIntensityMin": 32
+          }
+        ],
+        "dailyActivity": {
+          "steps": 17870,
+          "stepGoal": 10000,
+          "activeCalories": 768,
+          "bmrCalories": 1892,
+          "totalCalories": 2660,
+          "distanceKm": 14.82,
+          "moderateIntensityMin": 19,
+          "vigorousIntensityMin": 34
+        }
+      },
+      "sleep": {
+        "score": 81,
+        "hours": 6.8,
+        "need": 7.5,
+        "deepMin": 123,
+        "remMin": 70,
+        "lightMin": 218,
+        "awakeMin": 4,
+        "hypnogram": [
+          {
+            "level": "light",
+            "minutes": 3,
+            "start": "2026-06-08T19:08"
+          },
+          {
+            "level": "awake",
+            "minutes": 52,
+            "start": "2026-06-08T19:11"
+          },
+          {
+            "level": "light",
+            "minutes": 42,
+            "start": "2026-06-08T20:03"
+          },
+          {
+            "level": "awake",
+            "minutes": 21,
+            "start": "2026-06-08T20:45"
+          },
+          {
+            "level": "light",
+            "minutes": 18,
+            "start": "2026-06-08T21:06"
+          },
+          {
+            "level": "awake",
+            "minutes": 7,
+            "start": "2026-06-08T21:24"
+          },
+          {
+            "level": "light",
+            "minutes": 10,
+            "start": "2026-06-08T21:31"
+          },
+          {
+            "level": "awake",
+            "minutes": 5,
+            "start": "2026-06-08T21:41"
+          },
+          {
+            "level": "light",
+            "minutes": 94,
+            "start": "2026-06-08T21:46"
+          },
+          {
+            "level": "awake",
+            "minutes": 25,
+            "start": "2026-06-08T23:20"
+          },
+          {
+            "level": "rem",
+            "minutes": 4,
+            "start": "2026-06-08T23:45"
+          },
+          {
+            "level": "light",
+            "minutes": 11,
+            "start": "2026-06-08T23:49"
+          },
+          {
+            "level": "deep",
+            "minutes": 42,
+            "start": "2026-06-09T00:00"
+          },
+          {
+            "level": "light",
+            "minutes": 30,
+            "start": "2026-06-09T00:42"
+          },
+          {
+            "level": "awake",
+            "minutes": 13,
+            "start": "2026-06-09T01:12"
+          },
+          {
+            "level": "light",
+            "minutes": 10,
+            "start": "2026-06-09T01:25"
+          },
+          {
+            "level": "deep",
+            "minutes": 28,
+            "start": "2026-06-09T01:35"
+          }
+        ],
+        "debt7d": 19.5
+      },
+      "vitals": {
+        "hrv": 45,
+        "hrvBaseline": 45,
+        "rhr": 53,
+        "rhrBaseline": 59,
+        "stressAvg": 30,
+        "stressMax": 99,
+        "bodyBatteryNow": 15,
+        "bodyBatteryMin": 15,
+        "bodyBatteryMax": 86,
+        "vo2max": 46,
+        "fitnessAge": 40,
+        "chronologicalAge": 45,
+        "achievableFitnessAge": 39,
+        "fitnessAgeSource": "garmin",
+        "fitnessAgeTips": [
+          "BMI is the top lever — about 1.7 points from Garmin's target.",
+          "Add ~14 vigorous minutes per week to lower fitness age."
+        ],
+        "respirationRate": 13,
+        "readinessScore": 80,
+        "readinessZone": "high",
+        "readinessLabel": "High"
+      },
+      "curves": {
+        "bodyBattery": [
+          {
+            "time": "00:00",
+            "value": 17
+          },
+          {
+            "time": "06:00",
+            "value": 86
+          },
+          {
+            "time": "08:00",
+            "value": 70
+          },
+          {
+            "time": "15:54",
+            "value": 32
+          },
+          {
+            "time": "16:00",
+            "value": 32
+          },
+          {
+            "time": "22:27",
+            "value": 15
+          }
+        ],
+        "stress": [
+          {
+            "time": "00:00",
+            "value": 25
+          },
+          {
+            "time": "00:36",
+            "value": 22
+          },
+          {
+            "time": "01:09",
+            "value": 19
+          },
+          {
+            "time": "01:42",
+            "value": 8
+          },
+          {
+            "time": "02:15",
+            "value": 11
+          },
+          {
+            "time": "02:48",
+            "value": 10
+          },
+          {
+            "time": "03:21",
+            "value": 10
+          },
+          {
+            "time": "03:54",
+            "value": 6
+          },
+          {
+            "time": "04:27",
+            "value": 3
+          },
+          {
+            "time": "05:00",
+            "value": 3
+          },
+          {
+            "time": "05:33",
+            "value": 4
+          },
+          {
+            "time": "06:09",
+            "value": 58
+          },
+          {
+            "time": "06:51",
+            "value": 52
+          },
+          {
+            "time": "07:45",
+            "value": 76
+          },
+          {
+            "time": "09:15",
+            "value": 24
+          },
+          {
+            "time": "09:48",
+            "value": 24
+          },
+          {
+            "time": "10:21",
+            "value": 40
+          },
+          {
+            "time": "10:54",
+            "value": 38
+          },
+          {
+            "time": "11:39",
+            "value": 37
+          },
+          {
+            "time": "12:39",
+            "value": 17
+          },
+          {
+            "time": "13:12",
+            "value": 41
+          },
+          {
+            "time": "14:00",
+            "value": 34
+          },
+          {
+            "time": "14:42",
+            "value": 20
+          },
+          {
+            "time": "16:51",
+            "value": 88
+          },
+          {
+            "time": "17:33",
+            "value": 50
+          },
+          {
+            "time": "19:00",
+            "value": 23
+          },
+          {
+            "time": "20:30",
+            "value": 33
+          },
+          {
+            "time": "21:03",
+            "value": 79
+          },
+          {
+            "time": "21:36",
+            "value": 50
+          },
+          {
+            "time": "22:09",
+            "value": 76
+          },
+          {
+            "time": "22:45",
+            "value": 28
+          },
+          {
+            "time": "23:18",
+            "value": 28
+          }
+        ]
+      },
+      "coach": {
+        "morning": "",
+        "evening": ""
+      }
+    },
+    {
+      "date": "2026-06-08",
+      "recovery": {
+        "score": 84,
+        "zone": "green",
+        "drivers": [
+          {
+            "factor": "load",
+            "label": "Prior strain",
+            "value": 17,
+            "impact": "high"
+          },
+          {
+            "factor": "hrv",
+            "label": "HRV",
+            "value": 45,
+            "baseline": 45,
+            "delta": "+0%",
+            "impact": "medium"
+          },
+          {
+            "factor": "rhr",
+            "label": "Resting HR",
+            "value": 56,
+            "baseline": 59,
+            "delta": "-3 bpm",
+            "impact": "positive"
+          },
+          {
+            "factor": "sleep",
+            "label": "Sleep",
+            "value": "85%",
+            "impact": "positive"
+          }
+        ]
+      },
+      "strain": {
+        "current": 11.3,
+        "workoutStrain": 3.7,
+        "lifestyleStrain": 7.6,
+        "workoutLoad": 32,
+        "lifestyleLoad": 64.9,
+        "targetMin": 14,
+        "targetMax": 18,
+        "workouts": [
+          {
+            "name": "Jogging em passadeira",
+            "type": "treadmill_running",
+            "durationMin": 16,
+            "strain": 3.7,
+            "avgHr": 149,
+            "activityId": 23178049393,
+            "maxHr": 160,
+            "calories": 190,
+            "distanceKm": 2.51,
+            "paceMinPerKm": 6.62,
+            "startTime": "17:24",
+            "date": "2026-06-08",
+            "hrZones": {
+              "z1": 0.4,
+              "z2": 0.3,
+              "z3": 0.8,
+              "z4": 15.1,
+              "z5": 0
+            },
+            "moderateIntensityMin": 1,
+            "vigorousIntensityMin": 15
+          }
+        ],
+        "dailyActivity": {
+          "steps": 11148,
+          "stepGoal": 10000,
+          "activeCalories": 413,
+          "bmrCalories": 1892,
+          "totalCalories": 2305,
+          "distanceKm": 9.03,
+          "moderateIntensityMin": 4,
+          "vigorousIntensityMin": 17
+        }
+      },
+      "sleep": {
+        "score": 85,
+        "hours": 7.7,
+        "need": 7.5,
+        "deepMin": 64,
+        "remMin": 97,
+        "lightMin": 302,
+        "awakeMin": 1,
+        "hypnogram": [
+          {
+            "level": "light",
+            "minutes": 25,
+            "start": "2026-06-07T18:23"
+          },
+          {
+            "level": "awake",
+            "minutes": 30,
+            "start": "2026-06-07T18:48"
+          },
+          {
+            "level": "light",
+            "minutes": 15,
+            "start": "2026-06-07T19:18"
+          },
+          {
+            "level": "deep",
+            "minutes": 6,
+            "start": "2026-06-07T19:33"
+          },
+          {
+            "level": "light",
+            "minutes": 20,
+            "start": "2026-06-07T19:39"
+          },
+          {
+            "level": "awake",
+            "minutes": 9,
+            "start": "2026-06-07T19:59"
+          },
+          {
+            "level": "light",
+            "minutes": 51,
+            "start": "2026-06-07T20:08"
+          },
+          {
+            "level": "awake",
+            "minutes": 15,
+            "start": "2026-06-07T20:59"
+          },
+          {
+            "level": "light",
+            "minutes": 30,
+            "start": "2026-06-07T21:14"
+          },
+          {
+            "level": "awake",
+            "minutes": 10,
+            "start": "2026-06-07T21:44"
+          },
+          {
+            "level": "light",
+            "minutes": 11,
+            "start": "2026-06-07T21:54"
+          },
+          {
+            "level": "deep",
+            "minutes": 19,
+            "start": "2026-06-07T22:05"
+          },
+          {
+            "level": "light",
+            "minutes": 26,
+            "start": "2026-06-07T22:24"
+          },
+          {
+            "level": "deep",
+            "minutes": 10,
+            "start": "2026-06-07T22:50"
+          },
+          {
+            "level": "light",
+            "minutes": 65,
+            "start": "2026-06-07T23:00"
+          },
+          {
+            "level": "deep",
+            "minutes": 42,
+            "start": "2026-06-08T00:05"
+          },
+          {
+            "level": "rem",
+            "minutes": 1,
+            "start": "2026-06-08T00:47"
+          },
+          {
+            "level": "light",
+            "minutes": 59,
+            "start": "2026-06-08T00:48"
+          },
+          {
+            "level": "deep",
+            "minutes": 20,
+            "start": "2026-06-08T01:47"
+          }
+        ],
+        "debt7d": 19.6
+      },
+      "vitals": {
+        "hrv": 45,
+        "hrvBaseline": 45,
+        "rhr": 56,
+        "rhrBaseline": 59,
+        "stressAvg": 30,
+        "stressMax": 87,
+        "bodyBatteryNow": 15,
+        "bodyBatteryMin": 13,
+        "bodyBatteryMax": 70,
+        "vo2max": 46,
+        "fitnessAge": 40,
+        "chronologicalAge": 45,
+        "achievableFitnessAge": 39,
+        "fitnessAgeSource": "garmin",
+        "fitnessAgeTips": [
+          "Add ~20 vigorous minutes per week to lower fitness age.",
+          "Target 3 vigorous days/week — you're averaging 1.8."
+        ],
+        "respirationRate": 13,
+        "readinessScore": 80,
+        "readinessZone": "high",
+        "readinessLabel": "High"
+      },
+      "curves": {
+        "bodyBattery": [
+          {
+            "time": "00:00",
+            "value": 13
+          },
+          {
+            "time": "06:06",
+            "value": 70
+          },
+          {
+            "time": "08:00",
+            "value": 62
+          },
+          {
+            "time": "15:39",
+            "value": 39
+          },
+          {
+            "time": "16:00",
+            "value": 39
+          },
+          {
+            "time": "23:00",
+            "value": 15
+          }
+        ],
+        "stress": [
+          {
+            "time": "00:00",
+            "value": 18
+          },
+          {
+            "time": "00:30",
+            "value": 21
+          },
+          {
+            "time": "01:00",
+            "value": 11
+          },
+          {
+            "time": "01:30",
+            "value": 12
+          },
+          {
+            "time": "02:00",
+            "value": 16
+          },
+          {
+            "time": "02:30",
+            "value": 17
+          },
+          {
+            "time": "03:00",
+            "value": 23
+          },
+          {
+            "time": "03:30",
+            "value": 11
+          },
+          {
+            "time": "04:00",
+            "value": 13
+          },
+          {
+            "time": "04:30",
+            "value": 22
+          },
+          {
+            "time": "05:00",
+            "value": 15
+          },
+          {
+            "time": "05:30",
+            "value": 15
+          },
+          {
+            "time": "06:00",
+            "value": 17
+          },
+          {
+            "time": "06:39",
+            "value": 18
+          },
+          {
+            "time": "07:39",
+            "value": 42
+          },
+          {
+            "time": "08:42",
+            "value": 24
+          },
+          {
+            "time": "11:15",
+            "value": 31
+          },
+          {
+            "time": "11:54",
+            "value": 4
+          },
+          {
+            "time": "12:24",
+            "value": 16
+          },
+          {
+            "time": "13:36",
+            "value": 32
+          },
+          {
+            "time": "14:09",
+            "value": 22
+          },
+          {
+            "time": "15:00",
+            "value": 37
+          },
+          {
+            "time": "15:39",
+            "value": 33
+          },
+          {
+            "time": "16:12",
+            "value": 35
+          },
+          {
+            "time": "16:42",
+            "value": 46
+          },
+          {
+            "time": "18:06",
+            "value": 12
+          },
+          {
+            "time": "18:39",
+            "value": 21
+          },
+          {
+            "time": "19:21",
+            "value": 58
+          },
+          {
+            "time": "20:36",
+            "value": 80
+          },
+          {
+            "time": "21:06",
+            "value": 30
+          },
+          {
+            "time": "21:39",
+            "value": 46
+          },
+          {
+            "time": "22:24",
+            "value": 59
+          }
+        ]
+      },
+      "coach": {
+        "morning": "",
+        "evening": ""
+      }
+    },
+    {
+      "date": "2026-06-07",
+      "recovery": {
+        "score": 68,
+        "zone": "green",
+        "drivers": [
+          {
+            "factor": "sleep",
+            "label": "Sleep",
+            "value": "43%",
+            "impact": "high"
+          },
+          {
+            "factor": "load",
+            "label": "Prior strain",
+            "value": 19,
+            "impact": "high"
+          },
+          {
+            "factor": "hrv",
+            "label": "HRV",
+            "value": 45,
+            "baseline": 45,
+            "delta": "+0%",
+            "impact": "medium"
+          },
+          {
+            "factor": "rhr",
+            "label": "Resting HR",
+            "value": 60,
+            "baseline": 59,
+            "delta": "+1 bpm",
+            "impact": "low"
+          }
+        ]
+      },
+      "strain": {
+        "current": 17,
+        "workoutStrain": 8.4,
+        "lifestyleStrain": 8.6,
+        "workoutLoad": 72,
+        "lifestyleLoad": 74,
+        "targetMin": 14,
+        "targetMax": 18,
+        "workouts": [
+          {
+            "name": "Dubai Corrida",
+            "type": "running",
+            "durationMin": 36,
+            "strain": 8.4,
+            "avgHr": 151,
+            "activityId": 23157909520,
+            "maxHr": 168,
+            "calories": 417,
+            "distanceKm": 5.4,
+            "paceMinPerKm": 6.73,
+            "startTime": "05:59",
+            "date": "2026-06-07",
+            "hrZones": {
+              "z1": 0.2,
+              "z2": 0.7,
+              "z3": 2.7,
+              "z4": 26.1,
+              "z5": 6.4
+            },
+            "moderateIntensityMin": 0,
+            "vigorousIntensityMin": 36
+          }
+        ],
+        "dailyActivity": {
+          "steps": 12508,
+          "stepGoal": 10000,
+          "activeCalories": 657,
+          "bmrCalories": 1892,
+          "totalCalories": 2549,
+          "distanceKm": 14.48,
+          "moderateIntensityMin": 14,
+          "vigorousIntensityMin": 40
+        }
+      },
+      "sleep": {
+        "score": 43,
+        "hours": 4.8,
+        "need": 7.5,
+        "deepMin": 53,
+        "remMin": 61,
+        "lightMin": 177,
+        "awakeMin": 21,
+        "hypnogram": [
+          {
+            "level": "light",
+            "minutes": 20,
+            "start": "2026-06-06T19:50"
+          },
+          {
+            "level": "awake",
+            "minutes": 2,
+            "start": "2026-06-06T20:10"
+          },
+          {
+            "level": "rem",
+            "minutes": 1,
+            "start": "2026-06-06T20:12"
+          },
+          {
+            "level": "light",
+            "minutes": 13,
+            "start": "2026-06-06T20:13"
+          },
+          {
+            "level": "rem",
+            "minutes": 5,
+            "start": "2026-06-06T20:26"
+          },
+          {
+            "level": "light",
+            "minutes": 19,
+            "start": "2026-06-06T20:31"
+          },
+          {
+            "level": "awake",
+            "minutes": 6,
+            "start": "2026-06-06T20:50"
+          },
+          {
+            "level": "light",
+            "minutes": 3,
+            "start": "2026-06-06T20:56"
+          },
+          {
+            "level": "rem",
+            "minutes": 12,
+            "start": "2026-06-06T20:59"
+          },
+          {
+            "level": "light",
+            "minutes": 13,
+            "start": "2026-06-06T21:11"
+          },
+          {
+            "level": "awake",
+            "minutes": 8,
+            "start": "2026-06-06T21:24"
+          },
+          {
+            "level": "rem",
+            "minutes": 3,
+            "start": "2026-06-06T21:32"
+          },
+          {
+            "level": "light",
+            "minutes": 5,
+            "start": "2026-06-06T21:35"
+          },
+          {
+            "level": "deep",
+            "minutes": 40,
+            "start": "2026-06-06T21:40"
+          },
+          {
+            "level": "light",
+            "minutes": 8,
+            "start": "2026-06-06T22:20"
+          },
+          {
+            "level": "awake",
+            "minutes": 24,
+            "start": "2026-06-06T22:28"
+          },
+          {
+            "level": "light",
+            "minutes": 13,
+            "start": "2026-06-06T22:52"
+          },
+          {
+            "level": "awake",
+            "minutes": 13,
+            "start": "2026-06-06T23:05"
+          },
+          {
+            "level": "light",
+            "minutes": 30,
+            "start": "2026-06-06T23:18"
+          },
+          {
+            "level": "deep",
+            "minutes": 11,
+            "start": "2026-06-06T23:48"
+          },
+          {
+            "level": "light",
+            "minutes": 53,
+            "start": "2026-06-06T23:59"
+          },
+          {
+            "level": "deep",
+            "minutes": 10,
+            "start": "2026-06-07T00:52"
+          }
+        ],
+        "debt7d": 21.2
+      },
+      "vitals": {
+        "hrv": 45,
+        "hrvBaseline": 45,
+        "rhr": 60,
+        "rhrBaseline": 59,
+        "stressAvg": 40,
+        "stressMax": 99,
+        "bodyBatteryNow": 12,
+        "bodyBatteryMin": 5,
+        "bodyBatteryMax": 38,
+        "vo2max": 46,
+        "fitnessAge": 41,
+        "chronologicalAge": 45,
+        "achievableFitnessAge": 39,
+        "fitnessAgeSource": "garmin",
+        "fitnessAgeTips": [
+          "Add ~22 vigorous minutes per week to lower fitness age.",
+          "Target 3 vigorous days/week — you're averaging 1.8."
+        ],
+        "respirationRate": 15,
+        "readinessScore": 64,
+        "readinessZone": "moderate",
+        "readinessLabel": "Moderate"
+      },
+      "curves": {
+        "bodyBattery": [
+          {
+            "time": "00:21",
+            "value": 13
+          },
+          {
+            "time": "04:57",
+            "value": 38
+          },
+          {
+            "time": "08:00",
+            "value": 23
+          },
+          {
+            "time": "15:36",
+            "value": 8
+          },
+          {
+            "time": "20:12",
+            "value": 5
+          },
+          {
+            "time": "23:54",
+            "value": 12
+          }
+        ],
+        "stress": [
+          {
+            "time": "00:00",
+            "value": 79
+          },
+          {
+            "time": "00:33",
+            "value": 76
+          },
+          {
+            "time": "01:06",
+            "value": 60
+          },
+          {
+            "time": "01:39",
+            "value": 65
+          },
+          {
+            "time": "02:12",
+            "value": 89
+          },
+          {
+            "time": "02:45",
+            "value": 20
+          },
+          {
+            "time": "03:18",
+            "value": 22
+          },
+          {
+            "time": "04:03",
+            "value": 24
+          },
+          {
+            "time": "04:39",
+            "value": 20
+          },
+          {
+            "time": "05:36",
+            "value": 48
+          },
+          {
+            "time": "08:24",
+            "value": 59
+          },
+          {
+            "time": "09:18",
+            "value": 67
+          },
+          {
+            "time": "10:06",
+            "value": 70
+          },
+          {
+            "time": "11:06",
+            "value": 50
+          },
+          {
+            "time": "11:42",
+            "value": 40
+          },
+          {
+            "time": "13:06",
+            "value": 28
+          },
+          {
+            "time": "13:42",
+            "value": 23
+          },
+          {
+            "time": "14:18",
+            "value": 22
+          },
+          {
+            "time": "14:57",
+            "value": 69
+          },
+          {
+            "time": "15:33",
+            "value": 34
+          },
+          {
+            "time": "16:06",
+            "value": 24
+          },
+          {
+            "time": "16:45",
+            "value": 40
+          },
+          {
+            "time": "17:33",
+            "value": 23
+          },
+          {
+            "time": "18:06",
+            "value": 8
+          },
+          {
+            "time": "18:45",
+            "value": 42
+          },
+          {
+            "time": "19:21",
+            "value": 32
+          },
+          {
+            "time": "20:24",
+            "value": 40
+          },
+          {
+            "time": "21:06",
+            "value": 52
+          },
+          {
+            "time": "21:42",
+            "value": 55
+          },
+          {
+            "time": "22:18",
+            "value": 29
+          },
+          {
+            "time": "22:51",
+            "value": 22
+          },
+          {
+            "time": "23:24",
+            "value": 20
+          }
+        ]
+      },
+      "coach": {
+        "morning": "",
+        "evening": ""
+      }
+    },
+    {
+      "date": "2026-06-06",
+      "recovery": {
+        "score": 87,
+        "zone": "green",
+        "drivers": [
+          {
+            "factor": "hrv",
+            "label": "HRV",
+            "value": 45,
+            "baseline": 45,
+            "delta": "+0%",
+            "impact": "medium"
+          },
+          {
+            "factor": "sleep",
+            "label": "Sleep",
+            "value": "83%",
+            "impact": "medium"
+          },
+          {
+            "factor": "load",
+            "label": "Prior strain",
+            "value": 10.3,
+            "impact": "medium"
+          },
+          {
+            "factor": "rhr",
+            "label": "Resting HR",
+            "value": 54,
+            "baseline": 59,
+            "delta": "-5 bpm",
+            "impact": "positive"
+          }
+        ]
+      },
+      "strain": {
+        "current": 19,
+        "workoutStrain": 7,
+        "lifestyleStrain": 12,
+        "workoutLoad": 60,
+        "lifestyleLoad": 102.6,
+        "targetMin": 14,
+        "targetMax": 18,
+        "workouts": [
+          {
+            "name": "Jogging em passadeira",
+            "type": "treadmill_running",
+            "durationMin": 30,
+            "strain": 7,
+            "avgHr": 141,
+            "activityId": 23151875704,
+            "maxHr": 157,
+            "calories": 330,
+            "distanceKm": 4.78,
+            "paceMinPerKm": 6.39,
+            "startTime": "17:14",
+            "date": "2026-06-06",
+            "hrZones": {
+              "z1": 0.1,
+              "z2": 0.7,
+              "z3": 14.9,
+              "z4": 14.5,
+              "z5": 0
+            },
+            "moderateIntensityMin": 0,
+            "vigorousIntensityMin": 30
+          }
+        ],
+        "dailyActivity": {
+          "steps": 19456,
+          "stepGoal": 10000,
+          "activeCalories": 682,
+          "bmrCalories": 1892,
+          "totalCalories": 2574,
+          "distanceKm": 16,
+          "moderateIntensityMin": 5,
+          "vigorousIntensityMin": 30
+        }
+      },
+      "sleep": {
+        "score": 83,
+        "hours": 7,
+        "need": 7.5,
+        "deepMin": 69,
+        "remMin": 92,
+        "lightMin": 258,
+        "awakeMin": 10,
+        "hypnogram": [
+          {
+            "level": "light",
+            "minutes": 16,
+            "start": "2026-06-05T19:37"
+          },
+          {
+            "level": "rem",
+            "minutes": 4,
+            "start": "2026-06-05T19:53"
+          },
+          {
+            "level": "light",
+            "minutes": 15,
+            "start": "2026-06-05T19:57"
+          },
+          {
+            "level": "awake",
+            "minutes": 7,
+            "start": "2026-06-05T20:12"
+          },
+          {
+            "level": "light",
+            "minutes": 50,
+            "start": "2026-06-05T20:19"
+          },
+          {
+            "level": "deep",
+            "minutes": 5,
+            "start": "2026-06-05T21:09"
+          },
+          {
+            "level": "light",
+            "minutes": 29,
+            "start": "2026-06-05T21:14"
+          },
+          {
+            "level": "awake",
+            "minutes": 42,
+            "start": "2026-06-05T21:43"
+          },
+          {
+            "level": "rem",
+            "minutes": 1,
+            "start": "2026-06-05T22:25"
+          },
+          {
+            "level": "light",
+            "minutes": 12,
+            "start": "2026-06-05T22:26"
+          },
+          {
+            "level": "rem",
+            "minutes": 5,
+            "start": "2026-06-05T22:38"
+          },
+          {
+            "level": "light",
+            "minutes": 67,
+            "start": "2026-06-05T22:43"
+          },
+          {
+            "level": "deep",
+            "minutes": 35,
+            "start": "2026-06-05T23:50"
+          },
+          {
+            "level": "light",
+            "minutes": 50,
+            "start": "2026-06-06T00:25"
+          },
+          {
+            "level": "awake",
+            "minutes": 20,
+            "start": "2026-06-06T01:15"
+          },
+          {
+            "level": "light",
+            "minutes": 10,
+            "start": "2026-06-06T01:35"
+          },
+          {
+            "level": "deep",
+            "minutes": 34,
+            "start": "2026-06-06T01:45"
+          },
+          {
+            "level": "light",
+            "minutes": 9,
+            "start": "2026-06-06T02:19"
+          },
+          {
+            "level": "deep",
+            "minutes": 18,
+            "start": "2026-06-06T02:28"
+          }
+        ],
+        "debt7d": 26
+      },
+      "vitals": {
+        "hrv": 45,
+        "hrvBaseline": 45,
+        "rhr": 54,
+        "rhrBaseline": 59,
+        "stressAvg": 31,
+        "stressMax": 92,
+        "bodyBatteryNow": 14,
+        "bodyBatteryMin": 14,
+        "bodyBatteryMax": 87,
+        "vo2max": 46,
+        "fitnessAge": 40,
+        "chronologicalAge": 45,
+        "achievableFitnessAge": 39,
+        "fitnessAgeSource": "garmin",
+        "fitnessAgeTips": [
+          "Add ~29 vigorous minutes per week to lower fitness age.",
+          "Target 3 vigorous days/week — you're averaging 1.5."
+        ],
+        "respirationRate": 13,
+        "readinessScore": 80,
+        "readinessZone": "high",
+        "readinessLabel": "High"
+      },
+      "curves": {
+        "bodyBattery": [
+          {
+            "time": "00:00",
+            "value": 22
+          },
+          {
+            "time": "06:42",
+            "value": 87
+          },
+          {
+            "time": "08:00",
+            "value": 77
+          },
+          {
+            "time": "14:39",
+            "value": 47
+          },
+          {
+            "time": "16:00",
+            "value": 47
+          },
+          {
+            "time": "23:54",
+            "value": 14
+          }
+        ],
+        "stress": [
+          {
+            "time": "00:00",
+            "value": 21
+          },
+          {
+            "time": "00:30",
+            "value": 16
+          },
+          {
+            "time": "01:00",
+            "value": 68
+          },
+          {
+            "time": "01:30",
+            "value": 15
+          },
+          {
+            "time": "02:00",
+            "value": 16
+          },
+          {
+            "time": "02:30",
+            "value": 11
+          },
+          {
+            "time": "03:00",
+            "value": 6
+          },
+          {
+            "time": "03:30",
+            "value": 15
+          },
+          {
+            "time": "04:00",
+            "value": 19
+          },
+          {
+            "time": "04:30",
+            "value": 16
+          },
+          {
+            "time": "05:00",
+            "value": 5
+          },
+          {
+            "time": "05:30",
+            "value": 6
+          },
+          {
+            "time": "06:00",
+            "value": 8
+          },
+          {
+            "time": "06:30",
+            "value": 14
+          },
+          {
+            "time": "07:03",
+            "value": 40
+          },
+          {
+            "time": "07:33",
+            "value": 27
+          },
+          {
+            "time": "08:06",
+            "value": 45
+          },
+          {
+            "time": "08:36",
+            "value": 30
+          },
+          {
+            "time": "09:06",
+            "value": 24
+          },
+          {
+            "time": "10:18",
+            "value": 41
+          },
+          {
+            "time": "10:48",
+            "value": 55
+          },
+          {
+            "time": "11:24",
+            "value": 36
+          },
+          {
+            "time": "12:00",
+            "value": 33
+          },
+          {
+            "time": "13:12",
+            "value": 22
+          },
+          {
+            "time": "14:33",
+            "value": 21
+          },
+          {
+            "time": "15:12",
+            "value": 24
+          },
+          {
+            "time": "15:45",
+            "value": 19
+          },
+          {
+            "time": "16:15",
+            "value": 31
+          },
+          {
+            "time": "16:48",
+            "value": 23
+          },
+          {
+            "time": "20:06",
+            "value": 74
+          },
+          {
+            "time": "21:21",
+            "value": 73
+          },
+          {
+            "time": "21:51",
+            "value": 58
+          }
+        ]
+      },
+      "coach": {
+        "morning": "",
+        "evening": ""
+      }
+    },
+    {
+      "date": "2026-06-05",
+      "recovery": {
+        "score": 80,
+        "zone": "green",
+        "drivers": [
+          {
+            "factor": "rhr",
+            "label": "Resting HR",
+            "value": 64,
+            "baseline": 59,
+            "delta": "+5 bpm",
+            "impact": "high"
+          },
+          {
+            "factor": "hrv",
+            "label": "HRV",
+            "value": 45,
+            "baseline": 45,
+            "delta": "+0%",
+            "impact": "medium"
+          },
+          {
+            "factor": "sleep",
+            "label": "Sleep",
+            "value": "70%",
+            "impact": "medium"
+          },
+          {
+            "factor": "load",
+            "label": "Prior strain",
+            "value": 9.4,
+            "impact": "positive"
+          }
+        ]
+      },
+      "strain": {
+        "current": 10.3,
+        "workoutStrain": 7,
+        "lifestyleStrain": 3.3,
+        "workoutLoad": 60,
+        "lifestyleLoad": 28.2,
+        "targetMin": 14,
+        "targetMax": 18,
+        "workouts": [
+          {
+            "name": "Jogging em passadeira",
+            "type": "treadmill_running",
+            "durationMin": 30,
+            "strain": 7,
+            "avgHr": 143,
+            "activityId": 23140926119,
+            "maxHr": 160,
+            "calories": 333,
+            "distanceKm": 4.58,
+            "paceMinPerKm": 6.6,
+            "startTime": "18:50",
+            "date": "2026-06-05",
+            "hrZones": {
+              "z1": 0.4,
+              "z2": 0.2,
+              "z3": 13.4,
+              "z4": 16.3,
+              "z5": 0
+            },
+            "moderateIntensityMin": 0,
+            "vigorousIntensityMin": 29
+          }
+        ],
+        "dailyActivity": {
+          "steps": 8939,
+          "stepGoal": 10000,
+          "activeCalories": 408,
+          "bmrCalories": 1892,
+          "totalCalories": 2300,
+          "distanceKm": 7.52,
+          "moderateIntensityMin": 3,
+          "vigorousIntensityMin": 29
+        }
+      },
+      "sleep": {
+        "score": 70,
+        "hours": 0,
+        "need": 7.5,
+        "deepMin": 0,
+        "remMin": 0,
+        "lightMin": 0,
+        "awakeMin": 0,
+        "hypnogram": [],
+        "debt7d": 25.5
+      },
+      "vitals": {
+        "hrv": 45,
+        "hrvBaseline": 45,
+        "rhr": 64,
+        "rhrBaseline": 59,
+        "stressAvg": 33,
+        "stressMax": 92,
+        "bodyBatteryNow": 20,
+        "bodyBatteryMin": 20,
+        "bodyBatteryMax": 63,
+        "vo2max": 46,
+        "fitnessAge": 40,
+        "chronologicalAge": 45,
+        "achievableFitnessAge": 39,
+        "fitnessAgeSource": "garmin",
+        "fitnessAgeTips": [
+          "Add ~34 vigorous minutes per week to lower fitness age.",
+          "Target 3 vigorous days/week — you're averaging 1.3."
+        ],
+        "respirationRate": 14,
+        "readinessScore": 71,
+        "readinessZone": "moderate",
+        "readinessLabel": "Moderate"
+      },
+      "curves": {
+        "bodyBattery": [
+          {
+            "time": "10:09",
+            "value": 63
+          },
+          {
+            "time": "15:42",
+            "value": 45
+          },
+          {
+            "time": "16:00",
+            "value": 44
+          },
+          {
+            "time": "23:27",
+            "value": 20
+          }
+        ],
+        "stress": [
+          {
+            "time": "10:15",
+            "value": 11
+          },
+          {
+            "time": "10:39",
+            "value": 24
+          },
+          {
+            "time": "11:06",
+            "value": 40
+          },
+          {
+            "time": "11:27",
+            "value": 23
+          },
+          {
+            "time": "12:00",
+            "value": 33
+          },
+          {
+            "time": "12:21",
+            "value": 61
+          },
+          {
+            "time": "12:48",
+            "value": 42
+          },
+          {
+            "time": "13:09",
+            "value": 43
+          },
+          {
+            "time": "13:27",
+            "value": 25
+          },
+          {
+            "time": "13:45",
+            "value": 23
+          },
+          {
+            "time": "14:03",
+            "value": 34
+          },
+          {
+            "time": "14:21",
+            "value": 25
+          },
+          {
+            "time": "14:42",
+            "value": 46
+          },
+          {
+            "time": "15:06",
+            "value": 34
+          },
+          {
+            "time": "15:24",
+            "value": 11
+          },
+          {
+            "time": "15:57",
+            "value": 18
+          },
+          {
+            "time": "16:15",
+            "value": 25
+          },
+          {
+            "time": "16:33",
+            "value": 20
+          },
+          {
+            "time": "16:57",
+            "value": 31
+          },
+          {
+            "time": "17:36",
+            "value": 71
+          },
+          {
+            "time": "17:54",
+            "value": 25
+          },
+          {
+            "time": "18:12",
+            "value": 20
+          },
+          {
+            "time": "18:30",
+            "value": 25
+          },
+          {
+            "time": "20:27",
+            "value": 58
+          },
+          {
+            "time": "20:48",
+            "value": 44
+          },
+          {
+            "time": "21:06",
+            "value": 43
+          },
+          {
+            "time": "21:24",
+            "value": 43
+          },
+          {
+            "time": "21:42",
+            "value": 16
+          },
+          {
+            "time": "22:00",
+            "value": 16
+          },
+          {
+            "time": "22:18",
+            "value": 24
+          },
+          {
+            "time": "22:36",
+            "value": 25
+          },
+          {
+            "time": "22:54",
+            "value": 24
+          }
+        ]
+      },
+      "coach": {
+        "morning": "",
+        "evening": ""
+      }
+    },
+    {
+      "date": "2026-06-04",
+      "recovery": {
+        "score": 78,
+        "zone": "green",
+        "drivers": [
+          {
+            "factor": "rhr",
+            "label": "Resting HR",
+            "value": 63,
+            "baseline": 59,
+            "delta": "+4 bpm",
+            "impact": "high"
+          },
+          {
+            "factor": "load",
+            "label": "Prior strain",
+            "value": 19.6,
+            "impact": "high"
+          },
+          {
+            "factor": "hrv",
+            "label": "HRV",
+            "value": 45,
+            "baseline": 45,
+            "delta": "+0%",
+            "impact": "medium"
+          },
+          {
+            "factor": "sleep",
+            "label": "Sleep",
+            "value": "70%",
+            "impact": "medium"
+          }
+        ]
+      },
+      "strain": {
+        "current": 9.4,
+        "workoutStrain": 7,
+        "lifestyleStrain": 2.4,
+        "workoutLoad": 60,
+        "lifestyleLoad": 20.3,
+        "targetMin": 14,
+        "targetMax": 18,
+        "workouts": [
+          {
+            "name": "Jogging em passadeira",
+            "type": "treadmill_running",
+            "durationMin": 30,
+            "strain": 7,
+            "avgHr": 145,
+            "activityId": 23128137212,
+            "maxHr": 155,
+            "calories": 338,
+            "distanceKm": 4.79,
+            "paceMinPerKm": 6.33,
+            "startTime": "16:59",
+            "date": "2026-06-04",
+            "hrZones": {
+              "z1": 0.3,
+              "z2": 0.4,
+              "z3": 4.8,
+              "z4": 24.8,
+              "z5": 0
+            },
+            "moderateIntensityMin": 0,
+            "vigorousIntensityMin": 30
+          }
+        ],
+        "dailyActivity": {
+          "steps": 7343,
+          "stepGoal": 10000,
+          "activeCalories": 371,
+          "bmrCalories": 1892,
+          "totalCalories": 2263,
+          "distanceKm": 6.43,
+          "moderateIntensityMin": 3,
+          "vigorousIntensityMin": 30
+        }
+      },
+      "sleep": {
+        "score": 70,
+        "hours": 0,
+        "need": 7.5,
+        "deepMin": 0,
+        "remMin": 0,
+        "lightMin": 0,
+        "awakeMin": 0,
+        "hypnogram": [],
+        "debt7d": 18.8
+      },
+      "vitals": {
+        "hrv": 45,
+        "hrvBaseline": 45,
+        "rhr": 63,
+        "rhrBaseline": 59,
+        "stressAvg": 38,
+        "stressMax": 74,
+        "bodyBatteryNow": 30,
+        "bodyBatteryMin": 30,
+        "bodyBatteryMax": 51,
+        "vo2max": 46,
+        "fitnessAge": 40,
+        "chronologicalAge": 45,
+        "achievableFitnessAge": 39,
+        "fitnessAgeSource": "garmin",
+        "fitnessAgeTips": [
+          "Add ~39 vigorous minutes per week to lower fitness age.",
+          "Target 3 vigorous days/week — you're averaging 1.1."
+        ],
+        "respirationRate": 13,
+        "readinessScore": 73,
+        "readinessZone": "moderate",
+        "readinessLabel": "Moderate"
+      },
+      "curves": {
+        "bodyBattery": [
+          {
+            "time": "12:33",
+            "value": 51
+          },
+          {
+            "time": "15:39",
+            "value": 39
+          },
+          {
+            "time": "16:00",
+            "value": 39
+          },
+          {
+            "time": "17:27",
+            "value": 30
+          }
+        ],
+        "stress": [
+          {
+            "time": "12:42",
+            "value": 34
+          },
+          {
+            "time": "12:45",
+            "value": 31
+          },
+          {
+            "time": "12:48",
+            "value": 46
+          },
+          {
+            "time": "12:51",
+            "value": 55
+          },
+          {
+            "time": "12:54",
+            "value": 54
+          },
+          {
+            "time": "13:09",
+            "value": 48
+          },
+          {
+            "time": "13:12",
+            "value": 44
+          },
+          {
+            "time": "13:15",
+            "value": 51
+          },
+          {
+            "time": "13:18",
+            "value": 50
+          },
+          {
+            "time": "13:24",
+            "value": 37
+          },
+          {
+            "time": "13:27",
+            "value": 61
+          },
+          {
+            "time": "13:30",
+            "value": 52
+          },
+          {
+            "time": "13:33",
+            "value": 43
+          },
+          {
+            "time": "13:36",
+            "value": 43
+          },
+          {
+            "time": "13:42",
+            "value": 34
+          },
+          {
+            "time": "13:45",
+            "value": 40
+          },
+          {
+            "time": "13:48",
+            "value": 35
+          },
+          {
+            "time": "13:51",
+            "value": 41
+          },
+          {
+            "time": "13:54",
+            "value": 40
+          },
+          {
+            "time": "13:57",
+            "value": 41
+          },
+          {
+            "time": "14:00",
+            "value": 33
+          },
+          {
+            "time": "14:03",
+            "value": 36
+          },
+          {
+            "time": "14:06",
+            "value": 46
+          },
+          {
+            "time": "14:09",
+            "value": 43
+          },
+          {
+            "time": "14:12",
+            "value": 45
+          },
+          {
+            "time": "14:15",
+            "value": 46
+          },
+          {
+            "time": "14:18",
+            "value": 33
+          },
+          {
+            "time": "14:21",
+            "value": 34
+          },
+          {
+            "time": "14:24",
+            "value": 40
+          },
+          {
+            "time": "14:27",
+            "value": 30
+          },
+          {
+            "time": "14:30",
+            "value": 37
+          },
+          {
+            "time": "14:33",
+            "value": 31
+          }
+        ]
+      },
+      "coach": {
+        "morning": "",
+        "evening": ""
+      }
+    },
+    {
+      "date": "2026-06-03",
+      "recovery": {
+        "score": 80,
+        "zone": "green",
+        "drivers": [
+          {
+            "factor": "load",
+            "label": "Prior strain",
+            "value": 21,
+            "impact": "high"
+          },
+          {
+            "factor": "hrv",
+            "label": "HRV",
+            "value": 45,
+            "baseline": 45,
+            "delta": "+0%",
+            "impact": "medium"
+          },
+          {
+            "factor": "sleep",
+            "label": "Sleep",
+            "value": "79%",
+            "impact": "medium"
+          },
+          {
+            "factor": "rhr",
+            "label": "Resting HR",
+            "value": 55,
+            "baseline": 59,
+            "delta": "-4 bpm",
+            "impact": "positive"
+          }
+        ]
+      },
+      "strain": {
+        "current": 19.6,
+        "workoutStrain": 6.8,
+        "lifestyleStrain": 12.8,
+        "workoutLoad": 58,
+        "lifestyleLoad": 109.6,
+        "targetMin": 14,
+        "targetMax": 18,
+        "workouts": [
+          {
+            "name": "Jogging em passadeira",
+            "type": "treadmill_running",
+            "durationMin": 29,
+            "strain": 6.8,
+            "avgHr": 149,
+            "activityId": 23113276331,
+            "maxHr": 160,
+            "calories": 343,
+            "distanceKm": 4.5,
+            "paceMinPerKm": 6.64,
+            "startTime": "12:53",
+            "date": "2026-06-03",
+            "hrZones": {
+              "z1": 0.6,
+              "z2": 0.2,
+              "z3": 2.6,
+              "z4": 26.5,
+              "z5": 0
+            },
+            "moderateIntensityMin": 1,
+            "vigorousIntensityMin": 28
+          }
+        ],
+        "dailyActivity": {
+          "steps": 15370,
+          "stepGoal": 10000,
+          "activeCalories": 714,
+          "bmrCalories": 1892,
+          "totalCalories": 2606,
+          "distanceKm": 12.49,
+          "moderateIntensityMin": 13,
+          "vigorousIntensityMin": 31
+        }
+      },
+      "sleep": {
+        "score": 79,
+        "hours": 6.9,
+        "need": 7.5,
+        "deepMin": 82,
+        "remMin": 53,
+        "lightMin": 281,
+        "awakeMin": 0,
+        "hypnogram": [
+          {
+            "level": "light",
+            "minutes": 28,
+            "start": "2026-06-02T18:30"
+          },
+          {
+            "level": "awake",
+            "minutes": 18,
+            "start": "2026-06-02T18:58"
+          },
+          {
+            "level": "light",
+            "minutes": 10,
+            "start": "2026-06-02T19:16"
+          },
+          {
+            "level": "awake",
+            "minutes": 11,
+            "start": "2026-06-02T19:26"
+          },
+          {
+            "level": "light",
+            "minutes": 56,
+            "start": "2026-06-02T19:37"
+          },
+          {
+            "level": "awake",
+            "minutes": 22,
+            "start": "2026-06-02T20:33"
+          },
+          {
+            "level": "light",
+            "minutes": 28,
+            "start": "2026-06-02T20:55"
+          },
+          {
+            "level": "awake",
+            "minutes": 31,
+            "start": "2026-06-02T21:23"
+          },
+          {
+            "level": "light",
+            "minutes": 9,
+            "start": "2026-06-02T21:54"
+          },
+          {
+            "level": "deep",
+            "minutes": 18,
+            "start": "2026-06-02T22:03"
+          },
+          {
+            "level": "light",
+            "minutes": 28,
+            "start": "2026-06-02T22:21"
+          },
+          {
+            "level": "deep",
+            "minutes": 12,
+            "start": "2026-06-02T22:49"
+          },
+          {
+            "level": "light",
+            "minutes": 76,
+            "start": "2026-06-02T23:01"
+          },
+          {
+            "level": "deep",
+            "minutes": 23,
+            "start": "2026-06-03T00:17"
+          },
+          {
+            "level": "light",
+            "minutes": 46,
+            "start": "2026-06-03T00:40"
+          }
+        ],
+        "debt7d": 13.5
+      },
+      "vitals": {
+        "hrv": 45,
+        "hrvBaseline": 45,
+        "rhr": 55,
+        "rhrBaseline": 59,
+        "stressAvg": 34,
+        "stressMax": 99,
+        "bodyBatteryNow": 11,
+        "bodyBatteryMin": 8,
+        "bodyBatteryMax": 68,
+        "vo2max": 46,
+        "fitnessAge": 41,
+        "chronologicalAge": 45,
+        "achievableFitnessAge": 39,
+        "fitnessAgeSource": "garmin",
+        "fitnessAgeTips": [
+          "Add ~44 vigorous minutes per week to lower fitness age.",
+          "Target 3 vigorous days/week — you're averaging 1.1."
+        ],
+        "respirationRate": 14,
+        "readinessScore": 77,
+        "readinessZone": "high",
+        "readinessLabel": "High"
+      },
+      "curves": {
+        "bodyBattery": [
+          {
+            "time": "00:00",
+            "value": 8
+          },
+          {
+            "time": "05:24",
+            "value": 68
+          },
+          {
+            "time": "08:00",
+            "value": 54
+          },
+          {
+            "time": "15:51",
+            "value": 22
+          },
+          {
+            "time": "16:00",
+            "value": 22
+          },
+          {
+            "time": "21:09",
+            "value": 11
+          }
+        ],
+        "stress": [
+          {
+            "time": "00:00",
+            "value": 26
+          },
+          {
+            "time": "00:27",
+            "value": 10
+          },
+          {
+            "time": "00:54",
+            "value": 16
+          },
+          {
+            "time": "01:21",
+            "value": 13
+          },
+          {
+            "time": "01:48",
+            "value": 13
+          },
+          {
+            "time": "02:15",
+            "value": 19
+          },
+          {
+            "time": "02:42",
+            "value": 19
+          },
+          {
+            "time": "03:09",
+            "value": 7
+          },
+          {
+            "time": "03:36",
+            "value": 17
+          },
+          {
+            "time": "04:03",
+            "value": 17
+          },
+          {
+            "time": "04:30",
+            "value": 10
+          },
+          {
+            "time": "04:57",
+            "value": 8
+          },
+          {
+            "time": "05:30",
+            "value": 50
+          },
+          {
+            "time": "06:06",
+            "value": 82
+          },
+          {
+            "time": "06:33",
+            "value": 48
+          },
+          {
+            "time": "07:27",
+            "value": 54
+          },
+          {
+            "time": "08:30",
+            "value": 33
+          },
+          {
+            "time": "09:09",
+            "value": 55
+          },
+          {
+            "time": "09:45",
+            "value": 42
+          },
+          {
+            "time": "10:12",
+            "value": 56
+          },
+          {
+            "time": "10:45",
+            "value": 47
+          },
+          {
+            "time": "11:12",
+            "value": 25
+          },
+          {
+            "time": "11:42",
+            "value": 31
+          },
+          {
+            "time": "12:09",
+            "value": 51
+          },
+          {
+            "time": "12:36",
+            "value": 46
+          },
+          {
+            "time": "14:54",
+            "value": 66
+          },
+          {
+            "time": "15:27",
+            "value": 63
+          },
+          {
+            "time": "16:00",
+            "value": 39
+          },
+          {
+            "time": "16:27",
+            "value": 29
+          },
+          {
+            "time": "16:57",
+            "value": 58
+          },
+          {
+            "time": "17:33",
+            "value": 66
+          },
+          {
+            "time": "18:21",
+            "value": 19
+          }
+        ]
+      },
+      "coach": {
+        "morning": "",
+        "evening": ""
+      }
+    },
+    {
+      "date": "2026-06-02",
+      "recovery": {
+        "score": 77,
+        "zone": "green",
+        "drivers": [
+          {
+            "factor": "load",
+            "label": "Prior strain",
+            "value": 20.1,
+            "impact": "high"
+          },
+          {
+            "factor": "hrv",
+            "label": "HRV",
+            "value": 45,
+            "baseline": 45,
+            "delta": "+0%",
+            "impact": "medium"
+          },
+          {
+            "factor": "sleep",
+            "label": "Sleep",
+            "value": "74%",
+            "impact": "medium"
+          },
+          {
+            "factor": "rhr",
+            "label": "Resting HR",
+            "value": 60,
+            "baseline": 59,
+            "delta": "+1 bpm",
+            "impact": "low"
+          }
+        ]
+      },
+      "strain": {
+        "current": 21,
+        "workoutStrain": 6.8,
+        "lifestyleStrain": 17.2,
+        "workoutLoad": 58,
+        "lifestyleLoad": 147.8,
+        "targetMin": 14,
+        "targetMax": 18,
+        "workouts": [
+          {
+            "name": "Jogging em passadeira",
+            "type": "treadmill_running",
+            "durationMin": 29,
+            "strain": 6.8,
+            "avgHr": 149,
+            "activityId": 23103939290,
+            "maxHr": 172,
+            "calories": 344,
+            "distanceKm": 4.51,
+            "paceMinPerKm": 6.64,
+            "startTime": "17:50",
+            "date": "2026-06-02",
+            "hrZones": {
+              "z1": 0.3,
+              "z2": 0.2,
+              "z3": 5.8,
+              "z4": 20.6,
+              "z5": 3
+            },
+            "moderateIntensityMin": 0,
+            "vigorousIntensityMin": 29
+          }
+        ],
+        "dailyActivity": {
+          "steps": 15117,
+          "stepGoal": 10000,
+          "activeCalories": 841,
+          "bmrCalories": 1892,
+          "totalCalories": 2733,
+          "distanceKm": 12.32,
+          "moderateIntensityMin": 27,
+          "vigorousIntensityMin": 32
+        }
+      },
+      "sleep": {
+        "score": 74,
+        "hours": 6.7,
+        "need": 7.5,
+        "deepMin": 81,
+        "remMin": 63,
+        "lightMin": 260,
+        "awakeMin": 17,
+        "hypnogram": [
+          {
+            "level": "light",
+            "minutes": 22,
+            "start": "2026-06-01T18:57"
+          },
+          {
+            "level": "awake",
+            "minutes": 18,
+            "start": "2026-06-01T19:19"
+          },
+          {
+            "level": "light",
+            "minutes": 17,
+            "start": "2026-06-01T19:37"
+          },
+          {
+            "level": "awake",
+            "minutes": 17,
+            "start": "2026-06-01T19:54"
+          },
+          {
+            "level": "light",
+            "minutes": 11,
+            "start": "2026-06-01T20:11"
+          },
+          {
+            "level": "rem",
+            "minutes": 5,
+            "start": "2026-06-01T20:22"
+          },
+          {
+            "level": "light",
+            "minutes": 34,
+            "start": "2026-06-01T20:27"
+          },
+          {
+            "level": "awake",
+            "minutes": 6,
+            "start": "2026-06-01T21:01"
+          },
+          {
+            "level": "rem",
+            "minutes": 2,
+            "start": "2026-06-01T21:07"
+          },
+          {
+            "level": "light",
+            "minutes": 8,
+            "start": "2026-06-01T21:09"
+          },
+          {
+            "level": "awake",
+            "minutes": 13,
+            "start": "2026-06-01T21:17"
+          },
+          {
+            "level": "rem",
+            "minutes": 3,
+            "start": "2026-06-01T21:30"
+          },
+          {
+            "level": "light",
+            "minutes": 13,
+            "start": "2026-06-01T21:33"
+          },
+          {
+            "level": "awake",
+            "minutes": 27,
+            "start": "2026-06-01T21:46"
+          },
+          {
+            "level": "light",
+            "minutes": 14,
+            "start": "2026-06-01T22:13"
+          },
+          {
+            "level": "rem",
+            "minutes": 7,
+            "start": "2026-06-01T22:27"
+          },
+          {
+            "level": "light",
+            "minutes": 12,
+            "start": "2026-06-01T22:34"
+          },
+          {
+            "level": "deep",
+            "minutes": 5,
+            "start": "2026-06-01T22:46"
+          },
+          {
+            "level": "light",
+            "minutes": 17,
+            "start": "2026-06-01T22:51"
+          },
+          {
+            "level": "deep",
+            "minutes": 29,
+            "start": "2026-06-01T23:08"
+          },
+          {
+            "level": "light",
+            "minutes": 21,
+            "start": "2026-06-01T23:37"
+          },
+          {
+            "level": "deep",
+            "minutes": 5,
+            "start": "2026-06-01T23:58"
+          },
+          {
+            "level": "light",
+            "minutes": 38,
+            "start": "2026-06-02T00:03"
+          },
+          {
+            "level": "deep",
+            "minutes": 10,
+            "start": "2026-06-02T00:41"
+          },
+          {
+            "level": "light",
+            "minutes": 53,
+            "start": "2026-06-02T00:51"
+          },
+          {
+            "level": "deep",
+            "minutes": 14,
+            "start": "2026-06-02T01:44"
+          }
+        ],
+        "debt7d": 12.9
+      },
+      "vitals": {
+        "hrv": 45,
+        "hrvBaseline": 45,
+        "rhr": 60,
+        "rhrBaseline": 59,
+        "stressAvg": 38,
+        "stressMax": 98,
+        "bodyBatteryNow": 5,
+        "bodyBatteryMin": 5,
+        "bodyBatteryMax": 44,
+        "vo2max": 46,
+        "fitnessAge": 41,
+        "chronologicalAge": 45,
+        "achievableFitnessAge": 39,
+        "fitnessAgeSource": "garmin",
+        "fitnessAgeTips": [
+          "Add ~49 vigorous minutes per week to lower fitness age.",
+          "Target 3 vigorous days/week — you're averaging 1.0."
+        ],
+        "respirationRate": 14,
+        "readinessScore": 73,
+        "readinessZone": "moderate",
+        "readinessLabel": "Moderate"
+      },
+      "curves": {
+        "bodyBattery": [
+          {
+            "time": "00:00",
+            "value": 5
+          },
+          {
+            "time": "05:57",
+            "value": 44
+          },
+          {
+            "time": "08:00",
+            "value": 38
+          },
+          {
+            "time": "15:33",
+            "value": 17
+          },
+          {
+            "time": "16:00",
+            "value": 17
+          },
+          {
+            "time": "19:30",
+            "value": 5
+          }
+        ],
+        "stress": [
+          {
+            "time": "00:00",
+            "value": 65
+          },
+          {
+            "time": "00:30",
+            "value": 62
+          },
+          {
+            "time": "01:00",
+            "value": 36
+          },
+          {
+            "time": "01:30",
+            "value": 20
+          },
+          {
+            "time": "02:12",
+            "value": 22
+          },
+          {
+            "time": "02:42",
+            "value": 24
+          },
+          {
+            "time": "03:12",
+            "value": 21
+          },
+          {
+            "time": "03:42",
+            "value": 18
+          },
+          {
+            "time": "04:12",
+            "value": 21
+          },
+          {
+            "time": "04:42",
+            "value": 12
+          },
+          {
+            "time": "05:12",
+            "value": 13
+          },
+          {
+            "time": "05:42",
+            "value": 15
+          },
+          {
+            "time": "06:18",
+            "value": 64
+          },
+          {
+            "time": "06:51",
+            "value": 58
+          },
+          {
+            "time": "07:39",
+            "value": 43
+          },
+          {
+            "time": "08:42",
+            "value": 46
+          },
+          {
+            "time": "09:12",
+            "value": 58
+          },
+          {
+            "time": "09:42",
+            "value": 44
+          },
+          {
+            "time": "10:15",
+            "value": 47
+          },
+          {
+            "time": "10:48",
+            "value": 37
+          },
+          {
+            "time": "11:21",
+            "value": 25
+          },
+          {
+            "time": "11:54",
+            "value": 52
+          },
+          {
+            "time": "12:24",
+            "value": 43
+          },
+          {
+            "time": "13:06",
+            "value": 50
+          },
+          {
+            "time": "14:42",
+            "value": 46
+          },
+          {
+            "time": "15:24",
+            "value": 49
+          },
+          {
+            "time": "15:54",
+            "value": 33
+          },
+          {
+            "time": "16:24",
+            "value": 26
+          },
+          {
+            "time": "17:12",
+            "value": 28
+          },
+          {
+            "time": "19:24",
+            "value": 91
+          },
+          {
+            "time": "20:45",
+            "value": 64
+          },
+          {
+            "time": "21:24",
+            "value": 53
+          }
+        ]
+      },
+      "coach": {
+        "morning": "",
+        "evening": ""
+      }
+    },
+    {
+      "date": "2026-06-01",
+      "recovery": {
+        "score": 71,
+        "zone": "green",
+        "drivers": [
+          {
+            "factor": "sleep",
+            "label": "Sleep",
+            "value": "52%",
+            "impact": "high"
+          },
+          {
+            "factor": "hrv",
+            "label": "HRV",
+            "value": 45,
+            "baseline": 45,
+            "delta": "+0%",
+            "impact": "medium"
+          },
+          {
+            "factor": "load",
+            "label": "Prior strain",
+            "value": 15.5,
+            "impact": "medium"
+          },
+          {
+            "factor": "rhr",
+            "label": "Resting HR",
+            "value": 61,
+            "baseline": 59,
+            "delta": "+2 bpm",
+            "impact": "low"
+          }
+        ]
+      },
+      "strain": {
+        "current": 20.1,
+        "workoutStrain": 7,
+        "lifestyleStrain": 13.1,
+        "workoutLoad": 60,
+        "lifestyleLoad": 112.7,
+        "targetMin": 14,
+        "targetMax": 18,
+        "workouts": [
+          {
+            "name": "Jogging em passadeira",
+            "type": "treadmill_running",
+            "durationMin": 30,
+            "strain": 7,
+            "avgHr": 147,
+            "activityId": 23089629393,
+            "maxHr": 160,
+            "calories": 342,
+            "distanceKm": 4.5,
+            "paceMinPerKm": 6.72,
+            "startTime": "14:50",
+            "date": "2026-06-01",
+            "hrZones": {
+              "z1": 0.3,
+              "z2": 1.1,
+              "z3": 3.5,
+              "z4": 25.4,
+              "z5": 0
+            },
+            "moderateIntensityMin": 0,
+            "vigorousIntensityMin": 29
+          }
+        ],
+        "dailyActivity": {
+          "steps": 15146,
+          "stepGoal": 10000,
+          "activeCalories": 728,
+          "bmrCalories": 1892,
+          "totalCalories": 2620,
+          "distanceKm": 12.34,
+          "moderateIntensityMin": 8,
+          "vigorousIntensityMin": 30
+        }
+      },
+      "sleep": {
+        "score": 52,
+        "hours": 5.9,
+        "need": 7.5,
+        "deepMin": 43,
+        "remMin": 5,
+        "lightMin": 306,
+        "awakeMin": 29,
+        "hypnogram": [
+          {
+            "level": "light",
+            "minutes": 31,
+            "start": "2026-05-31T19:22"
+          },
+          {
+            "level": "awake",
+            "minutes": 13,
+            "start": "2026-05-31T19:53"
+          },
+          {
+            "level": "rem",
+            "minutes": 2,
+            "start": "2026-05-31T20:06"
+          },
+          {
+            "level": "light",
+            "minutes": 13,
+            "start": "2026-05-31T20:08"
+          },
+          {
+            "level": "rem",
+            "minutes": 4,
+            "start": "2026-05-31T20:21"
+          },
+          {
+            "level": "light",
+            "minutes": 18,
+            "start": "2026-05-31T20:25"
+          },
+          {
+            "level": "awake",
+            "minutes": 18,
+            "start": "2026-05-31T20:43"
+          },
+          {
+            "level": "light",
+            "minutes": 27,
+            "start": "2026-05-31T21:01"
+          },
+          {
+            "level": "rem",
+            "minutes": 22,
+            "start": "2026-05-31T21:28"
+          },
+          {
+            "level": "light",
+            "minutes": 34,
+            "start": "2026-05-31T21:50"
+          },
+          {
+            "level": "deep",
+            "minutes": 5,
+            "start": "2026-05-31T22:24"
+          },
+          {
+            "level": "light",
+            "minutes": 13,
+            "start": "2026-05-31T22:29"
+          },
+          {
+            "level": "rem",
+            "minutes": 1,
+            "start": "2026-05-31T22:42"
+          },
+          {
+            "level": "light",
+            "minutes": 127,
+            "start": "2026-05-31T22:43"
+          },
+          {
+            "level": "awake",
+            "minutes": 12,
+            "start": "2026-06-01T00:50"
+          },
+          {
+            "level": "light",
+            "minutes": 43,
+            "start": "2026-06-01T01:02"
+          }
+        ],
+        "debt7d": 12.1
+      },
+      "vitals": {
+        "hrv": 45,
+        "hrvBaseline": 45,
+        "rhr": 61,
+        "rhrBaseline": 59,
+        "stressAvg": 40,
+        "stressMax": 96,
+        "bodyBatteryNow": 5,
+        "bodyBatteryMin": 5,
+        "bodyBatteryMax": 48,
+        "vo2max": 46,
+        "fitnessAge": 42,
+        "chronologicalAge": 45,
+        "achievableFitnessAge": 39,
+        "fitnessAgeSource": "garmin",
+        "fitnessAgeTips": [
+          "Add ~54 vigorous minutes per week to lower fitness age.",
+          "Target 3 vigorous days/week — you're averaging 0.6."
+        ],
+        "respirationRate": 14,
+        "readinessScore": 65,
+        "readinessZone": "moderate",
+        "readinessLabel": "Moderate"
+      },
+      "curves": {
+        "bodyBattery": [
+          {
+            "time": "00:00",
+            "value": 18
+          },
+          {
+            "time": "05:42",
+            "value": 48
+          },
+          {
+            "time": "08:00",
+            "value": 40
+          },
+          {
+            "time": "15:42",
+            "value": 13
+          },
+          {
+            "time": "16:00",
+            "value": 13
+          },
+          {
+            "time": "21:06",
+            "value": 5
+          }
+        ],
+        "stress": [
+          {
+            "time": "00:00",
+            "value": 33
+          },
+          {
+            "time": "00:30",
+            "value": 36
+          },
+          {
+            "time": "01:00",
+            "value": 31
+          },
+          {
+            "time": "01:30",
+            "value": 33
+          },
+          {
+            "time": "02:00",
+            "value": 30
+          },
+          {
+            "time": "02:30",
+            "value": 25
+          },
+          {
+            "time": "03:00",
+            "value": 28
+          },
+          {
+            "time": "03:30",
+            "value": 30
+          },
+          {
+            "time": "04:00",
+            "value": 24
+          },
+          {
+            "time": "04:30",
+            "value": 27
+          },
+          {
+            "time": "05:00",
+            "value": 15
+          },
+          {
+            "time": "05:30",
+            "value": 19
+          },
+          {
+            "time": "06:03",
+            "value": 56
+          },
+          {
+            "time": "06:36",
+            "value": 39
+          },
+          {
+            "time": "07:24",
+            "value": 36
+          },
+          {
+            "time": "08:54",
+            "value": 61
+          },
+          {
+            "time": "09:24",
+            "value": 43
+          },
+          {
+            "time": "09:57",
+            "value": 46
+          },
+          {
+            "time": "12:21",
+            "value": 35
+          },
+          {
+            "time": "13:03",
+            "value": 58
+          },
+          {
+            "time": "13:33",
+            "value": 55
+          },
+          {
+            "time": "14:06",
+            "value": 43
+          },
+          {
+            "time": "16:39",
+            "value": 61
+          },
+          {
+            "time": "17:12",
+            "value": 85
+          },
+          {
+            "time": "18:42",
+            "value": 28
+          },
+          {
+            "time": "19:21",
+            "value": 45
+          },
+          {
+            "time": "19:57",
+            "value": 49
+          },
+          {
+            "time": "20:30",
+            "value": 19
+          },
+          {
+            "time": "21:27",
+            "value": 30
+          },
+          {
+            "time": "22:03",
+            "value": 43
+          },
+          {
+            "time": "22:36",
+            "value": 42
+          },
+          {
+            "time": "23:09",
+            "value": 31
+          }
+        ]
+      },
+      "coach": {
+        "morning": "",
+        "evening": ""
+      }
+    },
+    {
+      "date": "2026-05-31",
+      "recovery": {
+        "score": 84,
+        "zone": "green",
+        "drivers": [
+          {
+            "factor": "hrv",
+            "label": "HRV",
+            "value": 45,
+            "baseline": 45,
+            "delta": "+0%",
+            "impact": "medium"
+          },
+          {
+            "factor": "sleep",
+            "label": "Sleep",
+            "value": "70%",
+            "impact": "medium"
+          },
+          {
+            "factor": "rhr",
+            "label": "Resting HR",
+            "value": 62,
+            "baseline": 59,
+            "delta": "+3 bpm",
+            "impact": "low"
+          },
+          {
+            "factor": "load",
+            "label": "Prior strain",
+            "value": 6.5,
+            "impact": "positive"
+          }
+        ]
+      },
+      "strain": {
+        "current": 15.5,
+        "workoutStrain": 0,
+        "lifestyleStrain": 15.5,
+        "workoutLoad": 0,
+        "lifestyleLoad": 132.5,
+        "targetMin": 14,
+        "targetMax": 18,
+        "workouts": [],
+        "dailyActivity": {
+          "steps": 7703,
+          "stepGoal": 10000,
+          "activeCalories": 458,
+          "bmrCalories": 1892,
+          "totalCalories": 2350,
+          "distanceKm": 8.03,
+          "moderateIntensityMin": 6,
+          "vigorousIntensityMin": 31
+        }
+      },
+      "sleep": {
+        "score": 70,
+        "hours": 0,
+        "need": 7.5,
+        "deepMin": 0,
+        "remMin": 0,
+        "lightMin": 0,
+        "awakeMin": 0,
+        "hypnogram": [],
+        "debt7d": 10.5
+      },
+      "vitals": {
+        "hrv": 45,
+        "hrvBaseline": 45,
+        "rhr": 62,
+        "rhrBaseline": 59,
+        "stressAvg": 40,
+        "stressMax": 99,
+        "bodyBatteryNow": 18,
+        "bodyBatteryMin": 18,
+        "bodyBatteryMax": 69,
+        "vo2max": 46,
+        "fitnessAge": 42,
+        "chronologicalAge": 45,
+        "achievableFitnessAge": 39,
+        "fitnessAgeSource": "garmin",
+        "fitnessAgeTips": [
+          "Add ~60 vigorous minutes per week to lower fitness age.",
+          "Target 3 vigorous days/week — you're averaging 0.6."
+        ],
+        "respirationRate": 14,
+        "readinessScore": 74,
+        "readinessZone": "moderate",
+        "readinessLabel": "Moderate"
+      },
+      "curves": {
+        "bodyBattery": [
+          {
+            "time": "09:00",
+            "value": 69
+          },
+          {
+            "time": "15:30",
+            "value": 33
+          },
+          {
+            "time": "16:00",
+            "value": 33
+          },
+          {
+            "time": "23:15",
+            "value": 18
+          }
+        ],
+        "stress": [
+          {
+            "time": "09:03",
+            "value": 33
+          },
+          {
+            "time": "09:27",
+            "value": 29
+          },
+          {
+            "time": "09:54",
+            "value": 28
+          },
+          {
+            "time": "10:21",
+            "value": 27
+          },
+          {
+            "time": "10:39",
+            "value": 47
+          },
+          {
+            "time": "11:00",
+            "value": 61
+          },
+          {
+            "time": "11:21",
+            "value": 49
+          },
+          {
+            "time": "11:42",
+            "value": 37
+          },
+          {
+            "time": "12:03",
+            "value": 25
+          },
+          {
+            "time": "13:57",
+            "value": 89
+          },
+          {
+            "time": "14:15",
+            "value": 94
+          },
+          {
+            "time": "15:03",
+            "value": 64
+          },
+          {
+            "time": "15:21",
+            "value": 68
+          },
+          {
+            "time": "15:45",
+            "value": 35
+          },
+          {
+            "time": "16:21",
+            "value": 17
+          },
+          {
+            "time": "16:42",
+            "value": 42
+          },
+          {
+            "time": "17:00",
+            "value": 15
+          },
+          {
+            "time": "17:18",
+            "value": 10
+          },
+          {
+            "time": "18:00",
+            "value": 2
+          },
+          {
+            "time": "18:27",
+            "value": 23
+          },
+          {
+            "time": "18:57",
+            "value": 62
+          },
+          {
+            "time": "19:30",
+            "value": 22
+          },
+          {
+            "time": "19:51",
+            "value": 34
+          },
+          {
+            "time": "20:09",
+            "value": 30
+          },
+          {
+            "time": "20:33",
+            "value": 23
+          },
+          {
+            "time": "21:00",
+            "value": 33
+          },
+          {
+            "time": "21:18",
+            "value": 38
+          },
+          {
+            "time": "21:36",
+            "value": 64
+          },
+          {
+            "time": "21:54",
+            "value": 33
+          },
+          {
+            "time": "22:12",
+            "value": 42
+          },
+          {
+            "time": "22:30",
+            "value": 52
+          },
+          {
+            "time": "22:48",
+            "value": 67
+          }
+        ]
+      },
+      "coach": {
+        "morning": "",
+        "evening": ""
+      }
+    },
+    {
+      "date": "2026-05-30",
+      "recovery": {
+        "score": 81,
+        "zone": "green",
+        "drivers": [
+          {
+            "factor": "sleep",
+            "label": "Sleep",
+            "value": "64%",
+            "impact": "high"
+          },
+          {
+            "factor": "hrv",
+            "label": "HRV",
+            "value": 45,
+            "baseline": 45,
+            "delta": "+0%",
+            "impact": "medium"
+          },
+          {
+            "factor": "rhr",
+            "label": "Resting HR",
+            "value": 56,
+            "baseline": 59,
+            "delta": "-3 bpm",
+            "impact": "positive"
+          },
+          {
+            "factor": "load",
+            "label": "Prior strain",
+            "value": 9,
+            "impact": "positive"
+          }
+        ]
+      },
+      "strain": {
+        "current": 6.5,
+        "workoutStrain": 0,
+        "lifestyleStrain": 6.5,
+        "workoutLoad": 0,
+        "lifestyleLoad": 55.7,
+        "targetMin": 14,
+        "targetMax": 18,
+        "workouts": [],
+        "dailyActivity": {
+          "steps": 5953,
+          "stepGoal": 10000,
+          "activeCalories": 199,
+          "bmrCalories": 1892,
+          "totalCalories": 2091,
+          "distanceKm": 4.7,
+          "moderateIntensityMin": 0,
+          "vigorousIntensityMin": 0
+        }
+      },
+      "sleep": {
+        "score": 64,
+        "hours": 7.6,
+        "need": 7.5,
+        "deepMin": 68,
+        "remMin": 16,
+        "lightMin": 370,
+        "awakeMin": 20,
+        "hypnogram": [
+          {
+            "level": "light",
+            "minutes": 10,
+            "start": "2026-05-29T18:47"
+          },
+          {
+            "level": "awake",
+            "minutes": 15,
+            "start": "2026-05-29T18:57"
+          },
+          {
+            "level": "light",
+            "minutes": 74,
+            "start": "2026-05-29T19:12"
+          },
+          {
+            "level": "awake",
+            "minutes": 6,
+            "start": "2026-05-29T20:26"
+          },
+          {
+            "level": "light",
+            "minutes": 32,
+            "start": "2026-05-29T20:32"
+          },
+          {
+            "level": "awake",
+            "minutes": 18,
+            "start": "2026-05-29T21:04"
+          },
+          {
+            "level": "light",
+            "minutes": 28,
+            "start": "2026-05-29T21:22"
+          },
+          {
+            "level": "awake",
+            "minutes": 11,
+            "start": "2026-05-29T21:50"
+          },
+          {
+            "level": "light",
+            "minutes": 63,
+            "start": "2026-05-29T22:01"
+          },
+          {
+            "level": "awake",
+            "minutes": 18,
+            "start": "2026-05-29T23:04"
+          },
+          {
+            "level": "light",
+            "minutes": 10,
+            "start": "2026-05-29T23:22"
+          },
+          {
+            "level": "deep",
+            "minutes": 11,
+            "start": "2026-05-29T23:32"
+          },
+          {
+            "level": "light",
+            "minutes": 61,
+            "start": "2026-05-29T23:43"
+          },
+          {
+            "level": "rem",
+            "minutes": 20,
+            "start": "2026-05-30T00:44"
+          },
+          {
+            "level": "light",
+            "minutes": 45,
+            "start": "2026-05-30T01:04"
+          },
+          {
+            "level": "deep",
+            "minutes": 5,
+            "start": "2026-05-30T01:49"
+          },
+          {
+            "level": "light",
+            "minutes": 47,
+            "start": "2026-05-30T01:54"
+          }
+        ],
+        "debt7d": 3
+      },
+      "vitals": {
+        "hrv": 45,
+        "hrvBaseline": 45,
+        "rhr": 56,
+        "rhrBaseline": 59,
+        "stressAvg": 33,
+        "stressMax": 96,
+        "bodyBatteryNow": 32,
+        "bodyBatteryMin": 10,
+        "bodyBatteryMax": 69,
+        "vo2max": 46,
+        "fitnessAge": 42,
+        "chronologicalAge": 45,
+        "achievableFitnessAge": 39,
+        "fitnessAgeSource": "garmin",
+        "fitnessAgeTips": [
+          "Add ~65 vigorous minutes per week to lower fitness age.",
+          "Target 3 vigorous days/week — you're averaging 0.5."
+        ],
+        "respirationRate": 14,
+        "readinessScore": 76,
+        "readinessZone": "high",
+        "readinessLabel": "High"
+      },
+      "curves": {
+        "bodyBattery": [
+          {
+            "time": "00:00",
+            "value": 10
+          },
+          {
+            "time": "06:33",
+            "value": 69
+          },
+          {
+            "time": "08:00",
+            "value": 64
+          },
+          {
+            "time": "15:45",
+            "value": 30
+          },
+          {
+            "time": "16:00",
+            "value": 30
+          },
+          {
+            "time": "16:33",
+            "value": 32
+          }
+        ],
+        "stress": [
+          {
+            "time": "00:00",
+            "value": 29
+          },
+          {
+            "time": "00:24",
+            "value": 70
+          },
+          {
+            "time": "00:48",
+            "value": 52
+          },
+          {
+            "time": "01:12",
+            "value": 21
+          },
+          {
+            "time": "01:36",
+            "value": 10
+          },
+          {
+            "time": "02:00",
+            "value": 8
+          },
+          {
+            "time": "02:24",
+            "value": 9
+          },
+          {
+            "time": "02:48",
+            "value": 15
+          },
+          {
+            "time": "03:12",
+            "value": 13
+          },
+          {
+            "time": "03:36",
+            "value": 19
+          },
+          {
+            "time": "04:00",
+            "value": 5
+          },
+          {
+            "time": "04:24",
+            "value": 8
+          },
+          {
+            "time": "04:51",
+            "value": 46
+          },
+          {
+            "time": "05:15",
+            "value": 18
+          },
+          {
+            "time": "05:39",
+            "value": 27
+          },
+          {
+            "time": "06:03",
+            "value": 12
+          },
+          {
+            "time": "06:27",
+            "value": 16
+          },
+          {
+            "time": "06:54",
+            "value": 43
+          },
+          {
+            "time": "07:24",
+            "value": 31
+          },
+          {
+            "time": "07:48",
+            "value": 34
+          },
+          {
+            "time": "08:15",
+            "value": 25
+          },
+          {
+            "time": "08:51",
+            "value": 23
+          },
+          {
+            "time": "09:51",
+            "value": 82
+          },
+          {
+            "time": "10:15",
+            "value": 73
+          },
+          {
+            "time": "10:39",
+            "value": 61
+          },
+          {
+            "time": "11:15",
+            "value": 61
+          },
+          {
+            "time": "11:48",
+            "value": 61
+          },
+          {
+            "time": "12:18",
+            "value": 49
+          },
+          {
+            "time": "13:33",
+            "value": 65
+          },
+          {
+            "time": "14:33",
+            "value": 42
+          },
+          {
+            "time": "14:57",
+            "value": 20
+          },
+          {
+            "time": "15:27",
+            "value": 37
+          }
+        ]
+      },
+      "coach": {
+        "morning": "",
+        "evening": ""
+      }
+    },
+    {
+      "date": "2026-05-29",
+      "recovery": {
+        "score": 76,
+        "zone": "green",
+        "drivers": [
+          {
+            "factor": "load",
+            "label": "Prior strain",
+            "value": 18.6,
+            "impact": "high"
+          },
+          {
+            "factor": "hrv",
+            "label": "HRV",
+            "value": 45,
+            "baseline": 45,
+            "delta": "+0%",
+            "impact": "medium"
+          },
+          {
+            "factor": "sleep",
+            "label": "Sleep",
+            "value": "74%",
+            "impact": "medium"
+          },
+          {
+            "factor": "rhr",
+            "label": "Resting HR",
+            "value": 61,
+            "baseline": 59,
+            "delta": "+2 bpm",
+            "impact": "low"
+          }
+        ]
+      },
+      "strain": {
+        "current": 9,
+        "workoutStrain": 0,
+        "lifestyleStrain": 9,
+        "workoutLoad": 0,
+        "lifestyleLoad": 77.6,
+        "targetMin": 14,
+        "targetMax": 18,
+        "workouts": [],
+        "dailyActivity": {
+          "steps": 9107,
+          "stepGoal": 10000,
+          "activeCalories": 277,
+          "bmrCalories": 1892,
+          "totalCalories": 2169,
+          "distanceKm": 7.17,
+          "moderateIntensityMin": 0,
+          "vigorousIntensityMin": 0
+        }
+      },
+      "sleep": {
+        "score": 74,
+        "hours": 6.7,
+        "need": 7.5,
+        "deepMin": 96,
+        "remMin": 60,
+        "lightMin": 244,
+        "awakeMin": 3,
+        "hypnogram": [
+          {
+            "level": "light",
+            "minutes": 69,
+            "start": "2026-05-28T19:55"
+          },
+          {
+            "level": "awake",
+            "minutes": 25,
+            "start": "2026-05-28T21:04"
+          },
+          {
+            "level": "light",
+            "minutes": 21,
+            "start": "2026-05-28T21:29"
+          },
+          {
+            "level": "awake",
+            "minutes": 11,
+            "start": "2026-05-28T21:50"
+          },
+          {
+            "level": "light",
+            "minutes": 15,
+            "start": "2026-05-28T22:01"
+          },
+          {
+            "level": "awake",
+            "minutes": 12,
+            "start": "2026-05-28T22:16"
+          },
+          {
+            "level": "light",
+            "minutes": 8,
+            "start": "2026-05-28T22:28"
+          },
+          {
+            "level": "awake",
+            "minutes": 17,
+            "start": "2026-05-28T22:36"
+          },
+          {
+            "level": "light",
+            "minutes": 14,
+            "start": "2026-05-28T22:53"
+          },
+          {
+            "level": "awake",
+            "minutes": 6,
+            "start": "2026-05-28T23:07"
+          },
+          {
+            "level": "light",
+            "minutes": 17,
+            "start": "2026-05-28T23:13"
+          },
+          {
+            "level": "awake",
+            "minutes": 25,
+            "start": "2026-05-28T23:30"
+          },
+          {
+            "level": "rem",
+            "minutes": 3,
+            "start": "2026-05-28T23:55"
+          },
+          {
+            "level": "light",
+            "minutes": 59,
+            "start": "2026-05-28T23:58"
+          },
+          {
+            "level": "deep",
+            "minutes": 34,
+            "start": "2026-05-29T00:57"
+          },
+          {
+            "level": "light",
+            "minutes": 41,
+            "start": "2026-05-29T01:31"
+          },
+          {
+            "level": "deep",
+            "minutes": 26,
+            "start": "2026-05-29T02:12"
+          }
+        ],
+        "debt7d": 3
+      },
+      "vitals": {
+        "hrv": 45,
+        "hrvBaseline": 45,
+        "rhr": 61,
+        "rhrBaseline": 59,
+        "stressAvg": 36,
+        "stressMax": 91,
+        "bodyBatteryNow": 8,
+        "bodyBatteryMin": 5,
+        "bodyBatteryMax": 35,
+        "vo2max": 46,
+        "fitnessAge": 42,
+        "chronologicalAge": 45,
+        "achievableFitnessAge": 39,
+        "fitnessAgeSource": "garmin",
+        "fitnessAgeTips": [
+          "Add ~65 vigorous minutes per week to lower fitness age.",
+          "Target 3 vigorous days/week — you're averaging 0.5."
+        ],
+        "respirationRate": 14,
+        "readinessScore": 72,
+        "readinessZone": "moderate",
+        "readinessLabel": "Moderate"
+      },
+      "curves": {
+        "bodyBattery": [
+          {
+            "time": "00:00",
+            "value": 5
+          },
+          {
+            "time": "06:24",
+            "value": 35
+          },
+          {
+            "time": "08:00",
+            "value": 33
+          },
+          {
+            "time": "15:30",
+            "value": 18
+          },
+          {
+            "time": "17:45",
+            "value": 25
+          },
+          {
+            "time": "22:39",
+            "value": 8
+          }
+        ],
+        "stress": [
+          {
+            "time": "00:00",
+            "value": 70
+          },
+          {
+            "time": "00:36",
+            "value": 76
+          },
+          {
+            "time": "01:12",
+            "value": 61
+          },
+          {
+            "time": "01:48",
+            "value": 30
+          },
+          {
+            "time": "02:24",
+            "value": 46
+          },
+          {
+            "time": "03:00",
+            "value": 23
+          },
+          {
+            "time": "03:36",
+            "value": 19
+          },
+          {
+            "time": "04:12",
+            "value": 20
+          },
+          {
+            "time": "04:51",
+            "value": 17
+          },
+          {
+            "time": "05:27",
+            "value": 15
+          },
+          {
+            "time": "06:03",
+            "value": 15
+          },
+          {
+            "time": "06:45",
+            "value": 54
+          },
+          {
+            "time": "07:45",
+            "value": 35
+          },
+          {
+            "time": "08:21",
+            "value": 38
+          },
+          {
+            "time": "09:12",
+            "value": 23
+          },
+          {
+            "time": "10:03",
+            "value": 36
+          },
+          {
+            "time": "10:51",
+            "value": 34
+          },
+          {
+            "time": "11:30",
+            "value": 23
+          },
+          {
+            "time": "12:15",
+            "value": 61
+          },
+          {
+            "time": "13:09",
+            "value": 25
+          },
+          {
+            "time": "13:57",
+            "value": 21
+          },
+          {
+            "time": "14:33",
+            "value": 19
+          },
+          {
+            "time": "15:24",
+            "value": 31
+          },
+          {
+            "time": "16:12",
+            "value": 24
+          },
+          {
+            "time": "16:48",
+            "value": 24
+          },
+          {
+            "time": "17:24",
+            "value": 15
+          },
+          {
+            "time": "18:03",
+            "value": 34
+          },
+          {
+            "time": "19:36",
+            "value": 30
+          },
+          {
+            "time": "20:21",
+            "value": 24
+          },
+          {
+            "time": "21:00",
+            "value": 24
+          },
+          {
+            "time": "21:39",
+            "value": 54
+          },
+          {
+            "time": "22:18",
+            "value": 35
+          }
+        ]
+      },
+      "coach": {
+        "morning": "",
+        "evening": ""
+      }
+    },
+    {
+      "date": "2026-05-28",
+      "recovery": {
+        "score": 69,
+        "zone": "green",
+        "drivers": [
+          {
+            "factor": "sleep",
+            "label": "Sleep",
+            "value": "45%",
+            "impact": "high"
+          },
+          {
+            "factor": "hrv",
+            "label": "HRV",
+            "value": 45,
+            "baseline": 45,
+            "delta": "+0%",
+            "impact": "medium"
+          },
+          {
+            "factor": "load",
+            "label": "Prior strain",
+            "value": 10,
+            "impact": "medium"
+          },
+          {
+            "factor": "rhr",
+            "label": "Resting HR",
+            "value": 62,
+            "baseline": 59,
+            "delta": "+3 bpm",
+            "impact": "low"
+          }
+        ]
+      },
+      "strain": {
+        "current": 18.6,
+        "workoutStrain": 4.2,
+        "lifestyleStrain": 14.4,
+        "workoutLoad": 36,
+        "lifestyleLoad": 123.8,
+        "targetMin": 14,
+        "targetMax": 18,
+        "workouts": [
+          {
+            "name": "Dubai Corrida",
+            "type": "running",
+            "durationMin": 18,
+            "strain": 4.2,
+            "avgHr": 149,
+            "activityId": 23039032923,
+            "maxHr": 166,
+            "calories": 214,
+            "distanceKm": 3.13,
+            "paceMinPerKm": 5.92,
+            "startTime": "06:50",
+            "date": "2026-05-28",
+            "hrZones": {
+              "z1": 0.3,
+              "z2": 0.3,
+              "z3": 4.4,
+              "z4": 10,
+              "z5": 3.4
+            },
+            "moderateIntensityMin": 1,
+            "vigorousIntensityMin": 16
+          }
+        ],
+        "dailyActivity": {
+          "steps": 11257,
+          "stepGoal": 10000,
+          "activeCalories": 645,
+          "bmrCalories": 1892,
+          "totalCalories": 2537,
+          "distanceKm": 9.38,
+          "moderateIntensityMin": 5,
+          "vigorousIntensityMin": 21
+        }
+      },
+      "sleep": {
+        "score": 45,
+        "hours": 5.3,
+        "need": 7.5,
+        "deepMin": 74,
+        "remMin": 15,
+        "lightMin": 229,
+        "awakeMin": 0,
+        "hypnogram": [
+          {
+            "level": "light",
+            "minutes": 1,
+            "start": "2026-05-27T20:12"
+          },
+          {
+            "level": "awake",
+            "minutes": 13,
+            "start": "2026-05-27T20:13"
+          },
+          {
+            "level": "light",
+            "minutes": 15,
+            "start": "2026-05-27T20:26"
+          },
+          {
+            "level": "awake",
+            "minutes": 17,
+            "start": "2026-05-27T20:41"
+          },
+          {
+            "level": "light",
+            "minutes": 30,
+            "start": "2026-05-27T20:58"
+          },
+          {
+            "level": "awake",
+            "minutes": 16,
+            "start": "2026-05-27T21:28"
+          },
+          {
+            "level": "light",
+            "minutes": 16,
+            "start": "2026-05-27T21:44"
+          },
+          {
+            "level": "deep",
+            "minutes": 15,
+            "start": "2026-05-27T22:00"
+          },
+          {
+            "level": "light",
+            "minutes": 41,
+            "start": "2026-05-27T22:15"
+          },
+          {
+            "level": "awake",
+            "minutes": 5,
+            "start": "2026-05-27T22:56"
+          },
+          {
+            "level": "light",
+            "minutes": 56,
+            "start": "2026-05-27T23:01"
+          },
+          {
+            "level": "awake",
+            "minutes": 23,
+            "start": "2026-05-27T23:57"
+          },
+          {
+            "level": "light",
+            "minutes": 70,
+            "start": "2026-05-28T00:20"
+          }
+        ],
+        "debt7d": 2.2
+      },
+      "vitals": {
+        "hrv": 45,
+        "hrvBaseline": 45,
+        "rhr": 62,
+        "rhrBaseline": 59,
+        "stressAvg": 44,
+        "stressMax": 97,
+        "bodyBatteryNow": 5,
+        "bodyBatteryMin": 5,
+        "bodyBatteryMax": 31,
+        "vo2max": 46,
+        "fitnessAge": 42,
+        "chronologicalAge": 45,
+        "achievableFitnessAge": 39,
+        "fitnessAgeSource": "garmin",
+        "fitnessAgeTips": [
+          "Add ~65 vigorous minutes per week to lower fitness age.",
+          "Target 3 vigorous days/week — you're averaging 0.5."
+        ],
+        "respirationRate": 15,
+        "readinessScore": 62,
+        "readinessZone": "moderate",
+        "readinessLabel": "Moderate"
+      },
+      "curves": {
+        "bodyBattery": [
+          {
+            "time": "00:00",
+            "value": 5
+          },
+          {
+            "time": "05:18",
+            "value": 31
+          },
+          {
+            "time": "08:00",
+            "value": 23
+          },
+          {
+            "time": "14:03",
+            "value": 8
+          },
+          {
+            "time": "16:00",
+            "value": 12
+          },
+          {
+            "time": "17:45",
+            "value": 5
+          }
+        ],
+        "stress": [
+          {
+            "time": "00:00",
+            "value": 44
+          },
+          {
+            "time": "00:33",
+            "value": 34
+          },
+          {
+            "time": "01:03",
+            "value": 32
+          },
+          {
+            "time": "01:33",
+            "value": 28
+          },
+          {
+            "time": "02:06",
+            "value": 25
+          },
+          {
+            "time": "02:39",
+            "value": 28
+          },
+          {
+            "time": "03:15",
+            "value": 25
+          },
+          {
+            "time": "03:57",
+            "value": 28
+          },
+          {
+            "time": "04:27",
+            "value": 18
+          },
+          {
+            "time": "05:00",
+            "value": 17
+          },
+          {
+            "time": "05:39",
+            "value": 58
+          },
+          {
+            "time": "06:15",
+            "value": 58
+          },
+          {
+            "time": "08:45",
+            "value": 73
+          },
+          {
+            "time": "10:45",
+            "value": 70
+          },
+          {
+            "time": "11:15",
+            "value": 71
+          },
+          {
+            "time": "12:15",
+            "value": 72
+          },
+          {
+            "time": "13:06",
+            "value": 84
+          },
+          {
+            "time": "13:42",
+            "value": 53
+          },
+          {
+            "time": "14:12",
+            "value": 29
+          },
+          {
+            "time": "14:42",
+            "value": 24
+          },
+          {
+            "time": "15:12",
+            "value": 50
+          },
+          {
+            "time": "15:45",
+            "value": 35
+          },
+          {
+            "time": "16:15",
+            "value": 34
+          },
+          {
+            "time": "16:51",
+            "value": 41
+          },
+          {
+            "time": "17:27",
+            "value": 31
+          },
+          {
+            "time": "18:09",
+            "value": 24
+          },
+          {
+            "time": "18:57",
+            "value": 34
+          },
+          {
+            "time": "19:36",
+            "value": 16
+          },
+          {
+            "time": "20:42",
+            "value": 64
+          },
+          {
+            "time": "21:21",
+            "value": 50
+          },
+          {
+            "time": "21:57",
+            "value": 55
+          },
+          {
+            "time": "22:30",
+            "value": 59
+          }
+        ]
+      },
+      "coach": {
+        "morning": "",
+        "evening": ""
+      }
+    }
+  ],
+  "weekly": {
+    "avgRecovery": 80,
+    "avgStrain": 14.7,
+    "avgSleep": 73,
+    "greenDays": 7,
+    "balanceScore": 29,
+    "narrative": "This week was a solid one! My body felt great, with recovery scores consistently high, and I even managed to get enough sleep most nights. I pushed myself a bit more than usual in my workouts, but clearly, my body was up to the challenge."
+  },
+  "monthWorkouts": {
+    "month": "2026-06",
+    "workouts": [
+      {
+        "name": "Jogging em passadeira",
+        "type": "treadmill_running",
+        "durationMin": 32,
+        "strain": 7.5,
+        "avgHr": 145,
+        "activityId": 23198041794,
+        "maxHr": 159,
+        "calories": 366,
+        "distanceKm": 5.02,
+        "paceMinPerKm": 6.54,
+        "startTime": "14:01",
+        "date": "2026-06-10",
+        "hrZones": {
+          "z1": 0.2,
+          "z2": 0.3,
+          "z3": 10.6,
+          "z4": 21.7,
+          "z5": 0
+        },
+        "moderateIntensityMin": 1,
+        "vigorousIntensityMin": 31
+      },
+      {
+        "name": "Jogging em passadeira",
+        "type": "treadmill_running",
+        "durationMin": 40,
+        "strain": 9.3,
+        "avgHr": 138,
+        "activityId": 23186506951,
+        "maxHr": 153,
+        "calories": 400,
+        "distanceKm": 6.3,
+        "paceMinPerKm": 6.39,
+        "startTime": "15:17",
+        "date": "2026-06-09",
+        "hrZones": {
+          "z1": 0.4,
+          "z2": 5,
+          "z3": 19.6,
+          "z4": 15.2,
+          "z5": 0
+        },
+        "moderateIntensityMin": 7,
+        "vigorousIntensityMin": 32
+      },
+      {
+        "name": "Jogging em passadeira",
+        "type": "treadmill_running",
+        "durationMin": 16,
+        "strain": 3.7,
+        "avgHr": 149,
+        "activityId": 23178049393,
+        "maxHr": 160,
+        "calories": 190,
+        "distanceKm": 2.51,
+        "paceMinPerKm": 6.62,
+        "startTime": "17:24",
+        "date": "2026-06-08",
+        "hrZones": {
+          "z1": 0.4,
+          "z2": 0.3,
+          "z3": 0.8,
+          "z4": 15.1,
+          "z5": 0
+        },
+        "moderateIntensityMin": 1,
+        "vigorousIntensityMin": 15
+      },
+      {
+        "name": "Dubai Corrida",
+        "type": "running",
+        "durationMin": 36,
+        "strain": 8.4,
+        "avgHr": 151,
+        "activityId": 23157909520,
+        "maxHr": 168,
+        "calories": 417,
+        "distanceKm": 5.4,
+        "paceMinPerKm": 6.73,
+        "startTime": "05:59",
+        "date": "2026-06-07",
+        "hrZones": {
+          "z1": 0.2,
+          "z2": 0.7,
+          "z3": 2.7,
+          "z4": 26.1,
+          "z5": 6.4
+        },
+        "moderateIntensityMin": 0,
+        "vigorousIntensityMin": 36
+      },
+      {
+        "name": "Jogging em passadeira",
+        "type": "treadmill_running",
+        "durationMin": 30,
+        "strain": 7,
+        "avgHr": 141,
+        "activityId": 23151875704,
+        "maxHr": 157,
+        "calories": 330,
+        "distanceKm": 4.78,
+        "paceMinPerKm": 6.39,
+        "startTime": "17:14",
+        "date": "2026-06-06",
+        "hrZones": {
+          "z1": 0.1,
+          "z2": 0.7,
+          "z3": 14.9,
+          "z4": 14.5,
+          "z5": 0
+        },
+        "moderateIntensityMin": 0,
+        "vigorousIntensityMin": 30
+      },
+      {
+        "name": "Jogging em passadeira",
+        "type": "treadmill_running",
+        "durationMin": 30,
+        "strain": 7,
+        "avgHr": 143,
+        "activityId": 23140926119,
+        "maxHr": 160,
+        "calories": 333,
+        "distanceKm": 4.58,
+        "paceMinPerKm": 6.6,
+        "startTime": "18:50",
+        "date": "2026-06-05",
+        "hrZones": {
+          "z1": 0.4,
+          "z2": 0.2,
+          "z3": 13.4,
+          "z4": 16.3,
+          "z5": 0
+        },
+        "moderateIntensityMin": 0,
+        "vigorousIntensityMin": 29
+      },
+      {
+        "name": "Jogging em passadeira",
+        "type": "treadmill_running",
+        "durationMin": 30,
+        "strain": 7,
+        "avgHr": 145,
+        "activityId": 23128137212,
+        "maxHr": 155,
+        "calories": 338,
+        "distanceKm": 4.79,
+        "paceMinPerKm": 6.33,
+        "startTime": "16:59",
+        "date": "2026-06-04",
+        "hrZones": {
+          "z1": 0.3,
+          "z2": 0.4,
+          "z3": 4.8,
+          "z4": 24.8,
+          "z5": 0
+        },
+        "moderateIntensityMin": 0,
+        "vigorousIntensityMin": 30
+      },
+      {
+        "name": "Jogging em passadeira",
+        "type": "treadmill_running",
+        "durationMin": 29,
+        "strain": 6.8,
+        "avgHr": 149,
+        "activityId": 23113276331,
+        "maxHr": 160,
+        "calories": 343,
+        "distanceKm": 4.5,
+        "paceMinPerKm": 6.64,
+        "startTime": "12:53",
+        "date": "2026-06-03",
+        "hrZones": {
+          "z1": 0.6,
+          "z2": 0.2,
+          "z3": 2.6,
+          "z4": 26.5,
+          "z5": 0
+        },
+        "moderateIntensityMin": 1,
+        "vigorousIntensityMin": 28
+      },
+      {
+        "name": "Jogging em passadeira",
+        "type": "treadmill_running",
+        "durationMin": 29,
+        "strain": 6.8,
+        "avgHr": 149,
+        "activityId": 23103939290,
+        "maxHr": 172,
+        "calories": 344,
+        "distanceKm": 4.51,
+        "paceMinPerKm": 6.64,
+        "startTime": "17:50",
+        "date": "2026-06-02",
+        "hrZones": {
+          "z1": 0.3,
+          "z2": 0.2,
+          "z3": 5.8,
+          "z4": 20.6,
+          "z5": 3
+        },
+        "moderateIntensityMin": 0,
+        "vigorousIntensityMin": 29
+      },
+      {
+        "name": "Jogging em passadeira",
+        "type": "treadmill_running",
+        "durationMin": 30,
+        "strain": 7,
+        "avgHr": 147,
+        "activityId": 23089629393,
+        "maxHr": 160,
+        "calories": 342,
+        "distanceKm": 4.5,
+        "paceMinPerKm": 6.72,
+        "startTime": "14:50",
+        "date": "2026-06-01",
+        "hrZones": {
+          "z1": 0.3,
+          "z2": 1.1,
+          "z3": 3.5,
+          "z4": 25.4,
+          "z5": 0
+        },
+        "moderateIntensityMin": 0,
+        "vigorousIntensityMin": 29
+      }
+    ]
+  },
+  "coachMeta": {
+    "provider": "openrouter",
+    "model": "google/gemini-2.5-flash",
+    "generatedAt": "2026-06-10T13:18:02.551Z"
+  }
+}
