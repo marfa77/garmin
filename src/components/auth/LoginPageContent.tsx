@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { LoginForm } from "@/components/auth/LoginForm";
+import { LocaleToggle } from "@/components/LocaleToggle";
 import { useI18n } from "@/lib/i18n";
 
 export function LoginPageContent({ next }: { next?: string }) {
@@ -9,6 +10,9 @@ export function LoginPageContent({ next }: { next?: string }) {
 
   return (
     <div className="mesh-bg flex min-h-screen flex-col items-center justify-center px-4">
+      <div className="absolute right-4 top-4">
+        <LocaleToggle />
+      </div>
       <div className="w-full max-w-md">
         <Link href="/" className="text-xs text-zinc-500 hover:text-zinc-300">
           ← {t.landing.brand}

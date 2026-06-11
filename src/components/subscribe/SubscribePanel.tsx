@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { LocaleToggle } from "@/components/LocaleToggle";
 import { useI18n } from "@/lib/i18n";
 import { gumroadCheckoutUrl } from "@/lib/gumroad";
 
@@ -25,7 +26,10 @@ export function SubscribePanel({ email }: { email: string }) {
   }
 
   return (
-    <div className="mx-auto max-w-lg text-center">
+    <div className="relative mx-auto max-w-lg text-center">
+      <div className="absolute -top-12 right-0">
+        <LocaleToggle />
+      </div>
       <h1 className="text-2xl font-semibold text-white">{t.subscribe.title}</h1>
       <p className="mt-3 text-zinc-400">{t.subscribe.subtitle}</p>
       <p className="mt-8 text-4xl font-semibold text-white">{t.landing.price}</p>

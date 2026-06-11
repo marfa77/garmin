@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 import { userHasAccess } from "@/lib/access";
+import { isOwnerEmail } from "@/lib/owner";
 import { createClient } from "@/lib/supabase/server";
 import type { Profile } from "@/lib/supabase/database.types";
 
@@ -35,13 +36,15 @@ export async function requireOnboardedUser(): Promise<{
   const hasAccess = await userHasAccess(supabase, user.id);
   if (!hasAccess) redirect("/subscribe");
 
-  const { data: garmin } = await supabase
-    .from("garmin_connection_status")
-    .select("id")
-    .eq("user_id", user.id)
-    .maybeSingle();
+  if (!isOwnerEmail(user.email)) {
+    const { data: garmin } = await supabase
+      .from("garmin_connection_status")
+      .select("id")
+      .eq("user_id", user.id)
+      .maybeSingle();
 
-  if (!garmin) redirect("/connect/garmin");
+    if (!garmin) redirect("/connect/garmin");
+  }
 
   return { supabase, user, profile: profile as Profile };
 }

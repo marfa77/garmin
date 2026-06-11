@@ -3,14 +3,12 @@
 import Link from "next/link";
 import { LoginForm } from "@/components/auth/LoginForm";
 import { LandingDemoDashboard } from "@/components/landing/LandingDemoDashboard";
+import { WaitlistForm } from "@/components/landing/WaitlistForm";
+import { LocaleToggle } from "@/components/LocaleToggle";
 import { useI18n } from "@/lib/i18n";
-import { gumroadCheckoutUrl } from "@/lib/gumroad";
-
-const freeBeta = process.env.NEXT_PUBLIC_FREE_BETA === "true";
 
 export function LandingPage() {
   const { t } = useI18n();
-  const gumroadUrl = gumroadCheckoutUrl();
 
   return (
     <div className="mesh-bg min-h-screen">
@@ -18,29 +16,16 @@ export function LandingPage() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
           <p className="text-sm font-semibold tracking-wide text-white">{t.landing.brand}</p>
           <div className="flex items-center gap-3">
-            <a href="#live-demo" className="text-sm text-zinc-400 hover:text-white">
+            <LocaleToggle />
+            <a href="#live-demo" className="hidden text-sm text-zinc-400 hover:text-white sm:inline">
               {t.landing.demoBadge}
+            </a>
+            <a href="#pricing" className="hidden text-sm text-zinc-400 hover:text-white sm:inline">
+              {t.landing.ctaPricing}
             </a>
             <Link href="/login" className="text-sm text-zinc-400 hover:text-white">
               {t.landing.signIn}
             </Link>
-            {freeBeta ? (
-              <Link
-                href="/login"
-                className="rounded-lg bg-emerald-500 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-black hover:bg-emerald-400"
-              >
-                {t.landing.betaBadge}
-              </Link>
-            ) : (
-              <a
-                href={gumroadUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-lg bg-emerald-500 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-black hover:bg-emerald-400"
-              >
-                {t.landing.subscribe}
-              </a>
-            )}
           </div>
         </div>
       </header>
@@ -48,11 +33,9 @@ export function LandingPage() {
       <main>
         <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
           <div className="max-w-2xl">
-            {freeBeta && (
-              <p className="mb-3 inline-block rounded-full border border-emerald-500/40 bg-emerald-950/40 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-emerald-400">
-                {t.landing.betaBadge}
-              </p>
-            )}
+            <p className="mb-3 inline-block rounded-full border border-amber-500/40 bg-amber-950/40 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-amber-300">
+              {t.landing.launchBadge}
+            </p>
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-emerald-400/80">
               {t.landing.eyebrow}
             </p>
@@ -61,28 +44,24 @@ export function LandingPage() {
             </h1>
             <p className="mt-5 text-lg leading-relaxed text-zinc-400">{t.landing.heroSubtitle}</p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link
-                href="/login"
+              <a
+                href="#pricing"
                 className="rounded-xl bg-white px-6 py-3 text-sm font-semibold text-black hover:bg-zinc-200"
               >
-                {freeBeta ? t.landing.ctaBeta : t.landing.ctaStart}
-              </Link>
+                {t.landing.waitlistCta}
+              </a>
               <a
                 href="#live-demo"
                 className="rounded-xl border border-zinc-600 px-6 py-3 text-sm font-semibold text-white hover:border-zinc-400"
               >
                 {t.landing.scrollToDemo}
               </a>
-              {!freeBeta && (
-                <a
-                  href={gumroadUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-xl border border-zinc-700 px-6 py-3 text-sm font-semibold text-zinc-400 hover:border-zinc-500 hover:text-white"
-                >
-                  {t.landing.ctaPricing}
-                </a>
-              )}
+              <Link
+                href="/login"
+                className="rounded-xl border border-zinc-700 px-6 py-3 text-sm font-semibold text-zinc-400 hover:border-zinc-500 hover:text-white"
+              >
+                {t.landing.signIn}
+              </Link>
             </div>
           </div>
         </section>
@@ -137,46 +116,20 @@ export function LandingPage() {
 
         <section id="pricing" className="border-t border-zinc-800/60 bg-zinc-950/50 py-16">
           <div className="mx-auto max-w-lg px-4 text-center sm:px-6">
-            <h2 className="text-2xl font-semibold text-white">
-              {freeBeta ? t.landing.betaPricingTitle : t.landing.pricingTitle}
-            </h2>
-            <p className="mt-3 text-zinc-400">
-              {freeBeta ? t.landing.betaPricingSubtitle : t.landing.pricingSubtitle}
-            </p>
-            <p className="mt-8 text-5xl font-semibold text-white">
-              {freeBeta ? t.landing.betaPrice : t.landing.price}
-            </p>
-            <p className="mt-2 text-sm text-zinc-500">
-              {freeBeta ? t.landing.betaPriceNote : t.landing.priceNote}
-            </p>
-            {freeBeta ? (
-              <Link
-                href="/login"
-                className="mt-8 inline-block rounded-xl bg-emerald-500 px-8 py-3 text-sm font-semibold text-black hover:bg-emerald-400"
-              >
-                {t.landing.ctaBeta}
-              </Link>
-            ) : (
-              <a
-                href={gumroadUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-8 inline-block rounded-xl bg-emerald-500 px-8 py-3 text-sm font-semibold text-black hover:bg-emerald-400"
-              >
-                {t.landing.subscribeGumroad}
-              </a>
-            )}
+            <h2 className="text-2xl font-semibold text-white">{t.landing.pricingTitle}</h2>
+            <p className="mt-3 text-zinc-400">{t.landing.pricingSubtitle}</p>
+            <p className="mt-8 text-5xl font-semibold text-white">{t.landing.price}</p>
+            <p className="mt-2 text-sm text-zinc-500">{t.landing.priceNote}</p>
+            <WaitlistForm />
           </div>
         </section>
 
         <section className="py-16">
           <div className="mx-auto max-w-md px-4 sm:px-6">
-            <h2 className="text-center text-xl font-semibold text-white">
-              {freeBeta ? t.landing.ctaBeta : t.landing.loginTitle}
-            </h2>
+            <h2 className="text-center text-xl font-semibold text-white">{t.landing.loginTitle}</h2>
             <p className="mt-2 text-center text-sm text-zinc-500">{t.landing.loginSubtitle}</p>
             <div className="mt-6">
-              <LoginForm />
+              <LoginForm next="/dashboard" />
             </div>
           </div>
         </section>
