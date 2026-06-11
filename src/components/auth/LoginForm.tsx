@@ -27,7 +27,12 @@ export function LoginForm({ next = "/dashboard" }: { next?: string }) {
 
     setLoading(false);
     if (signError) {
-      setError(signError.message);
+      const msg = signError.message.toLowerCase();
+      if (msg.includes("rate limit")) {
+        setError(t.landing.loginRateLimit);
+      } else {
+        setError(t.landing.loginErrorGeneric);
+      }
       return;
     }
     setSent(true);

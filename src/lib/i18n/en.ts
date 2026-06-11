@@ -506,6 +506,8 @@ export const en = {
     sending: "Sending…",
     loginSentTitle: "Check your inbox",
     loginSentBody: "We sent a sign-in link to {email}. Open it on this device to continue.",
+    loginRateLimit: "Too many sign-in emails sent. Wait about an hour or use the link from your last email.",
+    loginErrorGeneric: "Could not send the link. Try again in a few minutes.",
     footer: "Garmin Wellness · Not affiliated with Garmin Ltd.",
     betaBadge: "Free beta",
     betaPricingTitle: "Free while we test demand",

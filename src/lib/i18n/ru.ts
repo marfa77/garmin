@@ -509,6 +509,9 @@ export const ru: Dictionary = {
     sending: "Отправляем…",
     loginSentTitle: "Проверь почту",
     loginSentBody: "Мы отправили ссылку на {email}. Открой её на этом устройстве.",
+    loginRateLimit:
+      "Слишком много писем за короткое время. Подожди ~час или открой ссылку из последнего письма.",
+    loginErrorGeneric: "Не удалось отправить ссылку. Попробуй через несколько минут.",
     footer: "Garmin Wellness · Не аффилирован с Garmin Ltd.",
     betaBadge: "Бесплатная бета",
     betaPricingTitle: "Бесплатно, пока тестируем спрос",
