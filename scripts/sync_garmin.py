@@ -109,6 +109,33 @@ def estimate_strain(load: float) -> float:
     return round(min(21.0, (load / 180) * 21), 1)
 
 
+def _merge_daily_stats(*sources: dict[str, Any] | None) -> dict[str, Any]:
+    merged: dict[str, Any] = {}
+    for src in sources:
+        if isinstance(src, dict):
+            merged.update(src)
+    return merged
+
+
+def _steps_from_daily_payload(payload: Any) -> int:
+    if isinstance(payload, dict):
+        for key in ("totalSteps", "steps", "stepCount"):
+            if payload.get(key) is not None:
+                return int(payload[key])
+        for key in ("calendarDay", "date"):
+            day_block = payload.get(key)
+            if isinstance(day_block, dict):
+                steps = _steps_from_daily_payload(day_block)
+                if steps:
+                    return steps
+    if isinstance(payload, list):
+        for item in reversed(payload):
+            steps = _steps_from_daily_payload(item)
+            if steps:
+                return steps
+    return 0
+
+
 def parse_daily_activity(api, day: str) -> dict[str, Any]:
     """Steps, calories, and all-day movement from Garmin daily summary."""
     empty = {
@@ -121,26 +148,59 @@ def parse_daily_activity(api, day: str) -> dict[str, Any]:
         "moderateIntensityMin": 0,
         "vigorousIntensityMin": 0,
     }
+
+    summary: dict[str, Any] | None = None
+    stats_body: dict[str, Any] | None = None
+
+    try:
+        raw = api.get_user_summary(day)
+        if isinstance(raw, dict):
+            summary = raw
+    except Exception:
+        pass
+
     try:
         stats = api.get_stats_and_body(day)
-        body = stats.get("bodyBattery") if isinstance(stats.get("bodyBattery"), dict) else stats
-        if not isinstance(body, dict):
-            return empty
-        distance_m = float(body.get("totalDistanceMeters") or body.get("wellnessDistanceMeters") or 0)
-        return {
-            "steps": int(body.get("totalSteps") or 0),
-            "stepGoal": int(body.get("dailyStepGoal") or 10000),
-            "activeCalories": int(
-                body.get("activeKilocalories") or body.get("wellnessActiveKilocalories") or 0
-            ),
-            "bmrCalories": int(body.get("bmrKilocalories") or 0),
-            "totalCalories": int(body.get("totalKilocalories") or body.get("wellnessKilocalories") or 0),
-            "distanceKm": round(distance_m / 1000, 2) if distance_m > 0 else 0.0,
-            "moderateIntensityMin": int(body.get("moderateIntensityMinutes") or 0),
-            "vigorousIntensityMin": int(body.get("vigorousIntensityMinutes") or 0),
-        }
+        if isinstance(stats, dict):
+            bb = stats.get("bodyBattery")
+            stats_body = bb if isinstance(bb, dict) else stats
     except Exception:
+        pass
+
+    body = _merge_daily_stats(stats_body, summary)
+    if not body:
         return empty
+
+    steps = int(body.get("totalSteps") or body.get("steps") or 0)
+    if steps == 0:
+        try:
+            steps = _steps_from_daily_payload(api.get_daily_steps(day, day))
+        except Exception:
+            pass
+    if steps == 0:
+        try:
+            steps = _steps_from_daily_payload(api.get_steps_data(day))
+        except Exception:
+            pass
+
+    distance_m = float(
+        body.get("totalDistanceMeters")
+        or body.get("wellnessDistanceMeters")
+        or body.get("distanceInMeters")
+        or 0
+    )
+    return {
+        "steps": steps,
+        "stepGoal": int(body.get("dailyStepGoal") or body.get("stepGoal") or 10000),
+        "activeCalories": int(
+            body.get("activeKilocalories") or body.get("wellnessActiveKilocalories") or 0
+        ),
+        "bmrCalories": int(body.get("bmrKilocalories") or 0),
+        "totalCalories": int(body.get("totalKilocalories") or body.get("wellnessKilocalories") or 0),
+        "distanceKm": round(distance_m / 1000, 2) if distance_m > 0 else 0.0,
+        "moderateIntensityMin": int(body.get("moderateIntensityMinutes") or 0),
+        "vigorousIntensityMin": int(body.get("vigorousIntensityMinutes") or 0),
+    }
 
 
 def estimate_lifestyle_load(daily: dict[str, Any], workout_calories: int) -> float:

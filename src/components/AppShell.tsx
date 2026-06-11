@@ -13,6 +13,7 @@ import { StrainView } from "./views/StrainView";
 import { useDashboard } from "@/lib/DashboardProvider";
 import { useI18n } from "@/lib/i18n";
 import { SyncButton } from "./SyncButton";
+import { SyncPanel } from "./SyncPanel";
 
 export function AppShell({ mode = "full" }: { mode?: "full" | "demo" }) {
   const isDemo = mode === "demo";
@@ -70,6 +71,8 @@ export function AppShell({ mode = "full" }: { mode?: "full" | "demo" }) {
           </div>
         </div>
       </header>
+
+      {!isDemo && <SyncPanel />}
 
       <div className="mx-auto max-w-[1600px] px-4 py-6 sm:px-6 lg:flex lg:gap-8 lg:px-8">
         <aside className="mb-4 shrink-0 lg:mb-0 lg:w-52">
