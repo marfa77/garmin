@@ -513,6 +513,13 @@ export const en = {
     betaPrice: "Free",
     betaPriceNote: "Pricing later · early users keep access",
     ctaBeta: "Join free beta",
+    demoTitle: "Try the real dashboard",
+    demoSubtitle: "Sample data — switch tabs, toggle Care / Roast coach, explore sleep and strain.",
+    demoBadge: "Live demo",
+    demoHint: "Sample data · fully interactive",
+    demoCta: "Connect yours",
+    demoFootnote: "Demo · sample Garmin Venu 2 data",
+    scrollToDemo: "Explore demo ↓",
   },
   subscribe: {
     title: "Unlock your dashboard",

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { CoachPersonaToggle } from "./CoachPersonaToggle";
 import { LocaleToggle } from "./LocaleToggle";
@@ -13,7 +14,8 @@ import { useDashboard } from "@/lib/DashboardProvider";
 import { useI18n } from "@/lib/i18n";
 import { SyncButton } from "./SyncButton";
 
-export function AppShell() {
+export function AppShell({ mode = "full" }: { mode?: "full" | "demo" }) {
+  const isDemo = mode === "demo";
   const { t, locale } = useI18n();
   const { data } = useDashboard();
   const [tab, setTab] = useState<TabId>("overview");
@@ -27,8 +29,8 @@ export function AppShell() {
   });
 
   return (
-    <div className="dashboard-shell mesh-bg min-h-screen">
-      <header className="sticky top-0 z-20 border-b border-zinc-800/80 bg-black/85 backdrop-blur-md">
+    <div className={`dashboard-shell mesh-bg ${isDemo ? "min-h-0" : "min-h-screen"}`}>
+      <header className={`sticky top-0 z-20 border-b border-zinc-800/80 bg-black/85 backdrop-blur-md ${isDemo ? "pt-12" : ""}`}>
         <div className="mx-auto flex max-w-[1600px] items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
           <div>
             <p className="text-[10px] font-semibold uppercase tracking-[0.35em] text-zinc-500">
@@ -46,16 +48,25 @@ export function AppShell() {
                 ›
               </button>
             </div>
-            <SyncButton />
+            {!isDemo && <SyncButton />}
             <CoachPersonaToggle />
             <LocaleToggle />
-            <button
-              type="button"
-              onClick={() => setShareOpen(true)}
-              className="rounded-lg border border-zinc-700 bg-zinc-900 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wider text-zinc-300 transition hover:border-zinc-600 hover:text-white"
-            >
-              {t.common.share}
-            </button>
+            {isDemo ? (
+              <Link
+                href="/login"
+                className="rounded-lg border border-zinc-700 bg-zinc-900 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wider text-zinc-300 transition hover:border-zinc-600 hover:text-white"
+              >
+                {t.landing.demoCta}
+              </Link>
+            ) : (
+              <button
+                type="button"
+                onClick={() => setShareOpen(true)}
+                className="rounded-lg border border-zinc-700 bg-zinc-900 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wider text-zinc-300 transition hover:border-zinc-600 hover:text-white"
+              >
+                {t.common.share}
+              </button>
+            )}
           </div>
         </div>
       </header>
@@ -67,7 +78,7 @@ export function AppShell() {
             <TabBar active={tab} onChange={setTab} variant="sidebar" />
           </div>
           <p className="mt-8 hidden text-[10px] leading-relaxed text-zinc-600 lg:block">
-            {data.source === "garmin" ? t.common.live : t.common.demo}
+            {isDemo ? t.landing.demoFootnote : data.source === "garmin" ? t.common.live : t.common.demo}
             {data.coachMeta ? ` · ${t.common.coach}` : ""}
           </p>
         </aside>

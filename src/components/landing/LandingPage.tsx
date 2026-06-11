@@ -2,11 +2,10 @@
 
 import Link from "next/link";
 import { LoginForm } from "@/components/auth/LoginForm";
-import { WhoopRing } from "@/components/WhoopRing";
+import { LandingDemoDashboard } from "@/components/landing/LandingDemoDashboard";
 import { useI18n } from "@/lib/i18n";
 import { gumroadCheckoutUrl } from "@/lib/gumroad";
 
-const COLORS = { sleep: "#8ecae6", recovery: "#3ecf8e", strain: "#5b9bd5" };
 const freeBeta = process.env.NEXT_PUBLIC_FREE_BETA === "true";
 
 export function LandingPage() {
@@ -19,6 +18,9 @@ export function LandingPage() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
           <p className="text-sm font-semibold tracking-wide text-white">{t.landing.brand}</p>
           <div className="flex items-center gap-3">
+            <a href="#live-demo" className="text-sm text-zinc-400 hover:text-white">
+              {t.landing.demoBadge}
+            </a>
             <Link href="/login" className="text-sm text-zinc-400 hover:text-white">
               {t.landing.signIn}
             </Link>
@@ -44,52 +46,59 @@ export function LandingPage() {
       </header>
 
       <main>
-        <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
-          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-            <div>
-              {freeBeta && (
-                <p className="mb-3 inline-block rounded-full border border-emerald-500/40 bg-emerald-950/40 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-emerald-400">
-                  {t.landing.betaBadge}
-                </p>
-              )}
-              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-emerald-400/80">
-                {t.landing.eyebrow}
+        <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+          <div className="max-w-2xl">
+            {freeBeta && (
+              <p className="mb-3 inline-block rounded-full border border-emerald-500/40 bg-emerald-950/40 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-emerald-400">
+                {t.landing.betaBadge}
               </p>
-              <h1 className="mt-4 text-4xl font-semibold leading-tight text-white sm:text-5xl">
-                {t.landing.heroTitle}
-              </h1>
-              <p className="mt-5 text-lg leading-relaxed text-zinc-400">{t.landing.heroSubtitle}</p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <Link
-                  href="/login"
-                  className="rounded-xl bg-white px-6 py-3 text-sm font-semibold text-black hover:bg-zinc-200"
+            )}
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-emerald-400/80">
+              {t.landing.eyebrow}
+            </p>
+            <h1 className="mt-4 text-4xl font-semibold leading-tight text-white sm:text-5xl">
+              {t.landing.heroTitle}
+            </h1>
+            <p className="mt-5 text-lg leading-relaxed text-zinc-400">{t.landing.heroSubtitle}</p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link
+                href="/login"
+                className="rounded-xl bg-white px-6 py-3 text-sm font-semibold text-black hover:bg-zinc-200"
+              >
+                {freeBeta ? t.landing.ctaBeta : t.landing.ctaStart}
+              </Link>
+              <a
+                href="#live-demo"
+                className="rounded-xl border border-zinc-600 px-6 py-3 text-sm font-semibold text-white hover:border-zinc-400"
+              >
+                {t.landing.scrollToDemo}
+              </a>
+              {!freeBeta && (
+                <a
+                  href={gumroadUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-xl border border-zinc-700 px-6 py-3 text-sm font-semibold text-zinc-400 hover:border-zinc-500 hover:text-white"
                 >
-                  {freeBeta ? t.landing.ctaBeta : t.landing.ctaStart}
-                </Link>
-                {!freeBeta && (
-                  <a
-                    href={gumroadUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="rounded-xl border border-zinc-600 px-6 py-3 text-sm font-semibold text-white hover:border-zinc-400"
-                  >
-                    {t.landing.ctaPricing}
-                  </a>
-                )}
-              </div>
+                  {t.landing.ctaPricing}
+                </a>
+              )}
+            </div>
+          </div>
+        </section>
+
+        <section id="live-demo" className="border-t border-zinc-800/60 bg-zinc-950/30 py-10 sm:py-14">
+          <div className="mx-auto max-w-[1680px] px-3 sm:px-6">
+            <div className="mb-6 text-center sm:mb-8">
+              <h2 className="text-2xl font-semibold text-white sm:text-3xl">{t.landing.demoTitle}</h2>
+              <p className="mx-auto mt-3 max-w-xl text-sm text-zinc-400 sm:text-base">
+                {t.landing.demoSubtitle}
+              </p>
             </div>
 
-            <div className="rounded-3xl border border-zinc-800 bg-zinc-950/80 p-6 shadow-2xl">
-              <p className="text-[10px] uppercase tracking-widest text-zinc-500">{t.landing.previewLabel}</p>
-              <div className="mt-6 flex items-end justify-center gap-3">
-                <WhoopRing value="77%" label={t.rings.sleep} pct={77} color={COLORS.sleep} />
-                <WhoopRing value="89%" label={t.rings.recovery} pct={89} color={COLORS.recovery} size="lg" />
-                <WhoopRing value="14.6" label={t.rings.strain} pct={70} color={COLORS.strain} />
-              </div>
-              <div className="mt-6 rounded-2xl border border-emerald-500/20 bg-emerald-950/20 p-4">
-                <p className="text-xs uppercase tracking-widest text-emerald-400/80">{t.landing.coachPreview}</p>
-                <p className="mt-2 text-base font-semibold text-white">{t.landing.coachHeadline}</p>
-                <p className="mt-2 text-sm leading-relaxed text-zinc-400">{t.landing.coachBody}</p>
+            <div className="overflow-hidden rounded-2xl border border-zinc-700/80 bg-black shadow-2xl ring-1 ring-white/5 sm:rounded-3xl">
+              <div className="max-h-[min(920px,88vh)] overflow-y-auto overscroll-contain">
+                <LandingDemoDashboard />
               </div>
             </div>
           </div>

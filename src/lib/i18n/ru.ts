@@ -516,6 +516,13 @@ export const ru: Dictionary = {
     betaPrice: "Бесплатно",
     betaPriceNote: "Потом будет подписка · ранним пользователям сохраним доступ",
     ctaBeta: "Войти в бета",
+    demoTitle: "Попробуй настоящий дашборд",
+    demoSubtitle: "Образец данных — переключай вкладки, Забота / Язва, сон и нагрузку.",
+    demoBadge: "Живое демо",
+    demoHint: "Образец · полностью кликабельно",
+    demoCta: "Подключить свой",
+    demoFootnote: "Демо · образец Garmin Venu 2",
+    scrollToDemo: "Смотреть демо ↓",
   },
   subscribe: {
     title: "Открой дашборд",
