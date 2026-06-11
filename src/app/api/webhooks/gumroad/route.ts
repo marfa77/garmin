@@ -2,6 +2,7 @@ import { createServiceRoleClient } from "@/lib/supabase/server";
 import {
   gumroadPurchaserEmail,
   gumroadSaleId,
+  isGarminGumroadProduct,
   parseGumroadFormData,
 } from "@/lib/gumroad";
 import { NextResponse } from "next/server";
@@ -11,6 +12,11 @@ export const dynamic = "force-dynamic";
 export async function POST(request: Request) {
   const form = await request.formData();
   const payload = parseGumroadFormData(form);
+
+  if (!isGarminGumroadProduct(payload)) {
+    return NextResponse.json({ ok: true, skipped: "other_product" });
+  }
+
   const saleId = gumroadSaleId(payload);
   const email = gumroadPurchaserEmail(payload);
 

@@ -1,6 +1,16 @@
 export const GUMROAD_CHECKOUT_URL =
   process.env.NEXT_PUBLIC_GUMROAD_CHECKOUT_URL ?? "https://pixidstudio.gumroad.com/l/uinvw";
 
+export const GUMROAD_PRODUCT_PERMALINK =
+  process.env.GUMROAD_PRODUCT_PERMALINK ?? "uinvw";
+
+/** True when payload is for this product (or filter not configured). */
+export function isGarminGumroadProduct(payload: Record<string, string>): boolean {
+  const permalink = payload.product_permalink?.trim();
+  if (!permalink) return true;
+  return permalink === GUMROAD_PRODUCT_PERMALINK;
+}
+
 export function gumroadCheckoutUrl(email?: string | null): string {
   const url = new URL(GUMROAD_CHECKOUT_URL);
   if (email?.trim()) {
