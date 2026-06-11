@@ -65,10 +65,17 @@ else
   npm ci --omit=dev
 fi
 
-# Worker secrets (append if missing)
+# Worker tuning + secrets
 grep -q '^SYNC_WORKER_PORT=' .env 2>/dev/null || echo 'SYNC_WORKER_PORT=3015' >> .env
+grep -q '^COACH_QUICK=' .env 2>/dev/null || echo 'COACH_QUICK=true' >> .env
+grep -q '^COACH_HISTORY_DAYS=' .env 2>/dev/null || echo 'COACH_HISTORY_DAYS=0' >> .env
+grep -q '^SYNC_DAYS=' .env 2>/dev/null || echo 'SYNC_DAYS=7' >> .env
 if ! grep -q '^SYNC_WORKER_SECRET=' .env 2>/dev/null; then
   echo "SYNC_WORKER_SECRET=\$(openssl rand -hex 32)" >> .env
+fi
+# Ensure Supabase URL for sync-user.mjs
+if ! grep -q '^NEXT_PUBLIC_SUPABASE_URL=' .env 2>/dev/null; then
+  echo "WARN: add NEXT_PUBLIC_SUPABASE_URL to ${REMOTE_PATH}/.env"
 fi
 
 cp deploy/garmin-wellness-sync.service /etc/systemd/system/${SERVICE_NAME}.service

@@ -52,7 +52,7 @@ const server = http.createServer(async (req, res) => {
     return send(res, 200, result);
   } catch (err) {
     const message = err instanceof Error ? err.message : "Sync failed";
-    console.error("[sync-server]", message);
+    console.error("[sync-server]", message, err instanceof Error ? err.stack : "");
     return send(res, 500, { ok: false, error: message.slice(0, 800) });
   }
 });

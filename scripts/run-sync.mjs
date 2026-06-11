@@ -48,7 +48,12 @@ export function runSyncPipeline(options = {}) {
   }
 
   run("python3 scripts/sync_garmin.py", env);
-  run("node scripts/generate-coach.mjs", { ...env, DATA_PATH: dataFile, PUBLIC_DATA_PATH: publicFile });
+  try {
+    run("node scripts/generate-coach.mjs", { ...env, DATA_PATH: dataFile, PUBLIC_DATA_PATH: publicFile });
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.warn(`[sync] coach skipped: ${msg.slice(0, 300)}`);
+  }
 
   const data = JSON.parse(fs.readFileSync(dataFile, "utf-8"));
   return {

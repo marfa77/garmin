@@ -293,10 +293,12 @@ export const ru: Dictionary = {
   },
   sync: {
     button: "Синк",
-    running: "Синхронизация…",
+    running: "Синк…",
+    runningHint: "~1 мин — не закрывай вкладку",
     hint: "Загрузить данные Garmin и перегенерировать AI-коуча",
     cloudHint:
       "Открой GitHub Actions → Run workflow → Sync Garmin data, затем обнови страницу.",
+    failed: "Синк не удался — попробуй через минуту",
   },
   coachPersona: {
     caring: "Забота",

@@ -708,7 +708,7 @@ def main() -> int:
 
     profile = load_user_profile(api)
 
-    days = 14
+    days = max(3, min(14, int(os.getenv("SYNC_DAYS", "7"))))
     history: list[dict[str, Any]] = []
     hrv_vals: list[float] = []
     rhr_vals: list[float] = []

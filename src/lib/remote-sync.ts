@@ -13,19 +13,28 @@ export async function runRemoteGarminSync(userId: string): Promise<SyncResult> {
     return { ok: false, error: "Sync worker not configured" };
   }
 
-  const res = await fetch(`${workerUrl}/sync`, {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${secret}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ userId }),
-    signal: AbortSignal.timeout(280_000),
-  });
+  let res: Response;
+  try {
+    res = await fetch(`${workerUrl}/sync`, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${secret}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ userId }),
+      signal: AbortSignal.timeout(280_000),
+    });
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : "Network error";
+    return { ok: false, error: msg.includes("timeout") ? "Sync timed out — try again" : msg };
+  }
 
   const body = (await res.json().catch(() => ({}))) as SyncResult & { error?: string };
 
   if (!res.ok) {
+    if (res.status === 401) {
+      return { ok: false, error: "Sync worker auth mismatch — contact support" };
+    }
     return { ok: false, error: body.error || `Sync worker error (${res.status})` };
   }
 

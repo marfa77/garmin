@@ -459,7 +459,37 @@ async function main() {
   const history = (data.history ?? []).slice(0, historyDays);
   const ctxJson = JSON.stringify(buildRichContext(data), null, 2);
 
-  console.log(`Generating coach with ${MODEL} (${historyDays} days, force=${force})...`);
+  const quick = process.env.COACH_QUICK === "true";
+
+  console.log(
+    `Generating coach with ${MODEL} (quick=${quick}, ${historyDays} days, force=${force})...`
+  );
+
+  if (quick) {
+    const [morning, morningRu] = await Promise.all([
+      callMasterCoach(MASTER_COACH_EN, `MASTER COACH — full dynamic analysis for today. Athlete data:\n${ctxJson}`),
+      callMasterCoach(MASTER_COACH_RU, `ГЛАВНЫЙ КОУЧ — полный динамический разбор на сегодня. Данные:\n${ctxJson}`),
+    ]);
+
+    applyCoachPatch(data, data.today.date, {
+      morning,
+      morningRu,
+    });
+
+    data.coachMeta = {
+      provider: "openrouter",
+      model: MODEL,
+      generatedAt: new Date().toISOString(),
+      quick: true,
+    };
+
+    const json = JSON.stringify(data, null, 2);
+    fs.writeFileSync(DATA_PATH, json);
+    fs.mkdirSync(path.dirname(PUBLIC_DATA_PATH), { recursive: true });
+    fs.writeFileSync(PUBLIC_DATA_PATH, json);
+    console.log("Coach updated (quick):", morning.headline);
+    return;
+  }
 
   const [morning, morningRu, morningSarcastic, morningSarcasticRu, evening, eveningRu, weeklyDynamics] =
     await Promise.all([
