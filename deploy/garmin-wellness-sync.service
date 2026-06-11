@@ -1,0 +1,19 @@
+[Unit]
+Description=Garmin Wellness Sync Worker (Python + coach)
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/garmin-wellness-sync
+Environment=NODE_ENV=production
+Environment=PATH=/opt/garmin-wellness-sync/venv/bin:/usr/bin:/usr/local/bin
+EnvironmentFile=-/opt/garmin-wellness-sync/.env
+ExecStart=/usr/bin/env node scripts/sync-server.mjs
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

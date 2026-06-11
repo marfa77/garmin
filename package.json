@@ -13,7 +13,8 @@
     "garmin:export-tokens": "python3 scripts/garmin-export-tokens.py",
     "coach": "node scripts/generate-coach.mjs",
     "owner:setup": "node scripts/owner-setup.mjs",
-    "owner:sync-push": "node scripts/owner-sync-push.mjs"
+    "owner:sync-push": "node scripts/owner-sync-push.mjs",
+    "deploy:sync-worker": "bash scripts/deploy-sync-worker.sh"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.0",

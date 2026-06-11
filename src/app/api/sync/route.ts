@@ -4,6 +4,7 @@ import path from "path";
 import { NextResponse } from "next/server";
 import { userHasAccess } from "@/lib/access";
 import { getSessionUser } from "@/lib/auth-guard";
+import { isRemoteSyncWorkerConfigured, runRemoteGarminSync } from "@/lib/remote-sync";
 import { createServiceRoleClient } from "@/lib/supabase/server";
 
 export const dynamic = "force-dynamic";
@@ -25,12 +26,27 @@ export async function POST() {
 
   const { data: conn, error: connError } = await admin
     .from("garmin_connections")
-    .select("token_blob, garmin_email")
+    .select("token_blob")
     .eq("user_id", user.id)
     .single();
 
   if (connError || !conn?.token_blob) {
     return NextResponse.json({ error: "Garmin not connected" }, { status: 400 });
+  }
+
+  if (isRemoteSyncWorkerConfigured()) {
+    const result = await runRemoteGarminSync(user.id);
+    if (!result.ok) {
+      return NextResponse.json(
+        { ok: false, error: result.error || "Sync failed" },
+        { status: 500 }
+      );
+    }
+    return NextResponse.json({
+      ok: true,
+      syncedAt: result.syncedAt,
+      date: result.date,
+    });
   }
 
   const workDir = fs.mkdtempSync(path.join(os.tmpdir(), `garmin-sync-${user.id}-`));
@@ -40,7 +56,7 @@ export async function POST() {
     const result = runSyncPipeline({
       workDir,
       tokenBlob: conn.token_blob,
-      garminEmail: conn.garmin_email ?? undefined,
+      garminEmail: undefined,
     });
 
     await admin.from("dashboard_snapshots").insert({
