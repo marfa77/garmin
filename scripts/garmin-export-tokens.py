@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""One-shot Garmin login; outputs token bundle as JSON on stdout."""
+"""Log in to Garmin locally and print a token bundle JSON for the web app (no password sent to server)."""
 
 from __future__ import annotations
 
@@ -8,6 +8,7 @@ import json
 import os
 import sys
 import tempfile
+from getpass import getpass
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -17,18 +18,17 @@ load_dotenv(ROOT / ".env")
 
 
 def main() -> int:
-    # Credentials only via env — never argv (visible in process list / error logs).
-    email = os.getenv("GARMIN_EMAIL")
-    password = os.getenv("GARMIN_PASSWORD")
+    email = os.getenv("GARMIN_EMAIL") or input("Garmin email: ").strip()
+    password = os.getenv("GARMIN_PASSWORD") or getpass("Garmin password (hidden, stays on this computer): ")
 
     if not email or not password:
-        print(json.dumps({"ok": False, "error": "Missing Garmin email or password"}))
+        print("Missing email or password.", file=sys.stderr)
         return 1
 
     try:
         from garminconnect import Garmin
     except ImportError:
-        print(json.dumps({"ok": False, "error": "garminconnect not installed"}))
+        print("Install: pip install garminconnect python-dotenv", file=sys.stderr)
         return 1
 
     api = Garmin(email, password)
@@ -47,7 +47,9 @@ def main() -> int:
             if p.is_file()
         }
 
-    print(json.dumps({"ok": True, "email": email, "files": files}))
+    bundle = {"v": 1, "files": files, "email": email}
+    print(json.dumps(bundle))
+    print("\n# Copy the JSON line above into Garmin Wellness → Connect", file=sys.stderr)
     return 0
 
 

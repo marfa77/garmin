@@ -10,6 +10,7 @@
     "lint": "next lint",
     "sync": "node scripts/run-sync.mjs",
     "sync:garmin": "python3 scripts/sync_garmin.py",
+    "garmin:export-tokens": "python3 scripts/garmin-export-tokens.py",
     "coach": "node scripts/generate-coach.mjs"
   },
   "dependencies": {
