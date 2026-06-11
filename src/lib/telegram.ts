@@ -25,7 +25,7 @@ export async function notifyWaitlistSignup(params: {
   email: string;
   locale: string;
   total?: number;
-}): Promise<void> {
+}): Promise<boolean> {
   const totalLine = params.total != null ? `\nВсего в листе: ${params.total}` : "";
   const text = [
     "🟢 Garmin Wellness — waitlist",
@@ -37,5 +37,5 @@ export async function notifyWaitlistSignup(params: {
     .filter(Boolean)
     .join("\n");
 
-  await sendTelegramMessage(text);
+  return sendTelegramMessage(text);
 }

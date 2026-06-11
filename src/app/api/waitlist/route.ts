@@ -25,9 +25,11 @@ export async function POST(request: Request) {
 
   const { data: existing } = await admin
     .from("waitlist_signups")
-    .select("id")
+    .select("id, notified_at")
     .eq("email", email)
     .maybeSingle();
+
+  const isNew = !existing;
 
   const { error } = await admin.from("waitlist_signups").upsert(
     {
@@ -46,12 +48,21 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Could not save" }, { status: 500 });
   }
 
-  if (!existing) {
+  const shouldNotify = isNew || !existing?.notified_at;
+
+  if (shouldNotify) {
     const { count } = await admin
       .from("waitlist_signups")
       .select("*", { count: "exact", head: true });
 
-    void notifyWaitlistSignup({ email, locale, total: count ?? undefined });
+    const sent = await notifyWaitlistSignup({ email, locale, total: count ?? undefined });
+
+    if (sent) {
+      await admin
+        .from("waitlist_signups")
+        .update({ notified_at: new Date().toISOString() })
+        .eq("email", email);
+    }
   }
 
   return NextResponse.json({ ok: true });

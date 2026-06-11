@@ -1,7 +1,7 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
-const PUBLIC_PREFIXES = ["/login", "/auth/callback", "/api/webhooks"];
+const PUBLIC_PREFIXES = ["/login", "/auth/callback", "/api/webhooks", "/api/waitlist"];
 
 export async function updateSession(request: NextRequest) {
   const { pathname } = request.nextUrl;
