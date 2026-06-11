@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import { userHasAccess } from "@/lib/access";
 import { createClient } from "@/lib/supabase/server";
 import type { Profile } from "@/lib/supabase/database.types";
 
@@ -31,8 +32,8 @@ export async function requireOnboardedUser(): Promise<{
 
   if (error || !profile) redirect("/login");
 
-  const { data: hasSub } = await supabase.rpc("has_active_subscription", { uid: user.id });
-  if (!hasSub) redirect("/subscribe");
+  const hasAccess = await userHasAccess(supabase, user.id);
+  if (!hasAccess) redirect("/subscribe");
 
   const { data: garmin } = await supabase
     .from("garmin_connection_status")

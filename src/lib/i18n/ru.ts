@@ -510,6 +510,12 @@ export const ru: Dictionary = {
     loginSentTitle: "Проверь почту",
     loginSentBody: "Мы отправили ссылку на {email}. Открой её на этом устройстве.",
     footer: "Garmin Wellness · Не аффилирован с Garmin Ltd.",
+    betaBadge: "Бесплатная бета",
+    betaPricingTitle: "Бесплатно, пока тестируем спрос",
+    betaPricingSubtitle: "Без оплаты — войди, подключи Garmin, пользуйся полным дашбордом.",
+    betaPrice: "Бесплатно",
+    betaPriceNote: "Потом будет подписка · ранним пользователям сохраним доступ",
+    ctaBeta: "Войти в бета",
   },
   subscribe: {
     title: "Открой дашборд",

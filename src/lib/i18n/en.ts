@@ -507,6 +507,12 @@ export const en = {
     loginSentTitle: "Check your inbox",
     loginSentBody: "We sent a sign-in link to {email}. Open it on this device to continue.",
     footer: "Garmin Wellness · Not affiliated with Garmin Ltd.",
+    betaBadge: "Free beta",
+    betaPricingTitle: "Free while we test demand",
+    betaPricingSubtitle: "No payment for now — sign in, connect Garmin, use the full dashboard.",
+    betaPrice: "Free",
+    betaPriceNote: "Pricing later · early users keep access",
+    ctaBeta: "Join free beta",
   },
   subscribe: {
     title: "Unlock your dashboard",

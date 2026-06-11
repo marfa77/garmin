@@ -1,4 +1,5 @@
 import { execSync } from "child_process";
+import { userHasAccess } from "@/lib/access";
 import { getSessionUser } from "@/lib/auth-guard";
 import { createServiceRoleClient } from "@/lib/supabase/server";
 import { NextResponse } from "next/server";
@@ -12,8 +13,8 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const { data: hasSub } = await supabase.rpc("has_active_subscription", { uid: user.id });
-  if (!hasSub) {
+  const hasAccess = await userHasAccess(supabase, user.id);
+  if (!hasAccess) {
     return NextResponse.json({ error: "Subscription required" }, { status: 403 });
   }
 

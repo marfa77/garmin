@@ -2,6 +2,7 @@ import fs from "fs";
 import os from "os";
 import path from "path";
 import { NextResponse } from "next/server";
+import { userHasAccess } from "@/lib/access";
 import { getSessionUser } from "@/lib/auth-guard";
 import { createServiceRoleClient } from "@/lib/supabase/server";
 
@@ -17,8 +18,8 @@ export async function POST() {
 
   const admin = createServiceRoleClient();
 
-  const { data: hasSub } = await admin.rpc("has_active_subscription", { uid: user.id });
-  if (!hasSub) {
+  const hasAccess = await userHasAccess(admin, user.id);
+  if (!hasAccess) {
     return NextResponse.json({ error: "Subscription required" }, { status: 403 });
   }
 

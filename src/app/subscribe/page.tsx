@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import { isFreeBeta } from "@/lib/access";
 import { SubscribePanel } from "@/components/subscribe/SubscribePanel";
 import { requireUser } from "@/lib/auth-guard";
 import { LocaleProvider } from "@/lib/i18n";
@@ -10,6 +11,10 @@ import {
 
 export default async function SubscribePage() {
   const { user } = await requireUser();
+
+  if (isFreeBeta()) {
+    redirect("/connect/garmin");
+  }
 
   if (user.email) {
     await linkSubscriptionsByEmail(user.id, user.email);
