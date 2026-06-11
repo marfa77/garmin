@@ -1,4 +1,4 @@
-import type { CoachMessage } from "./coach-types";
+import type { CoachBundle } from "./coach-types";
 
 export type RecoveryZone = "green" | "yellow" | "red";
 export type ReadinessZone = "prime" | "high" | "moderate" | "low" | "poor";
@@ -113,12 +113,7 @@ export interface DailySummary {
     bodyBattery: TimePoint[];
     stress: TimePoint[];
   };
-  coach: {
-    morning: CoachMessage | string;
-    evening?: CoachMessage | string;
-    morningRu?: CoachMessage;
-    eveningRu?: CoachMessage;
-  };
+  coach: CoachBundle;
 }
 
 export interface MonthWorkouts {
@@ -150,6 +145,7 @@ export interface DashboardData {
     greenDays: number;
     balanceScore: number;
     narrative: string;
+    narrativeRu?: string;
   };
   coachMeta?: {
     provider: string;

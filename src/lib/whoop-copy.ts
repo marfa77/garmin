@@ -61,9 +61,40 @@ export function fallbackCoach(day: DailySummary, period: "morning" | "evening", 
   };
 }
 
+function sarcasticFallbackCoach(
+  day: DailySummary,
+  period: "morning" | "evening",
+  t: Dictionary = en
+): CoachMessage {
+  const z = day.recovery.zone;
+  const watchouts = period === "morning" ? fallbackWatchouts(day, t) : undefined;
+
+  if (period === "morning") {
+    const c = t.coach.sarcastic.morning[z];
+    return {
+      headline: c.headline,
+      insight: c.insight,
+      action: c.action,
+      watchouts: watchouts?.length ? watchouts : undefined,
+    };
+  }
+
+  const gap = Math.max(0, day.sleep.need - day.sleep.hours).toFixed(1);
+  const key =
+    day.strain.current > day.strain.targetMax ? "over" : day.vitals.bodyBatteryNow < 30 ? "lowBb" : "good";
+  const e = t.coach.sarcastic.evening[key];
+  return {
+    headline: e.headline,
+    insight: e.insight,
+    action: e.action.replace("{gap}", gap),
+  };
+}
+
 export function coachFallbacks(day: DailySummary, t: Dictionary = en) {
   return {
     morning: fallbackCoach(day, "morning", t),
     evening: fallbackCoach(day, "evening", t),
+    sarcasticMorning: sarcasticFallbackCoach(day, "morning", t),
+    sarcasticEvening: sarcasticFallbackCoach(day, "evening", t),
   };
 }

@@ -14,9 +14,9 @@ import { WhoopRing } from "../WhoopRing";
 import { WeekTrendChartsClient } from "../WeekTrendChartsClient";
 import { recoveryContributorBars } from "@/lib/contributors";
 import { heroInsights } from "@/lib/hero-insights";
+import { useCoachPersona } from "@/lib/coach-persona";
 import { useI18n } from "@/lib/i18n";
 import { heartHealthStatus, keyStatistics, strainRemaining } from "@/lib/interpretations";
-import { trainingBalance } from "@/lib/training-balance";
 import { normalizeCoach } from "@/lib/coach-types";
 import { isOptimalDay } from "@/lib/readiness";
 import { zoneLabel, coachFallbacks } from "@/lib/whoop-copy";
@@ -33,17 +33,23 @@ export function OverviewView({
   onNavigate: (tab: TabId) => void;
 }) {
   const { t, locale } = useI18n();
+  const { persona } = useCoachPersona();
   const { today, history } = data;
-  const coach = normalizeCoach(today.coach, coachFallbacks(today, t), { locale });
-  const accent = today.recovery.zone === "green" ? "emerald" : today.recovery.zone === "yellow" ? "amber" : "rose";
+  const coach = normalizeCoach(today.coach, coachFallbacks(today, t), { locale, persona });
+  const accent =
+    persona === "sarcastic"
+      ? "zinc"
+      : today.recovery.zone === "green"
+        ? "emerald"
+        : today.recovery.zone === "yellow"
+          ? "amber"
+          : "rose";
   const heart = heartHealthStatus(today, t);
   const stats = keyStatistics(today, t);
   const remaining = strainRemaining(today);
   const contributors = recoveryContributorBars(today, t);
   const optimal = isOptimalDay(today.recovery.score, today.sleep.score);
   const heroes = heroInsights(today, t);
-  const training = trainingBalance(today, history, t);
-
   return (
     <DashboardGrid>
       {today.vitals.readinessScore != null && (
@@ -105,8 +111,8 @@ export function OverviewView({
         <CoachSection
           label={`${t.common.today} · ${zoneLabel(today.recovery.zone, t)}`}
           coach={coach.morning}
-          training={training}
           accent={accent}
+          variant="master"
         />
       </DashboardTile>
 

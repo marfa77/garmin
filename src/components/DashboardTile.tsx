@@ -14,12 +14,14 @@ const spanClass: Record<Span, string> = {
 export function DashboardTile({
   children,
   title,
+  subtitle,
   span = "1/2",
   className = "",
   noPadding = false,
 }: {
   children: ReactNode;
   title?: string;
+  subtitle?: string;
   span?: Span;
   className?: string;
   noPadding?: boolean;
@@ -29,7 +31,10 @@ export function DashboardTile({
       className={`rounded-2xl border border-zinc-800/70 bg-zinc-950/50 shadow-[0_1px_0_rgba(255,255,255,0.04)_inset] ${spanClass[span]} ${noPadding ? "" : "p-5"} ${className}`}
     >
       {title && (
-        <p className="mb-4 text-[11px] font-semibold uppercase tracking-widest text-zinc-500">{title}</p>
+        <div className="mb-4">
+          <p className="text-[11px] font-semibold uppercase tracking-widest text-zinc-500">{title}</p>
+          {subtitle && <p className="mt-1 text-xs text-zinc-600">{subtitle}</p>}
+        </div>
       )}
       {children}
     </section>

@@ -279,6 +279,26 @@ export const en = {
   coachSection: {
     watchouts: "What to watch today",
     training: "Training",
+    dynamics: "How your body has been shifting",
+    progress: "What you're doing right",
+    careNotes: "I'm keeping an eye on",
+    yourMove: "Your move today",
+    dynamicsSarcastic: "How you've been flirting with disaster",
+    progressSarcastic: "Surprising wins (for your metrics)",
+    careNotesSarcastic: "Red flags I'm pretending not to see",
+    yourMoveSarcastic: "Try this before your watch gives up",
+  },
+  coachPersona: {
+    caring: "Care",
+    sarcastic: "Roast",
+    hint: "Coach tone: warm mentor or dry sarcasm",
+  },
+  coachTimeline: {
+    title: "Your body over time",
+    subtitle: "AI summaries — how you've been feeling day by day",
+    weekStory: "This week in your body",
+    today: "Today",
+    ruleBased: "estimated",
   },
   trainingBalance: {
     onTrack: "On track",
@@ -380,6 +400,42 @@ export const en = {
       strong: "A strong week — recovery stayed green most days. Keep the rhythm: hard days hard, easy days easy.",
       mixed: "A mixed week — some days you were primed, others you were digging out. Consistent sleep will stabilize the trend.",
       tough: "Recovery was challenged this week — lighten the load, protect bedtime, and let HRV climb back toward baseline.",
+    },
+    sarcastic: {
+      morning: {
+        green: {
+          headline: "Still alive? Shocking.",
+          insight: "Your watch says you're ready. Your sleep debt says you're cosplaying a functional human. Pick a lane.",
+          action: "Move today — before your body reconsiders this recovery score.",
+        },
+        yellow: {
+          headline: "Half-charged, fully optimistic",
+          insight: "Not wrecked, not ready — the wellness equivalent of 'I'll fix it tomorrow.'",
+          action: "Something light. Heroics are for people who slept.",
+        },
+        red: {
+          headline: "Your metrics filed a wellness complaint",
+          insight: "Recovery is in the red. Even your resting heart rate looks tired of your choices.",
+          action: "Rest. Seriously. The gym will survive without your suffering.",
+        },
+      },
+      evening: {
+        over: {
+          headline: "You did the thing. Again.",
+          insight: "Strain overshot the plan — tomorrow-you is already drafting a complaint.",
+          action: "Bed. Early. You're about {gap}h behind on sleep and it shows.",
+        },
+        lowBb: {
+          headline: "Running on fumes and audacity",
+          insight: "Body Battery is begging for mercy. Listen, for once.",
+          action: "Shut it down. Sleep debt won't fix itself while you scroll.",
+        },
+        good: {
+          headline: "Not a disaster. Low bar cleared.",
+          insight: "Pacing was reasonable. Don't let pride turn tomorrow into a cautionary tale.",
+          action: "Wind down. You're still ~{gap}h short on sleep — act like it matters.",
+        },
+      },
     },
   },
   metrics: {

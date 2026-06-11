@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { CoachPersonaToggle } from "./CoachPersonaToggle";
 import { LocaleToggle } from "./LocaleToggle";
 import { ShareSheet } from "./ShareSheet";
 import { TabBar, type TabId } from "./TabBar";
@@ -9,14 +10,13 @@ import { RecoveryView } from "./views/RecoveryView";
 import { SleepView } from "./views/SleepView";
 import { StrainView } from "./views/StrainView";
 import { useI18n } from "@/lib/i18n";
-import { resolveWeeklyNarrative } from "@/lib/interpretations";
 import type { DashboardData } from "@/lib/types";
 
 export function AppShell({ data }: { data: DashboardData }) {
   const { t, locale } = useI18n();
   const [tab, setTab] = useState<TabId>("overview");
   const [shareOpen, setShareOpen] = useState(false);
-  const { today, weekly, device, history } = data;
+  const { today, device, history } = data;
 
   const dateLabel = new Date(today.date).toLocaleDateString(locale === "ru" ? "ru-RU" : "en-US", {
     weekday: "long",
@@ -44,6 +44,7 @@ export function AppShell({ data }: { data: DashboardData }) {
                 ›
               </button>
             </div>
+            <CoachPersonaToggle />
             <LocaleToggle />
             <button
               type="button"
@@ -74,12 +75,6 @@ export function AppShell({ data }: { data: DashboardData }) {
           {tab === "sleep" && <SleepView today={today} history={history} />}
           {tab === "strain" && <StrainView data={data} />}
 
-          {tab === "overview" && (
-            <footer className="mt-6 rounded-2xl border border-zinc-800/60 bg-zinc-950/50 p-5">
-              <p className="text-[11px] uppercase tracking-widest text-zinc-500">{t.overview.thisWeek}</p>
-              <p className="mt-3 text-sm leading-relaxed text-zinc-300">{resolveWeeklyNarrative(weekly, t)}</p>
-            </footer>
-          )}
         </main>
       </div>
 
