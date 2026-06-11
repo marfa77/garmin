@@ -1,7 +1,10 @@
-import { Dashboard } from "@/components/Dashboard";
-import { loadDashboard } from "@/lib/data";
+import { LandingPage } from "@/components/landing/LandingPage";
+import { LocaleProvider } from "@/lib/i18n";
 
 export default function Home() {
-  const data = loadDashboard();
-  return <Dashboard data={data} />;
+  return (
+    <LocaleProvider>
+      <LandingPage />
+    </LocaleProvider>
+  );
 }

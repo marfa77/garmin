@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Wellness",
-  description: "Recovery · Sleep · Strain — powered by Garmin Venu 2",
+  title: "Garmin Wellness — Recovery · Sleep · Strain",
+  description:
+    "Whoop-style wellness dashboard for Garmin Venu 2 with AI coach, magic link auth, and one-tap sync.",
 };
 
 export const viewport = {

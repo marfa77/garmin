@@ -11,6 +11,7 @@ export const ru: Dictionary = {
   common: {
     wellness: "WELLNESS",
     share: "Поделиться",
+    sync: "Синк",
     close: "Закрыть",
     savePng: "Сохранить PNG",
     saving: "…",
@@ -290,6 +291,13 @@ export const ru: Dictionary = {
     careNotesSarcastic: "Тревожные звоночки (игнорировать нельзя)",
     yourMoveSarcastic: "Сделай это, пока часы не сдались",
   },
+  sync: {
+    button: "Синк",
+    running: "Синхронизация…",
+    hint: "Загрузить данные Garmin и перегенерировать AI-коуча",
+    cloudHint:
+      "Открой GitHub Actions → Run workflow → Sync Garmin data, затем обнови страницу.",
+  },
   coachPersona: {
     caring: "Забота",
     sarcastic: "Язва",
@@ -439,6 +447,89 @@ export const ru: Dictionary = {
         },
       },
     },
+  },
+  landing: {
+    brand: "Garmin Wellness",
+    signIn: "Войти",
+    subscribe: "Подписка",
+    eyebrow: "Wellness в стиле Whoop · Garmin Venu 2",
+    heroTitle: "Твоё тело в цифрах — с AI-коучем, который говорит по-человечески",
+    heroSubtitle:
+      "Сон, восстановление и нагрузка в одном дашборде. Ежедневные AI-резюме: заботливый наставник или саркастичная «Язва». Сделано под Garmin, не под абстрактный фитнес.",
+    ctaStart: "Войти по magic link",
+    ctaPricing: "Тарифы",
+    previewLabel: "Превью дашборда",
+    coachPreview: "Утренний коуч",
+    coachHeadline: "Ты готов работать",
+    coachBody:
+      "Сон и сердечные сигналы поддерживают — есть запас для качественной нагрузки сегодня.",
+    forWhoTitle: "Для кого",
+    audiences: [
+      {
+        title: "Атлеты на Garmin",
+        body: "Уже всё меряешь на Venu 2 — получи whoop-уровень историй поверх своих данных.",
+      },
+      {
+        title: "Занятые профи",
+        body: "Один взгляд на кольца и коуча — жать, держать темп или беречь сон сегодня.",
+      },
+      {
+        title: "Любители данных",
+        body: "HRV, Body Battery, архитектура сна и баланс нагрузки — объяснено простым языком.",
+      },
+    ],
+    featuresTitle: "Что внутри",
+    features: [
+      {
+        title: "Кольца Recovery · Sleep · Strain",
+        body: "Три кольца с целями под твою готовность — нагляднее, чем листать Garmin Connect.",
+      },
+      {
+        title: "AI-коуч — Забота или Язва",
+        body: "Динамический разбор дня: прогресс, динамика, риски и один конкретный шаг. Переключай тон.",
+      },
+      {
+        title: "Синк в один клик",
+        body: "Свежие данные Garmin и новый коуч прямо из дашборда — без терминала.",
+      },
+      {
+        title: "Story для соцсетей",
+        body: "Экспорт 9:16 с кольцами, готовностью и коучем — богаче типичных share-экранов.",
+      },
+    ],
+    pricingTitle: "Простая подписка",
+    pricingSubtitle: "Оплата на Gumroad · вход тем же email · Garmin подключаешь один раз",
+    price: "$9 / мес",
+    priceNote: "Отмена в любой момент на Gumroad",
+    subscribeGumroad: "Подписаться на Gumroad",
+    loginTitle: "Уже оплатил?",
+    loginSubtitle: "Пришлём magic link на почту — пароль не нужен.",
+    emailLabel: "Email",
+    sendMagicLink: "Отправить ссылку",
+    sending: "Отправляем…",
+    loginSentTitle: "Проверь почту",
+    loginSentBody: "Мы отправили ссылку на {email}. Открой её на этом устройстве.",
+    footer: "Garmin Wellness · Не аффилирован с Garmin Ltd.",
+  },
+  subscribe: {
+    title: "Открой дашборд",
+    subtitle: "Оплати на Gumroad и вернись сюда с тем же email, что для входа.",
+    payGumroad: "Оплатить на Gumroad",
+    emailHint: "На кассе укажи {email} — так мы привяжем покупку автоматически.",
+    alreadyPaid: "Уже оплатил — проверить доступ",
+    checking: "Проверяем…",
+    backLogin: "Другой email",
+  },
+  connect: {
+    title: "Подключить Garmin",
+    subtitle: "Email и пароль Garmin Connect. Токены хранятся на сервере в зашифрованном виде — не в git.",
+    garminEmail: "Email Garmin",
+    garminPassword: "Пароль Garmin",
+    securityNote: "Пароль нужен один раз для OAuth-токенов; дальше храним только токены.",
+    connect: "Подключить Garmin",
+    connecting: "Подключаем…",
+    error: "Не удалось подключить — проверь данные и попробуй снова.",
+    mfaHint: "Garmin запросил MFA — заверши вход в приложении Garmin Connect и попробуй снова.",
   },
   metrics: {
     hrvAbove: "Выше базы — нервная система восстановилась",

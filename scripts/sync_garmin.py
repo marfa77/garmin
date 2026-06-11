@@ -13,7 +13,7 @@ from typing import Any
 from dotenv import load_dotenv
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = ROOT / "data"
+DATA_DIR = Path(os.getenv("WELLNESS_DATA_DIR") or (ROOT / "data"))
 OUTPUT = DATA_DIR / "dashboard.json"
 PUBLIC_OUTPUT = ROOT / "public" / "data" / "dashboard.json"
 

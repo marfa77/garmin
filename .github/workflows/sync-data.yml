@@ -1,0 +1,63 @@
+name: Sync Garmin data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 7 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install Python deps
+        run: pip install -r scripts/requirements.txt
+
+      - name: Install Node deps
+        run: npm ci
+
+      - name: Restore Garmin tokens
+        env:
+          GARMIN_TOKENS_B64: ${{ secrets.GARMIN_TOKENS_B64 }}
+        run: |
+          if [ -z "$GARMIN_TOKENS_B64" ]; then
+            echo "No GARMIN_TOKENS_B64 secret — login may require MFA"
+            exit 0
+          fi
+          mkdir -p data
+          echo "$GARMIN_TOKENS_B64" | base64 -d > data/.garmin-tokens
+
+      - name: Sync Garmin + AI coach
+        env:
+          GARMIN_EMAIL: ${{ secrets.GARMIN_EMAIL }}
+          GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: npm run sync
+
+      - name: Commit dashboard data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/dashboard.json
+          if git diff --staged --quiet; then
+            echo "No dashboard changes"
+            exit 0
+          fi
+          git commit -m "chore: sync Garmin dashboard data"
+          git push

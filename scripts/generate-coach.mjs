@@ -6,8 +6,8 @@ import dotenv from "dotenv";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
-const DATA_PATH = path.join(ROOT, "data", "dashboard.json");
-const PUBLIC_DATA_PATH = path.join(ROOT, "public", "data", "dashboard.json");
+const DATA_PATH = process.env.DATA_PATH || path.join(ROOT, "data", "dashboard.json");
+const PUBLIC_DATA_PATH = process.env.PUBLIC_DATA_PATH || path.join(ROOT, "public", "data", "dashboard.json");
 
 dotenv.config({ path: path.join(ROOT, ".env") });
 

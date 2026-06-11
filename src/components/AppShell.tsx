@@ -9,11 +9,13 @@ import { OverviewView } from "./views/OverviewView";
 import { RecoveryView } from "./views/RecoveryView";
 import { SleepView } from "./views/SleepView";
 import { StrainView } from "./views/StrainView";
+import { useDashboard } from "@/lib/DashboardProvider";
 import { useI18n } from "@/lib/i18n";
-import type { DashboardData } from "@/lib/types";
+import { SyncButton } from "./SyncButton";
 
-export function AppShell({ data }: { data: DashboardData }) {
+export function AppShell() {
   const { t, locale } = useI18n();
+  const { data } = useDashboard();
   const [tab, setTab] = useState<TabId>("overview");
   const [shareOpen, setShareOpen] = useState(false);
   const { today, device, history } = data;
@@ -44,6 +46,7 @@ export function AppShell({ data }: { data: DashboardData }) {
                 ›
               </button>
             </div>
+            <SyncButton />
             <CoachPersonaToggle />
             <LocaleToggle />
             <button
