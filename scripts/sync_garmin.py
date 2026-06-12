@@ -262,25 +262,84 @@ def safe_list(val: Any) -> list:
     return []
 
 
+def _extract_bb_points(values_array: Any) -> list[tuple[int, str, int]]:
+    """Return sorted (epoch_ms, HH:MM, level) tuples from Garmin BB arrays."""
+    out: list[tuple[int, str, int]] = []
+    for item in safe_list(values_array):
+        if len(item) < 2 or item[1] is None:
+            continue
+        try:
+            ts, val = int(item[0]), int(item[1])
+        except (TypeError, ValueError):
+            continue
+        if val < 0:
+            continue
+        out.append((ts, datetime.fromtimestamp(ts / 1000).strftime("%H:%M"), val))
+    out.sort(key=lambda row: row[0])
+    return out
+
+
+def _bb_summary_scalars(summary: dict[str, Any]) -> tuple[int, int, int]:
+    recent = int(summary.get("bodyBatteryMostRecentValue") or 0)
+    low = int(summary.get("bodyBatteryLowestValue") or 0)
+    high = int(summary.get("bodyBatteryHighestValue") or 0)
+    if recent <= 0 and low <= 0 and high <= 0:
+        return 0, 0, 0
+    now = recent or high or low
+    bb_min = low or now
+    bb_max = high or now
+    return now, bb_min, bb_max
+
+
 def parse_body_battery(api, day: str) -> tuple[list[dict], int, int, int]:
+    merged: dict[int, tuple[str, int]] = {}
+
     try:
         rows = api.get_body_battery(day, day)
-        points = []
-        values = []
         for row in safe_list(rows):
-            for item in safe_list(row.get("bodyBatteryValuesArray")):
-                if len(item) >= 2:
-                    ts, val = item[0], item[1]
-                    if val is None:
-                        continue
-                    t = datetime.fromtimestamp(ts / 1000).strftime("%H:%M")
-                    points.append({"time": t, "value": int(val)})
-                    values.append(int(val))
-        if not points:
-            return [], 0, 0, 0
-        return points, values[-1], min(values), max(values)
+            if not isinstance(row, dict):
+                continue
+            for ts, label, val in _extract_bb_points(row.get("bodyBatteryValuesArray")):
+                merged[ts] = (label, val)
     except Exception:
-        return [], 0, 0, 0
+        pass
+
+    if not merged:
+        try:
+            stress = api.get_all_day_stress(day)
+            if isinstance(stress, dict):
+                for ts, label, val in _extract_bb_points(stress.get("bodyBatteryValuesArray")):
+                    merged[ts] = (label, val)
+        except Exception:
+            pass
+
+    summary_now = summary_min = summary_max = 0
+    try:
+        summary = api.get_user_summary(day)
+        if isinstance(summary, dict):
+            summary_now, summary_min, summary_max = _bb_summary_scalars(summary)
+    except Exception:
+        pass
+
+    if merged:
+        ordered = sorted(merged.items(), key=lambda item: item[0])
+        points = [{"time": label, "value": val} for _, (label, val) in ordered]
+        values = [val for _, val in ordered]
+        return points, values[-1], min(values), max(values)
+
+    if summary_now > 0:
+        ref = date.fromisoformat(day)
+        is_today = ref == date.today()
+        now_label = datetime.now().strftime("%H:%M") if is_today else "20:00"
+        curve: list[dict[str, Any]] = []
+        if summary_min > 0 and summary_min != summary_now:
+            curve.append({"time": "06:30", "value": summary_min})
+        if summary_max > 0 and summary_max not in {summary_min, summary_now}:
+            curve.append({"time": "14:00", "value": summary_max})
+        curve.append({"time": now_label, "value": summary_now})
+        return curve, summary_now, summary_min or summary_now, summary_max or summary_now
+
+    return [], 0, 0, 0
 
 
 SLEEP_LEVEL_MAP = {0: "awake", 1: "light", 2: "deep", 3: "rem"}

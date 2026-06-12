@@ -169,7 +169,13 @@ export function OverviewView({
       </DashboardTile>
 
       <DashboardTile span="2/3" noPadding className="overflow-hidden !p-0">
-        <DayCurvesClient bodyBattery={today.curves.bodyBattery} stress={today.curves.stress} />
+        <DayCurvesClient
+          bodyBattery={today.curves.bodyBattery}
+          stress={today.curves.stress}
+          bodyBatteryNow={today.vitals.bodyBatteryNow}
+          bodyBatteryMin={today.vitals.bodyBatteryMin}
+          bodyBatteryMax={today.vitals.bodyBatteryMax}
+        />
       </DashboardTile>
 
       <DashboardTile span="1/3" title={t.strain.activities}>
