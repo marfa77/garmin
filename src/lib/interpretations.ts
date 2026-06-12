@@ -23,7 +23,7 @@ export function sleepHoursVsNeeded(day: DailySummary) {
 export function sleepEfficiency(day: DailySummary) {
   const total = day.sleep.deepMin + day.sleep.remMin + day.sleep.lightMin + day.sleep.awakeMin;
   const asleep = total - day.sleep.awakeMin;
-  const pct = total > 0 ? Math.round((asleep / total) * 100) : day.sleep.score;
+  const pct = total > 0 ? Math.round((asleep / total) * 100) : 0;
   const status: Status = pct >= 90 ? "optimal" : pct >= 82 ? "good" : pct >= 72 ? "sufficient" : "pay_attention";
   return { pct, status };
 }

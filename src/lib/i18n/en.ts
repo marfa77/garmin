@@ -143,6 +143,10 @@ export const en = {
     legendPoor: "Poor",
     legendSufficient: "Sufficient",
     legendOptimal: "Optimal",
+    pendingToday: "No sleep data for today yet — your watch may still be syncing to Garmin Connect.",
+    pendingHint: "Tap Sync after your watch uploads, or check back in an hour.",
+    pendingWithFallback: "Today's sleep isn't in Garmin yet — showing your most recent recorded night below.",
+    showingLastNight: "Last recorded night ({date}) — tap Sync when your watch has uploaded today's sleep.",
     footer:
       "Recovery blends overnight HRV, resting heart rate, sleep quality, and recent training load. Green means your body is primed for exertion.",
   },
@@ -188,6 +192,7 @@ export const en = {
     dayLoad: "Day load",
     strainBreakdown: "Strain breakdown",
     strainBreakdownHint: "Workouts + steps & daily active calories (walking, chores, commute). Resting calories are not counted toward strain.",
+    earlyDayHint: "No movement yet today — steps and strain update as you go. Tap Sync after your watch uploads to Garmin.",
     workoutStrain: "Workouts",
     lifestyleStrain: "Daily movement",
     dailyMovement: "Steps & calories",

@@ -1,11 +1,11 @@
 {
   "device": "Garmin Venu 2",
-  "syncedAt": "2026-06-11T07:44:49.282242Z",
+  "syncedAt": "2026-06-12T06:47:31.614857Z",
   "source": "garmin",
   "today": {
-    "date": "2026-06-11",
+    "date": "2026-06-12",
     "recovery": {
-      "score": 89,
+      "score": 91,
       "zone": "green",
       "drivers": [
         {
@@ -25,15 +25,15 @@
         {
           "factor": "load",
           "label": "Prior strain",
-          "value": 14.6,
+          "value": 12.7,
           "impact": "medium"
         },
         {
           "factor": "rhr",
           "label": "Resting HR",
           "value": 52,
-          "baseline": 58,
-          "delta": "-6 bpm",
+          "baseline": 55,
+          "delta": "-3 bpm",
           "impact": "positive"
         }
       ]
@@ -67,13 +67,13 @@
       "lightMin": 0,
       "awakeMin": 0,
       "hypnogram": [],
-      "debt7d": 19.9
+      "debt7d": 12.5
     },
     "vitals": {
       "hrv": 45,
       "hrvBaseline": 45,
       "rhr": 52,
-      "rhrBaseline": 58,
+      "rhrBaseline": 55,
       "stressAvg": 0,
       "stressMax": 0,
       "bodyBatteryNow": 0,
@@ -86,10 +86,10 @@
       "fitnessAgeSource": "garmin",
       "fitnessAgeTips": [
         "BMI is the top lever — about 1.7 points from Garmin's target.",
-        "Add ~8 vigorous minutes per week to lower fitness age."
+        "Add ~1 vigorous minutes per week to lower fitness age."
       ],
       "respirationRate": null,
-      "readinessScore": 78,
+      "readinessScore": 79,
       "readinessZone": "high",
       "readinessLabel": "High"
     },
@@ -99,77 +99,71 @@
     },
     "coach": {
       "morning": {
-        "headline": "Fantastic recovery and heart calm!",
-        "insight": "Today you're waking up feeling incredibly refreshed and ready, with your recovery score soaring and your heart rate even lower than usual. This is a clear sign your body is truly absorbing all the good work you've been putting in. While your sleep quality was good, there's still a bit of a sleep debt lingering, which is something to keep an eye on to maintain this excellent recovery. Your heart signals are beautifully calm, setting a wonderful tone for the day.",
-        "dynamics": "This week has been a powerful journey of recovery and balance. We saw a dip in recovery mid-week, but you've consistently brought it back up, showing great resilience. Your resting heart rate has been steadily decreasing, which is a fantastic indicator of improved cardiovascular health and overall calm. You've navigated varying training loads really well, adapting and allowing your body to bounce back stronger each time.",
-        "progress": "You've done a phenomenal job this week prioritizing recovery and listening to your body, culminating in today's stellar numbers. Keep up this mindful approach!",
-        "action": "Today, let's gently re-engage with your movement goals to build on this incredible recovery and keep your momentum going.",
+        "headline": "Ready to Shine, Mind Your Sleep!",
+        "insight": "Today, your body is truly singing! You've woken up with incredible recovery, hitting that green zone with a fantastic 91. Your heart is calm, reflected in that lovely low resting heart rate. While your sleep quality dipped a little last night, the overall picture shows a body ready to take on the day with great energy.",
+        "dynamics": "This past week has been a real journey. We saw a dip in recovery mid-week, likely due to a lower sleep score, but you bounced back beautifully. Your heart signals have been steadily improving, with your resting heart rate trending down, which is a wonderful sign of deep rest and resilience. You've also managed your training load well, with a nice wave of effort and recovery.",
+        "progress": "It's fantastic to see how consistently you're achieving high recovery scores, with 6 green days this week! Your body is clearly responding well to your efforts, and that lower resting heart rate is a testament to your commitment to health.",
+        "action": "Today is a perfect day to embrace some movement; let's aim for a workout that feels good and helps you chip away at that remaining strain target!",
         "watchouts": [
-          "While your sleep quality was good, that lingering sleep debt is still present. Prioritizing consistent, full nights of sleep will help you feel even more energized.",
-          "Today's training load is currently at zero. Let's make sure you're getting enough movement to stay on track with your fitness goals."
+          "Let's keep an eye on that sleep debt; it's a bit higher than ideal and can quietly chip away at your overall well-being.",
+          "While your recovery is excellent today, remember that sleep is a cornerstone, so aim to hit your target sleep hours consistently."
         ]
       },
       "evening": {
-        "headline": "Great Recovery, Low Strain Day!",
-        "insight": "You've had an excellent recovery day with a score of 89% and a significantly lower resting heart rate. Today's strain was zero, which is likely contributing to your high recovery. However, remember to aim for your target strain of 14-18 to maintain fitness. Your sleep debt is quite high at 19.9 hours over the last 7 days, even though your RHR is looking great. Prioritize getting enough sleep tonight to chip away at that debt.",
-        "action": "Aim for at least 7.5 hours of quality sleep tonight to reduce your sleep debt. Consider a light activity tomorrow to start building back your strain towards your target of 14-18.",
+        "headline": "Great Recovery, Aim for Consistent Sleep Tonight!",
+        "insight": "You've achieved an excellent recovery score of 91% today, driven by a stable HRV and a positive drop in your resting heart rate. This is fantastic! However, your sleep score of 70% indicates you didn't quite hit your sleep goal last night, contributing to a 7-day sleep debt of 12.5 hours. With zero strain today, your body is primed for optimal rest. Focus on a solid night's sleep to fully capitalize on your recovery and reduce that debt.",
+        "action": "Aim for at least 7.5 hours of quality sleep tonight. Create a relaxing bedtime routine, avoid screens an hour before bed, and ensure your sleep environment is dark and cool. This will help reduce your sleep debt and consolidate your strong recovery.",
         "watchouts": [
-          "Your sleep debt is substantial. Focus on extending your sleep tonight and over the next few days.",
-          "Today's strain was 0. While good for recovery, ensure you're consistently hitting your target strain range to avoid undertraining."
+          "Despite the good recovery, your current sleep debt is significant. Prioritize sleep tonight to start chipping away at it.",
+          "Your HRV has remained consistent, which is good, but ensuring adequate sleep will help maintain and potentially improve it further."
         ]
       },
       "morningRu": {
-        "headline": "Отличное восстановление, ты молодец!",
-        "insight": "Сегодня ты просыпаешься с фантастическим восстановлением, почти на пике, и это здорово! Твоё сердце очень спокойно, а организм явно набрался сил. Единственное, что стоит заметить — сон был чуть короче, чем нужно, но это не помешало тебе отлично восстановиться.",
-        "dynamics": "За последнюю неделю мы видим, как твое тело уверенно движется к балансу. После небольшого провала в восстановлении в воскресенье, ты отлично поработал над собой. Сон стал более стабильным, и особенно радует, как твоё сердце успокаивается, снижая пульс покоя.",
-        "progress": "Я очень горжусь тобой! Твоё восстановление выросло на целых 10% за неделю, и все дни ты держишься в зелёной зоне. Это прекрасный показатель того, как ты заботишься о себе.",
-        "action": "Сегодня — прекрасный день, чтобы подарить себе полноценный и качественный сон, чтобы завтра ты проснулся ещё более энергичным!",
-        "watchouts": [
-          "Обрати внимание на сон, он пока не всегда дотягивает до нормы, и есть небольшой накопившийся долг.",
-          "Не забывай про тренировки, чтобы поддерживать тонус и не растерять форму."
-        ]
-      },
-      "eveningRu": {
-        "headline": "Отличная динамика восстановления!",
-        "insight": "Ваш показатель восстановления сегодня составляет 89, что является отличным результатом! Это подкрепляется снижением ЧСС в покое на 6 ударов в минуту по сравнению с базовым уровнем, что свидетельствует о хорошем состоянии сердечно-сосудистой системы. Однако, несмотря на это, ваш сон сегодня был неоптимальным (70%), и за последние 7 дней у вас накопился значительный дефицит сна в 19.9 часов. Это может негативно сказаться на вашей долгосрочной производительности и восстановлении.",
-        "action": "Сфокусируйтесь на улучшении гигиены сна. Постарайтесь сегодня лечь спать раньше и создать максимально комфортные условия для полноценного отдыха. Завтра, когда вы будете планировать тренировку, учтите, что вам нужно набрать от 14 до 18 единиц нагрузки, чтобы выйти из зоны недостаточной тренированности. Отличная возможность для легкой или умеренной тренировки, чтобы поддержать вашу форму и не перегружать организм.",
-        "watchouts": [
-          "Обратите внимание на качество и продолжительность сна. Несмотря на высокий показатель восстановления, недостаток сна может быть скрытым фактором, влияющим на вашу энергию и когнитивные функции.",
-          "Ваш текущий показатель нагрузки (strain) составляет 0, и вы находитесь в зоне недостаточной тренированности. Это может быть связано с тем, что сегодня вы не тренировались.",
-          "Несмотря на то, что HRV остается стабильным, уделите внимание сну, чтобы поддержать и улучшить этот показатель."
-        ]
+        "headline": "Listen to your body",
+        "insight": "{\n  \"headline\": \"Отличное восстановление, пора двигаться!\",\n  \"insight\": \"Сегодня твое тело говорит тебе «спасибо»! Восстановление на высоте, сердце",
+        "action": "",
+        "watchouts": []
       },
       "morningSarcastic": {
-        "headline": "Recovery: So Good It's Suspicious",
-        "insight": "Looks like you're practically a zen master today, with an 89% recovery score and your RHR dropping like a stone. Either you've discovered the secret to eternal youth, or you've just been incredibly lazy. Given your zero strain, I'm leaning towards the latter. Don't let that green recovery zone fool you into thinking you're invincible; it just means your body is ready to actually *do* something.",
-        "dynamics": "Your recovery has been consistently stellar this week, which is great, I guess. The average strain of 13.3 suggests you're operating at a 'mildly active houseplant' level. And that 19.9-hour sleep debt? That's not a debt, that's a lifestyle choice. You're basically auditioning for a role as a professional napper.",
-        "progress": "Your body's apparently been doing a fantastic job of recovering from... well, mostly nothing this week. At least your RHR is looking sharp; perhaps it's just really bored.",
-        "action": "Go forth and acquire some strain, preferably before your muscles atrophy from disuse. Your body is practically begging for it.",
+        "headline": "Recovery? You're practically glowing.",
+        "insight": "Well, look at you, Mr./Ms. Perfect Recovery today. A whopping 91% in the green. Your HRV is stable, your RHR is doing a little happy dance, and your prior strain was apparently just enough to keep you from turning into a couch potato. Now, if only we could figure out where all that glorious recovery went, considering your sleep score is a solid 'meh' at 70%.",
+        "dynamics": "Over the past week, you've been a recovery machine, hitting green 6 out of 7 days. Your average strain was a respectable 14.2, proving you're not entirely allergic to effort. However, your sleep score has dipped a bit, which is concerning, especially with a sleep debt that could fund a small country. We can't all be perfect, can we?",
+        "progress": "Your recovery is consistently impressive, and your RHR is clearly trying to win an award for 'most improved'. Keep up the good work, you almost make me believe in miracles.",
+        "action": "Go forth and move, but maybe try to get some actual sleep tonight, unless you're aiming for a world record in sleep deprivation.",
         "watchouts": [
-          "That 19.9-hour sleep debt could fund a small country, or at least a very long nap. Time to pay up.",
-          "Your training balance is screaming 'undertraining' louder than a banshee. Are you sure you haven't confused 'training' with 'sitting still'?",
-          "A recovery score this high with zero strain is like getting a perfect score on a test you didn't even take."
+          "Your sleep debt is currently 12.5 hours. Are you running a secret night shift?",
+          "Today's strain is 0. Did you forget how to move, or are you just admiring your recovery score?",
+          "Your body battery is at 0. Perhaps you should consider plugging yourself in."
         ]
       },
       "morningSarcasticRu": {
-        "headline": "Ты восстановился? Или просто забыл, как напрягаться?",
-        "insight": "Сегодня ты, видимо, решил объявить забастовку: ноль нагрузки, ноль стресса. Зато восстановление на 89% — ну, хоть что-то. С таким 'отдыхом' и 70% сна ты, наверное, уже чувствуешь себя готовым к марафону… по лежанию на диване. И, о чудо, пульс покоя упал до 52, ты же не умер, правда?",
-        "dynamics": "За неделю ты продемонстрировал завидную стабильность… в своём HRV (45 — как будто застрял во времени). Средний сон в 73% и среднее восстановление в 82% показывают, что ты, в принципе, способен функционировать. А вот тренировочная нагрузка скачет как белка по деревьям, то 21, то 0. Ну, хоть все дни зелёные, это уже достижение.",
-        "progress": "Поздравляю, ты умудрился снизить пульс покоя с 64 до 52. Может, ты просто перестал дышать так часто? Отличный прогресс, если это не означает, что ты впал в кому.",
-        "action": "Ну что, может, сегодня попробуешь не просто дышать, а ещё и что-то сделать? Хотя бы 14 минут умеренной активности, чтобы не забыть, как это — двигаться.",
+        "headline": "Ты ещё жив? Сегодня почти человек!",
+        "insight": "Сегодня ты, похоже, решил поразить всех своей способностью к восстановлению — 91% Recovery, почти как новый! Видимо, твоё тело решило взять выходной, пока ты там где-то бездельничал, потому что Strain равен нулю, а сон… ну, 70% от нормы, но это уже прогресс, учитывая твой хронический недосып. RHR упал на 3 удара, что, вероятно, просто означает, что ты наконец-то перестал бегать от своих проблем.",
+        "dynamics": "За последнюю неделю ты демонстрировал завидную стабильность в своём восстановлении, проведя 6 дней в зелёной зоне. Похоже, ты наконец-то понял, что телу нужен отдых, хотя твой средний Strain в 14.2 говорит о том, что ты не сильно-то и перетруждался. И да, твой 'долг сна' в 12.5 часов за неделю — это уже не долг, а ипотека. Поздравляю, ты почти как я – уставший, но функциональный.",
+        "progress": "Несмотря на твою любовь к недосыпу, ты умудрился поддерживать высокую Recovery и даже снизить RHR. Кто бы мог подумать, что даже ты способен на такое?",
+        "action": "Попробуй сегодня не только восстанавливаться, но и, возможно, даже что-то сделать. Ну, ты понял.",
         "watchouts": [
-          "Твой сон сегодня 70%, а долг сна за неделю почти 20 часов. Ты, похоже, копишь его на чёрный день, чтобы потом отсыпаться весь год?",
-          "Сегодняшняя тренировочная нагрузка — 0. Ты точно знаешь, что такое 'тренировка'? Или просто забыл, где спортзал?",
-          "С твоим 'недотренингом' ты скоро превратишься в диванного эксперта по спорту, а не в его активного участника."
+          "Твой Strain сегодня 0. Ноль, Карл! Ты точно не превратился в диванного эксперта?",
+          "Долг сна в 12.5 часов — это не просто долг, это уже кредитная история. Может, пора выплатить хоть часть?",
+          "Твоя Body Battery сегодня 0. Ты уверен, что не забыл зарядиться? Или ты просто притворяешься мёртвым, чтобы избежать тренировки?"
+        ]
+      },
+      "eveningRu": {
+        "headline": "Отличная готовность к тренировкам завтра!",
+        "insight": "Сегодняшний день без тренировок и отличные показатели восстановления (91%) создают идеальные условия для завтрашних нагрузок. Ваш пульс покоя снизился на 3 удара по сравнению с базовым, что является отличным знаком восстановления. Однако, обратите внимание на дефицит сна за последнюю неделю (12.5 часов) — это может повлиять на долгосрочное восстановление, если не будет компенсировано.",
+        "action": "Запланируйте завтра тренировку с нагрузкой от 14 до 18, чтобы достичь целевых показателей и использовать высокий уровень восстановления. Постарайтесь лечь спать пораньше сегодня, чтобы компенсировать дефицит сна и обеспечить оптимальное восстановление организма.",
+        "watchouts": [
+          "Дефицит сна за 7 дней (12.5 часов) может негативно сказаться на долгосрочном восстановлении и производительности. Постарайтесь компенсировать его в ближайшие дни.",
+          "Несмотря на отличные показатели восстановления, сегодня вы не достигли минимальной целевой нагрузки. Убедитесь, что завтрашняя тренировка будет достаточной для поддержания вашего прогресса."
         ]
       }
     }
   },
   "history": [
     {
-      "date": "2026-06-11",
+      "date": "2026-06-12",
       "recovery": {
-        "score": 89,
+        "score": 91,
         "zone": "green",
         "drivers": [
           {
@@ -189,15 +183,15 @@
           {
             "factor": "load",
             "label": "Prior strain",
-            "value": 14.6,
+            "value": 12.7,
             "impact": "medium"
           },
           {
             "factor": "rhr",
             "label": "Resting HR",
             "value": 52,
-            "baseline": 58,
-            "delta": "-6 bpm",
+            "baseline": 55,
+            "delta": "-3 bpm",
             "impact": "positive"
           }
         ]
@@ -231,13 +225,13 @@
         "lightMin": 0,
         "awakeMin": 0,
         "hypnogram": [],
-        "debt7d": 19.9
+        "debt7d": 12.5
       },
       "vitals": {
         "hrv": 45,
         "hrvBaseline": 45,
         "rhr": 52,
-        "rhrBaseline": 58,
+        "rhrBaseline": 55,
         "stressAvg": 0,
         "stressMax": 0,
         "bodyBatteryNow": 0,
@@ -250,10 +244,10 @@
         "fitnessAgeSource": "garmin",
         "fitnessAgeTips": [
           "BMI is the top lever — about 1.7 points from Garmin's target.",
-          "Add ~8 vigorous minutes per week to lower fitness age."
+          "Add ~1 vigorous minutes per week to lower fitness age."
         ],
         "respirationRate": null,
-        "readinessScore": 78,
+        "readinessScore": 79,
         "readinessZone": "high",
         "readinessLabel": "High"
       },
@@ -263,68 +257,443 @@
       },
       "coach": {
         "morning": {
-          "headline": "Fantastic recovery and heart calm!",
-          "insight": "Today you're waking up feeling incredibly refreshed and ready, with your recovery score soaring and your heart rate even lower than usual. This is a clear sign your body is truly absorbing all the good work you've been putting in. While your sleep quality was good, there's still a bit of a sleep debt lingering, which is something to keep an eye on to maintain this excellent recovery. Your heart signals are beautifully calm, setting a wonderful tone for the day.",
-          "dynamics": "This week has been a powerful journey of recovery and balance. We saw a dip in recovery mid-week, but you've consistently brought it back up, showing great resilience. Your resting heart rate has been steadily decreasing, which is a fantastic indicator of improved cardiovascular health and overall calm. You've navigated varying training loads really well, adapting and allowing your body to bounce back stronger each time.",
-          "progress": "You've done a phenomenal job this week prioritizing recovery and listening to your body, culminating in today's stellar numbers. Keep up this mindful approach!",
-          "action": "Today, let's gently re-engage with your movement goals to build on this incredible recovery and keep your momentum going.",
+          "headline": "Ready to Shine, Mind Your Sleep!",
+          "insight": "Today, your body is truly singing! You've woken up with incredible recovery, hitting that green zone with a fantastic 91. Your heart is calm, reflected in that lovely low resting heart rate. While your sleep quality dipped a little last night, the overall picture shows a body ready to take on the day with great energy.",
+          "dynamics": "This past week has been a real journey. We saw a dip in recovery mid-week, likely due to a lower sleep score, but you bounced back beautifully. Your heart signals have been steadily improving, with your resting heart rate trending down, which is a wonderful sign of deep rest and resilience. You've also managed your training load well, with a nice wave of effort and recovery.",
+          "progress": "It's fantastic to see how consistently you're achieving high recovery scores, with 6 green days this week! Your body is clearly responding well to your efforts, and that lower resting heart rate is a testament to your commitment to health.",
+          "action": "Today is a perfect day to embrace some movement; let's aim for a workout that feels good and helps you chip away at that remaining strain target!",
           "watchouts": [
-            "While your sleep quality was good, that lingering sleep debt is still present. Prioritizing consistent, full nights of sleep will help you feel even more energized.",
-            "Today's training load is currently at zero. Let's make sure you're getting enough movement to stay on track with your fitness goals."
+            "Let's keep an eye on that sleep debt; it's a bit higher than ideal and can quietly chip away at your overall well-being.",
+            "While your recovery is excellent today, remember that sleep is a cornerstone, so aim to hit your target sleep hours consistently."
           ]
         },
         "evening": {
-          "headline": "Great Recovery, Low Strain Day!",
-          "insight": "You've had an excellent recovery day with a score of 89% and a significantly lower resting heart rate. Today's strain was zero, which is likely contributing to your high recovery. However, remember to aim for your target strain of 14-18 to maintain fitness. Your sleep debt is quite high at 19.9 hours over the last 7 days, even though your RHR is looking great. Prioritize getting enough sleep tonight to chip away at that debt.",
-          "action": "Aim for at least 7.5 hours of quality sleep tonight to reduce your sleep debt. Consider a light activity tomorrow to start building back your strain towards your target of 14-18.",
+          "headline": "Great Recovery, Aim for Consistent Sleep Tonight!",
+          "insight": "You've achieved an excellent recovery score of 91% today, driven by a stable HRV and a positive drop in your resting heart rate. This is fantastic! However, your sleep score of 70% indicates you didn't quite hit your sleep goal last night, contributing to a 7-day sleep debt of 12.5 hours. With zero strain today, your body is primed for optimal rest. Focus on a solid night's sleep to fully capitalize on your recovery and reduce that debt.",
+          "action": "Aim for at least 7.5 hours of quality sleep tonight. Create a relaxing bedtime routine, avoid screens an hour before bed, and ensure your sleep environment is dark and cool. This will help reduce your sleep debt and consolidate your strong recovery.",
           "watchouts": [
-            "Your sleep debt is substantial. Focus on extending your sleep tonight and over the next few days.",
-            "Today's strain was 0. While good for recovery, ensure you're consistently hitting your target strain range to avoid undertraining."
+            "Despite the good recovery, your current sleep debt is significant. Prioritize sleep tonight to start chipping away at it.",
+            "Your HRV has remained consistent, which is good, but ensuring adequate sleep will help maintain and potentially improve it further."
           ]
         },
         "morningRu": {
-          "headline": "Отличное восстановление, ты молодец!",
-          "insight": "Сегодня ты просыпаешься с фантастическим восстановлением, почти на пике, и это здорово! Твоё сердце очень спокойно, а организм явно набрался сил. Единственное, что стоит заметить — сон был чуть короче, чем нужно, но это не помешало тебе отлично восстановиться.",
-          "dynamics": "За последнюю неделю мы видим, как твое тело уверенно движется к балансу. После небольшого провала в восстановлении в воскресенье, ты отлично поработал над собой. Сон стал более стабильным, и особенно радует, как твоё сердце успокаивается, снижая пульс покоя.",
-          "progress": "Я очень горжусь тобой! Твоё восстановление выросло на целых 10% за неделю, и все дни ты держишься в зелёной зоне. Это прекрасный показатель того, как ты заботишься о себе.",
-          "action": "Сегодня — прекрасный день, чтобы подарить себе полноценный и качественный сон, чтобы завтра ты проснулся ещё более энергичным!",
-          "watchouts": [
-            "Обрати внимание на сон, он пока не всегда дотягивает до нормы, и есть небольшой накопившийся долг.",
-            "Не забывай про тренировки, чтобы поддерживать тонус и не растерять форму."
-          ]
-        },
-        "eveningRu": {
-          "headline": "Отличная динамика восстановления!",
-          "insight": "Ваш показатель восстановления сегодня составляет 89, что является отличным результатом! Это подкрепляется снижением ЧСС в покое на 6 ударов в минуту по сравнению с базовым уровнем, что свидетельствует о хорошем состоянии сердечно-сосудистой системы. Однако, несмотря на это, ваш сон сегодня был неоптимальным (70%), и за последние 7 дней у вас накопился значительный дефицит сна в 19.9 часов. Это может негативно сказаться на вашей долгосрочной производительности и восстановлении.",
-          "action": "Сфокусируйтесь на улучшении гигиены сна. Постарайтесь сегодня лечь спать раньше и создать максимально комфортные условия для полноценного отдыха. Завтра, когда вы будете планировать тренировку, учтите, что вам нужно набрать от 14 до 18 единиц нагрузки, чтобы выйти из зоны недостаточной тренированности. Отличная возможность для легкой или умеренной тренировки, чтобы поддержать вашу форму и не перегружать организм.",
-          "watchouts": [
-            "Обратите внимание на качество и продолжительность сна. Несмотря на высокий показатель восстановления, недостаток сна может быть скрытым фактором, влияющим на вашу энергию и когнитивные функции.",
-            "Ваш текущий показатель нагрузки (strain) составляет 0, и вы находитесь в зоне недостаточной тренированности. Это может быть связано с тем, что сегодня вы не тренировались.",
-            "Несмотря на то, что HRV остается стабильным, уделите внимание сну, чтобы поддержать и улучшить этот показатель."
-          ]
+          "headline": "Listen to your body",
+          "insight": "{\n  \"headline\": \"Отличное восстановление, пора двигаться!\",\n  \"insight\": \"Сегодня твое тело говорит тебе «спасибо»! Восстановление на высоте, сердце",
+          "action": "",
+          "watchouts": []
         },
         "morningSarcastic": {
-          "headline": "Recovery: So Good It's Suspicious",
-          "insight": "Looks like you're practically a zen master today, with an 89% recovery score and your RHR dropping like a stone. Either you've discovered the secret to eternal youth, or you've just been incredibly lazy. Given your zero strain, I'm leaning towards the latter. Don't let that green recovery zone fool you into thinking you're invincible; it just means your body is ready to actually *do* something.",
-          "dynamics": "Your recovery has been consistently stellar this week, which is great, I guess. The average strain of 13.3 suggests you're operating at a 'mildly active houseplant' level. And that 19.9-hour sleep debt? That's not a debt, that's a lifestyle choice. You're basically auditioning for a role as a professional napper.",
-          "progress": "Your body's apparently been doing a fantastic job of recovering from... well, mostly nothing this week. At least your RHR is looking sharp; perhaps it's just really bored.",
-          "action": "Go forth and acquire some strain, preferably before your muscles atrophy from disuse. Your body is practically begging for it.",
+          "headline": "Recovery? You're practically glowing.",
+          "insight": "Well, look at you, Mr./Ms. Perfect Recovery today. A whopping 91% in the green. Your HRV is stable, your RHR is doing a little happy dance, and your prior strain was apparently just enough to keep you from turning into a couch potato. Now, if only we could figure out where all that glorious recovery went, considering your sleep score is a solid 'meh' at 70%.",
+          "dynamics": "Over the past week, you've been a recovery machine, hitting green 6 out of 7 days. Your average strain was a respectable 14.2, proving you're not entirely allergic to effort. However, your sleep score has dipped a bit, which is concerning, especially with a sleep debt that could fund a small country. We can't all be perfect, can we?",
+          "progress": "Your recovery is consistently impressive, and your RHR is clearly trying to win an award for 'most improved'. Keep up the good work, you almost make me believe in miracles.",
+          "action": "Go forth and move, but maybe try to get some actual sleep tonight, unless you're aiming for a world record in sleep deprivation.",
           "watchouts": [
-            "That 19.9-hour sleep debt could fund a small country, or at least a very long nap. Time to pay up.",
-            "Your training balance is screaming 'undertraining' louder than a banshee. Are you sure you haven't confused 'training' with 'sitting still'?",
-            "A recovery score this high with zero strain is like getting a perfect score on a test you didn't even take."
+            "Your sleep debt is currently 12.5 hours. Are you running a secret night shift?",
+            "Today's strain is 0. Did you forget how to move, or are you just admiring your recovery score?",
+            "Your body battery is at 0. Perhaps you should consider plugging yourself in."
           ]
         },
         "morningSarcasticRu": {
-          "headline": "Ты восстановился? Или просто забыл, как напрягаться?",
-          "insight": "Сегодня ты, видимо, решил объявить забастовку: ноль нагрузки, ноль стресса. Зато восстановление на 89% — ну, хоть что-то. С таким 'отдыхом' и 70% сна ты, наверное, уже чувствуешь себя готовым к марафону… по лежанию на диване. И, о чудо, пульс покоя упал до 52, ты же не умер, правда?",
-          "dynamics": "За неделю ты продемонстрировал завидную стабильность… в своём HRV (45 — как будто застрял во времени). Средний сон в 73% и среднее восстановление в 82% показывают, что ты, в принципе, способен функционировать. А вот тренировочная нагрузка скачет как белка по деревьям, то 21, то 0. Ну, хоть все дни зелёные, это уже достижение.",
-          "progress": "Поздравляю, ты умудрился снизить пульс покоя с 64 до 52. Может, ты просто перестал дышать так часто? Отличный прогресс, если это не означает, что ты впал в кому.",
-          "action": "Ну что, может, сегодня попробуешь не просто дышать, а ещё и что-то сделать? Хотя бы 14 минут умеренной активности, чтобы не забыть, как это — двигаться.",
+          "headline": "Ты ещё жив? Сегодня почти человек!",
+          "insight": "Сегодня ты, похоже, решил поразить всех своей способностью к восстановлению — 91% Recovery, почти как новый! Видимо, твоё тело решило взять выходной, пока ты там где-то бездельничал, потому что Strain равен нулю, а сон… ну, 70% от нормы, но это уже прогресс, учитывая твой хронический недосып. RHR упал на 3 удара, что, вероятно, просто означает, что ты наконец-то перестал бегать от своих проблем.",
+          "dynamics": "За последнюю неделю ты демонстрировал завидную стабильность в своём восстановлении, проведя 6 дней в зелёной зоне. Похоже, ты наконец-то понял, что телу нужен отдых, хотя твой средний Strain в 14.2 говорит о том, что ты не сильно-то и перетруждался. И да, твой 'долг сна' в 12.5 часов за неделю — это уже не долг, а ипотека. Поздравляю, ты почти как я – уставший, но функциональный.",
+          "progress": "Несмотря на твою любовь к недосыпу, ты умудрился поддерживать высокую Recovery и даже снизить RHR. Кто бы мог подумать, что даже ты способен на такое?",
+          "action": "Попробуй сегодня не только восстанавливаться, но и, возможно, даже что-то сделать. Ну, ты понял.",
           "watchouts": [
-            "Твой сон сегодня 70%, а долг сна за неделю почти 20 часов. Ты, похоже, копишь его на чёрный день, чтобы потом отсыпаться весь год?",
-            "Сегодняшняя тренировочная нагрузка — 0. Ты точно знаешь, что такое 'тренировка'? Или просто забыл, где спортзал?",
-            "С твоим 'недотренингом' ты скоро превратишься в диванного эксперта по спорту, а не в его активного участника."
+            "Твой Strain сегодня 0. Ноль, Карл! Ты точно не превратился в диванного эксперта?",
+            "Долг сна в 12.5 часов — это не просто долг, это уже кредитная история. Может, пора выплатить хоть часть?",
+            "Твоя Body Battery сегодня 0. Ты уверен, что не забыл зарядиться? Или ты просто притворяешься мёртвым, чтобы избежать тренировки?"
+          ]
+        },
+        "eveningRu": {
+          "headline": "Отличная готовность к тренировкам завтра!",
+          "insight": "Сегодняшний день без тренировок и отличные показатели восстановления (91%) создают идеальные условия для завтрашних нагрузок. Ваш пульс покоя снизился на 3 удара по сравнению с базовым, что является отличным знаком восстановления. Однако, обратите внимание на дефицит сна за последнюю неделю (12.5 часов) — это может повлиять на долгосрочное восстановление, если не будет компенсировано.",
+          "action": "Запланируйте завтра тренировку с нагрузкой от 14 до 18, чтобы достичь целевых показателей и использовать высокий уровень восстановления. Постарайтесь лечь спать пораньше сегодня, чтобы компенсировать дефицит сна и обеспечить оптимальное восстановление организма.",
+          "watchouts": [
+            "Дефицит сна за 7 дней (12.5 часов) может негативно сказаться на долгосрочном восстановлении и производительности. Постарайтесь компенсировать его в ближайшие дни.",
+            "Несмотря на отличные показатели восстановления, сегодня вы не достигли минимальной целевой нагрузки. Убедитесь, что завтрашняя тренировка будет достаточной для поддержания вашего прогресса."
+          ]
+        }
+      }
+    },
+    {
+      "date": "2026-06-11",
+      "recovery": {
+        "score": 84,
+        "zone": "green",
+        "drivers": [
+          {
+            "factor": "load",
+            "label": "Prior strain",
+            "value": 18.7,
+            "impact": "high"
+          },
+          {
+            "factor": "hrv",
+            "label": "HRV",
+            "value": 45,
+            "baseline": 45,
+            "delta": "+0%",
+            "impact": "medium"
+          },
+          {
+            "factor": "rhr",
+            "label": "Resting HR",
+            "value": 54,
+            "baseline": 55,
+            "delta": "-1 bpm",
+            "impact": "positive"
+          },
+          {
+            "factor": "sleep",
+            "label": "Sleep",
+            "value": "88%",
+            "impact": "positive"
+          }
+        ]
+      },
+      "strain": {
+        "current": 12.7,
+        "workoutStrain": 9.3,
+        "lifestyleStrain": 3.4,
+        "workoutLoad": 80,
+        "lifestyleLoad": 29.4,
+        "targetMin": 14,
+        "targetMax": 18,
+        "workouts": [
+          {
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "durationMin": 40,
+            "strain": 9.3,
+            "avgHr": 152,
+            "activityId": 23209016339,
+            "maxHr": 168,
+            "calories": 470,
+            "distanceKm": 6.38,
+            "paceMinPerKm": 6.33,
+            "startTime": "12:04",
+            "date": "2026-06-11",
+            "hrZones": {
+              "z1": 0.2,
+              "z2": 0.2,
+              "z3": 3.1,
+              "z4": 34.6,
+              "z5": 2.1
+            },
+            "moderateIntensityMin": 1,
+            "vigorousIntensityMin": 38
+          }
+        ],
+        "dailyActivity": {
+          "steps": 8920,
+          "stepGoal": 10000,
+          "activeCalories": 487,
+          "bmrCalories": 1011,
+          "totalCalories": 1498,
+          "distanceKm": 7.9,
+          "moderateIntensityMin": 3,
+          "vigorousIntensityMin": 42
+        }
+      },
+      "sleep": {
+        "score": 88,
+        "hours": 7.4,
+        "need": 7.5,
+        "deepMin": 91,
+        "remMin": 100,
+        "lightMin": 251,
+        "awakeMin": 1,
+        "hypnogram": [
+          {
+            "level": "light",
+            "minutes": 15,
+            "start": "2026-06-10T17:55"
+          },
+          {
+            "level": "rem",
+            "minutes": 1,
+            "start": "2026-06-10T18:10"
+          },
+          {
+            "level": "light",
+            "minutes": 21,
+            "start": "2026-06-10T18:11"
+          },
+          {
+            "level": "awake",
+            "minutes": 42,
+            "start": "2026-06-10T18:32"
+          },
+          {
+            "level": "light",
+            "minutes": 22,
+            "start": "2026-06-10T19:14"
+          },
+          {
+            "level": "awake",
+            "minutes": 14,
+            "start": "2026-06-10T19:36"
+          },
+          {
+            "level": "light",
+            "minutes": 40,
+            "start": "2026-06-10T19:50"
+          },
+          {
+            "level": "awake",
+            "minutes": 35,
+            "start": "2026-06-10T20:30"
+          },
+          {
+            "level": "light",
+            "minutes": 20,
+            "start": "2026-06-10T21:05"
+          },
+          {
+            "level": "deep",
+            "minutes": 5,
+            "start": "2026-06-10T21:25"
+          },
+          {
+            "level": "light",
+            "minutes": 29,
+            "start": "2026-06-10T21:30"
+          },
+          {
+            "level": "deep",
+            "minutes": 18,
+            "start": "2026-06-10T21:59"
+          },
+          {
+            "level": "light",
+            "minutes": 11,
+            "start": "2026-06-10T22:17"
+          },
+          {
+            "level": "deep",
+            "minutes": 36,
+            "start": "2026-06-10T22:28"
+          },
+          {
+            "level": "light",
+            "minutes": 71,
+            "start": "2026-06-10T23:04"
+          },
+          {
+            "level": "deep",
+            "minutes": 41,
+            "start": "2026-06-11T00:15"
+          },
+          {
+            "level": "light",
+            "minutes": 22,
+            "start": "2026-06-11T00:56"
+          }
+        ],
+        "debt7d": 5
+      },
+      "vitals": {
+        "hrv": 45,
+        "hrvBaseline": 45,
+        "rhr": 54,
+        "rhrBaseline": 55,
+        "stressAvg": 25,
+        "stressMax": 81,
+        "bodyBatteryNow": 40,
+        "bodyBatteryMin": 26,
+        "bodyBatteryMax": 82,
+        "vo2max": 46,
+        "fitnessAge": 40,
+        "chronologicalAge": 45,
+        "achievableFitnessAge": 39,
+        "fitnessAgeSource": "garmin",
+        "fitnessAgeTips": [
+          "BMI is the top lever — about 1.7 points from Garmin's target.",
+          "Add ~1 vigorous minutes per week to lower fitness age."
+        ],
+        "respirationRate": 13,
+        "readinessScore": 84,
+        "readinessZone": "high",
+        "readinessLabel": "High"
+      },
+      "curves": {
+        "bodyBattery": [
+          {
+            "time": "00:00",
+            "value": 26
+          },
+          {
+            "time": "04:15",
+            "value": 73
+          },
+          {
+            "time": "05:15",
+            "value": 82
+          },
+          {
+            "time": "08:30",
+            "value": 62
+          },
+          {
+            "time": "08:36",
+            "value": 62
+          },
+          {
+            "time": "12:45",
+            "value": 40
+          }
+        ],
+        "stress": [
+          {
+            "time": "00:00",
+            "value": 11
+          },
+          {
+            "time": "00:18",
+            "value": 6
+          },
+          {
+            "time": "00:36",
+            "value": 10
+          },
+          {
+            "time": "00:54",
+            "value": 10
+          },
+          {
+            "time": "01:12",
+            "value": 10
+          },
+          {
+            "time": "01:30",
+            "value": 10
+          },
+          {
+            "time": "01:48",
+            "value": 10
+          },
+          {
+            "time": "02:06",
+            "value": 21
+          },
+          {
+            "time": "02:24",
+            "value": 18
+          },
+          {
+            "time": "02:42",
+            "value": 25
+          },
+          {
+            "time": "03:00",
+            "value": 12
+          },
+          {
+            "time": "03:18",
+            "value": 12
+          },
+          {
+            "time": "03:36",
+            "value": 11
+          },
+          {
+            "time": "03:54",
+            "value": 9
+          },
+          {
+            "time": "04:12",
+            "value": 15
+          },
+          {
+            "time": "04:30",
+            "value": 6
+          },
+          {
+            "time": "04:48",
+            "value": 9
+          },
+          {
+            "time": "05:06",
+            "value": 9
+          },
+          {
+            "time": "05:27",
+            "value": 28
+          },
+          {
+            "time": "05:48",
+            "value": 49
+          },
+          {
+            "time": "06:09",
+            "value": 37
+          },
+          {
+            "time": "06:30",
+            "value": 32
+          },
+          {
+            "time": "07:00",
+            "value": 31
+          },
+          {
+            "time": "07:18",
+            "value": 34
+          },
+          {
+            "time": "07:42",
+            "value": 39
+          },
+          {
+            "time": "08:00",
+            "value": 51
+          },
+          {
+            "time": "08:21",
+            "value": 49
+          },
+          {
+            "time": "08:45",
+            "value": 45
+          },
+          {
+            "time": "09:06",
+            "value": 53
+          },
+          {
+            "time": "09:33",
+            "value": 23
+          },
+          {
+            "time": "09:51",
+            "value": 23
+          },
+          {
+            "time": "10:09",
+            "value": 37
+          }
+        ]
+      },
+      "coach": {
+        "morning": {
+          "headline": "Great Recovery and Sleep!",
+          "insight": "You woke up with excellent recovery and sleep scores today. Your Resting Heart Rate (RHR) also saw a positive drop. This strong foundation sets you up for a productive day.",
+          "action": "Consider adding a bit more activity to reach your optimal strain target, perhaps by taking a longer walk or an extra short workout. Aim to hit your step goal today to support overall activity.",
+          "watchouts": [
+            "You are currently undertraining, with your strain at 12.7, below your target range of 14-18.",
+            "You're slightly below your daily step goal of 10,000 steps."
+          ]
+        },
+        "evening": "",
+        "morningRu": {
+          "headline": "Отличное восстановление и качественный сон!",
+          "insight": "Вы прекрасно восстановились (84%) и отлично выспались (88%). Пульс в покое снизился, что говорит о хорошей форме. Сегодняшняя нагрузка была ниже обычного, но в пределах нормы.",
+          "action": "Продолжайте в том же духе, поддерживая баланс между тренировками и отдыхом. Если хотите, можете немного увеличить нагрузку сегодня, чтобы достичь целевых значений.",
+          "watchouts": [
+            "Сегодняшняя нагрузка (12.7) была немного ниже вашей целевой (14-18), но не критично.",
+            "HRV осталась на прежнем уровне, но это не повлияло на общее восстановление."
           ]
         }
       }
@@ -332,7 +701,7 @@
     {
       "date": "2026-06-10",
       "recovery": {
-        "score": 80,
+        "score": 79,
         "zone": "green",
         "drivers": [
           {
@@ -359,18 +728,18 @@
             "factor": "rhr",
             "label": "Resting HR",
             "value": 55,
-            "baseline": 58,
-            "delta": "-3 bpm",
-            "impact": "positive"
+            "baseline": 55,
+            "delta": "+0 bpm",
+            "impact": "low"
           }
         ]
       },
       "strain": {
-        "current": 14.6,
+        "current": 18.7,
         "workoutStrain": 7.5,
-        "lifestyleStrain": 7.1,
+        "lifestyleStrain": 11.2,
         "workoutLoad": 64,
-        "lifestyleLoad": 60.6,
+        "lifestyleLoad": 95.6,
         "targetMin": 14,
         "targetMax": 18,
         "workouts": [
@@ -399,12 +768,12 @@
           }
         ],
         "dailyActivity": {
-          "steps": 11753,
+          "steps": 16267,
           "stepGoal": 10000,
-          "activeCalories": 564,
-          "bmrCalories": 1170,
-          "totalCalories": 1734,
-          "distanceKm": 9.8,
+          "activeCalories": 689,
+          "bmrCalories": 1892,
+          "totalCalories": 2581,
+          "distanceKm": 13.35,
           "moderateIntensityMin": 9,
           "vigorousIntensityMin": 34
         }
@@ -499,17 +868,17 @@
             "start": "2026-06-10T00:23"
           }
         ],
-        "debt7d": 19.9
+        "debt7d": 4.9
       },
       "vitals": {
         "hrv": 45,
         "hrvBaseline": 45,
         "rhr": 55,
-        "rhrBaseline": 58,
+        "rhrBaseline": 55,
         "stressAvg": 32,
         "stressMax": 94,
-        "bodyBatteryNow": 24,
-        "bodyBatteryMin": 20,
+        "bodyBatteryNow": 26,
+        "bodyBatteryMin": 12,
         "bodyBatteryMax": 69,
         "vo2max": 46,
         "fitnessAge": 40,
@@ -532,24 +901,24 @@
             "value": 20
           },
           {
-            "time": "04:54",
-            "value": 68
-          },
-          {
             "time": "04:57",
             "value": 69
           },
           {
-            "time": "09:51",
-            "value": 45
+            "time": "08:00",
+            "value": 54
           },
           {
-            "time": "09:54",
-            "value": 45
+            "time": "15:57",
+            "value": 21
           },
           {
-            "time": "14:36",
-            "value": 24
+            "time": "21:33",
+            "value": 12
+          },
+          {
+            "time": "23:57",
+            "value": 26
           }
         ],
         "stress": [
@@ -558,149 +927,149 @@
             "value": 40
           },
           {
-            "time": "00:18",
-            "value": 29
+            "time": "00:30",
+            "value": 27
           },
           {
-            "time": "00:36",
-            "value": 18
-          },
-          {
-            "time": "01:00",
-            "value": 24
-          },
-          {
-            "time": "01:18",
-            "value": 23
+            "time": "01:06",
+            "value": 43
           },
           {
             "time": "01:36",
             "value": 18
           },
           {
-            "time": "01:54",
+            "time": "02:06",
             "value": 15
           },
           {
-            "time": "02:12",
-            "value": 15
-          },
-          {
-            "time": "02:30",
-            "value": 15
-          },
-          {
-            "time": "02:48",
-            "value": 21
+            "time": "02:36",
+            "value": 12
           },
           {
             "time": "03:06",
             "value": 21
           },
           {
-            "time": "03:24",
-            "value": 12
+            "time": "03:36",
+            "value": 13
           },
           {
-            "time": "03:42",
-            "value": 5
-          },
-          {
-            "time": "04:00",
-            "value": 5
-          },
-          {
-            "time": "04:18",
-            "value": 10
+            "time": "04:06",
+            "value": 9
           },
           {
             "time": "04:36",
             "value": 22
           },
           {
-            "time": "04:54",
-            "value": 10
+            "time": "05:12",
+            "value": 48
           },
           {
-            "time": "05:21",
-            "value": 25
-          },
-          {
-            "time": "05:39",
-            "value": 44
-          },
-          {
-            "time": "05:57",
-            "value": 38
+            "time": "05:45",
+            "value": 45
           },
           {
             "time": "06:15",
             "value": 24
           },
           {
-            "time": "06:45",
-            "value": 46
+            "time": "07:15",
+            "value": 76
           },
           {
-            "time": "07:30",
-            "value": 64
-          },
-          {
-            "time": "08:30",
-            "value": 73
-          },
-          {
-            "time": "08:54",
-            "value": 55
+            "time": "08:36",
+            "value": 49
           },
           {
             "time": "09:12",
             "value": 41
           },
           {
-            "time": "09:42",
-            "value": 42
+            "time": "10:00",
+            "value": 40
           },
           {
-            "time": "10:06",
-            "value": 35
-          },
-          {
-            "time": "10:24",
-            "value": 34
-          },
-          {
-            "time": "12:00",
-            "value": 64
+            "time": "10:33",
+            "value": 54
           },
           {
             "time": "12:18",
             "value": 64
           },
           {
-            "time": "12:48",
-            "value": 25
+            "time": "13:06",
+            "value": 68
+          },
+          {
+            "time": "13:39",
+            "value": 32
+          },
+          {
+            "time": "15:51",
+            "value": 45
+          },
+          {
+            "time": "16:21",
+            "value": 62
+          },
+          {
+            "time": "16:54",
+            "value": 81
+          },
+          {
+            "time": "17:33",
+            "value": 33
+          },
+          {
+            "time": "18:03",
+            "value": 44
+          },
+          {
+            "time": "18:48",
+            "value": 14
+          },
+          {
+            "time": "19:27",
+            "value": 23
+          },
+          {
+            "time": "20:45",
+            "value": 52
+          },
+          {
+            "time": "21:15",
+            "value": 36
+          },
+          {
+            "time": "21:51",
+            "value": 24
+          },
+          {
+            "time": "22:21",
+            "value": 17
           }
         ]
       },
       "coach": {
         "morning": {
-          "headline": "You're in good shape",
-          "insight": "Your body is recovering well from yesterday's higher strain, indicated by a good recovery score and lower resting heart rate. While your sleep quality was decent, you still have some sleep debt. Your training load is currently right on track for your goals.",
-          "action": "Prioritize getting extra sleep tonight to chip away at that debt and recharge your Body Battery.",
+          "headline": "Great recovery, but watch your strain!",
+          "insight": "Your recovery is looking good today, staying in the green zone. However, your overall strain for the day is above your target, indicating a potential overtraining risk. Prioritize adequate rest to maintain this positive recovery trend.",
+          "action": "Consider a lighter activity or active recovery today to bring your strain back into target. Focus on getting a full night's sleep to reduce your growing sleep debt.",
           "watchouts": [
-            "Your Body Battery is quite low (24%), suggesting you're running on reserves.",
-            "You have a significant accumulated sleep debt of nearly 20 hours over the last 7 days."
+            "Daily strain is above target, indicating overtraining.",
+            "Sleep debt is accumulating over the week."
           ]
         },
         "evening": "",
         "morningRu": {
-          "headline": "Хорошее восстановление, но есть недосып",
-          "insight": "Твой организм хорошо восстановился после вчерашней нагрузки, о чем говорит высокий уровень восстановления в 80%. Пульс покоя снизился на 3 удара, что является отличным знаком. Однако, ты снова недобрал сна, и это начинает накапливаться. Тренировочная нагрузка сегодня в норме, ты укладываешься в целевой диапазон.",
-          "action": "Сфокусируйся на качестве и продолжительности сна сегодня, чтобы компенсировать накопившийся дефицит.",
+          "headline": "Восстановление хорошее, но нагрузка превышает норму",
+          "insight": "Ваше восстановление остается в зеленой зоне (79%), но вчерашняя нагрузка (18.7) немного превысила целевой диапазон. Это привело к статусу перетренированности. Убедитесь, что вы достаточно отдыхаете и не перегружаете себя.",
+          "action": "Сосредоточьтесь на активном восстановлении сегодня. Убедитесь, что вы выспались, чтобы компенсировать дефицит сна.",
           "watchouts": [
-            "Сон: Ты спал всего 6.5 часов при потребности в 7.5 часов, и это уже сказывается на недельном долге сна в 19.9 часов.",
-            "Body Battery: Уровень Body Battery сейчас всего 24, что говорит о низком запасе энергии на день."
+            "Нагрузка превысила целевой диапазон, что привело к перетренированности.",
+            "Небольшой дефицит сна (6.5 часов при потребности в 7.5 часов)."
           ]
         }
       }
@@ -735,8 +1104,8 @@
             "factor": "rhr",
             "label": "Resting HR",
             "value": 53,
-            "baseline": 58,
-            "delta": "-5 bpm",
+            "baseline": 55,
+            "delta": "-2 bpm",
             "impact": "positive"
           }
         ]
@@ -880,13 +1249,13 @@
             "start": "2026-06-09T01:35"
           }
         ],
-        "debt7d": 19.5
+        "debt7d": 3.9
       },
       "vitals": {
         "hrv": 45,
         "hrvBaseline": 45,
         "rhr": 53,
-        "rhrBaseline": 58,
+        "rhrBaseline": 55,
         "stressAvg": 30,
         "stressMax": 99,
         "bodyBatteryNow": 15,
@@ -1066,23 +1435,22 @@
       },
       "coach": {
         "morning": {
-          "headline": "Pushing hard, but recovering well",
-          "insight": "Your recovery is excellent today, driven by a significantly lower resting heart rate. However, you've accumulated a high amount of strain, exceeding your target range. Your body is handling the load well, but you are currently overreaching.",
-          "action": "Prioritize active recovery and stress reduction today to help your body bounce back.",
+          "headline": "Great recovery after a high strain day!",
+          "insight": "Your recovery score of 86 is excellent, driven by good sleep efficiency and a lower resting heart rate. This is particularly impressive following yesterday's high strain, indicating your body is adapting well to your training load.",
+          "action": "Maintain your recovery efforts. Consider a lighter activity or active recovery today to allow your body to fully adapt from yesterday's high strain. Continue to prioritize sleep to reduce your weekly sleep debt.",
           "watchouts": [
-            "High overall strain today",
-            "Body Battery is very low (15%)",
-            "Significant sleep debt over the last 7 days"
+            "Your sleep debt for the week is still 3.9 hours, so prioritize getting enough rest tonight.",
+            "Today's strain is already at 21, exceeding your target range. Be mindful of further exertion."
           ]
         },
         "evening": "",
         "morningRu": {
-          "headline": "Отличное восстановление, но не переусердствуй",
-          "insight": "Ваше восстановление сегодня на высоком уровне (86%), во многом благодаря хорошему сну и снижению пульса в покое. Однако сегодняшняя тренировочная нагрузка (21) превышает целевой диапазон, что указывает на перетренировку. Обратите внимание на баланс между активностью и отдыхом.",
-          "action": "Сфокусируйтесь на активном восстановлении и дайте организму отдохнуть после интенсивной нагрузки.",
+          "headline": "Отличное восстановление, но не переусердствуй!",
+          "insight": "Ваше восстановление в зеленой зоне (86%), ЧСС в покое снизилась на 2 удара, но общая нагрузка за день (21) значительно превысила целевую. Сегодня вы явно перетренировались, несмотря на хорошее восстановление.",
+          "action": "Учитывая высокую нагрузку вчера, сегодня сосредоточьтесь на активном восстановлении или легкой тренировке, чтобы избежать переутомления. Постарайтесь выспаться, чтобы компенсировать дефицит сна.",
           "watchouts": [
-            "Сегодняшняя тренировочная нагрузка значительно выше рекомендованной (цель 14-18), что может негативно сказаться на восстановлении.",
-            "Уровень Body Battery к утру низкий (15%), что говорит о недостаточном восполнении энергии за ночь."
+            "Перетренированность: Текущая нагрузка 21, что выше целевого диапазона 14-18.",
+            "Недостаток сна: Вы спали 6.8 часа, при потребности в 7.5 часа, что увеличивает недельный дефицит сна до 3.9 часа."
           ]
         }
       }
@@ -1090,7 +1458,7 @@
     {
       "date": "2026-06-08",
       "recovery": {
-        "score": 84,
+        "score": 82,
         "zone": "green",
         "drivers": [
           {
@@ -1111,9 +1479,9 @@
             "factor": "rhr",
             "label": "Resting HR",
             "value": 56,
-            "baseline": 58,
-            "delta": "-2 bpm",
-            "impact": "positive"
+            "baseline": 55,
+            "delta": "+1 bpm",
+            "impact": "low"
           },
           {
             "factor": "sleep",
@@ -1272,13 +1640,13 @@
             "start": "2026-06-08T01:47"
           }
         ],
-        "debt7d": 19.6
+        "debt7d": 3.2
       },
       "vitals": {
         "hrv": 45,
         "hrvBaseline": 45,
         "rhr": 56,
-        "rhrBaseline": 58,
+        "rhrBaseline": 55,
         "stressAvg": 30,
         "stressMax": 87,
         "bodyBatteryNow": 15,
@@ -1294,7 +1662,7 @@
           "Target 3 vigorous days/week — you're averaging 1.8."
         ],
         "respirationRate": 13,
-        "readinessScore": 80,
+        "readinessScore": 78,
         "readinessZone": "high",
         "readinessLabel": "High"
       },
@@ -1458,23 +1826,21 @@
       },
       "coach": {
         "morning": {
-          "headline": "You're in good shape",
-          "insight": "Your body is recovering well, with a strong recovery score of 84% and excellent sleep quality. Your resting heart rate is also down, which is a positive sign. However, your current training is below your target range, indicating you're undertraining despite your good recovery.",
-          "action": "Consider adding more activity to reach your training goals today.",
+          "headline": "Great Recovery and Sleep!",
+          "insight": "Your recovery is excellent today, driven by a fantastic night's sleep where you exceeded your sleep need. This puts you in a strong position to tackle your training goals.",
+          "action": "You're currently undertraining, so aim to hit your target strain of 14-18 today. With your green recovery, you have the capacity for a solid workout.",
           "watchouts": [
-            "You have a significant sleep debt accumulated over the last 7 days.",
-            "Your Body Battery is quite low at 15, suggesting you might feel fatigued later."
+            "Your RHR increased slightly, but it's still well within a healthy range."
           ]
         },
         "evening": "",
         "morningRu": {
-          "headline": "Отличное восстановление, но нужно больше активности",
-          "insight": "Ваше тело отлично восстановилось, о чем говорит высокий показатель восстановления в 84% и снижение пульса в покое на 2 удара. Вы спали 7.7 часа, что даже немного больше вашей нормы. Однако тренировочная нагрузка по-прежнему остается низкой, вы недотренировываетесь.",
-          "action": "Сегодня сосредоточьтесь на том, чтобы увеличить тренировочную нагрузку и внимательно следите за уровнем энергии в течение дня.",
+          "headline": "Отличное восстановление и качественный сон!",
+          "insight": "Ваше восстановление сегодня на высоком уровне (82%), что обусловлено качественным сном (85%). Несмотря на недавнюю нагрузку, ваше тело хорошо справилось, и вы готовы к активности. Ваша текущая тренировочная нагрузка немного ниже целевой, так что есть пространство для увеличения.",
+          "action": "Сегодня отличный день для более интенсивной тренировки, чтобы достичь целевого диапазона нагрузки. Учитывая хорошее восстановление, вы можете смело увеличивать активность.",
           "watchouts": [
-            "Уровень Body Battery сейчас всего 15, это очень низко. Важно понять, почему он так сильно истощился за ночь.",
-            "Несмотря на хорошее восстановление, ваша тренировочная нагрузка в 11.3 значительно ниже целевого диапазона 14-18. Это может замедлить прогресс.",
-            "Средний уровень стресса 30 — это неплохо, но максимальный стресс достигал 87. Подумайте, что могло вызвать такой всплеск."
+            "Пульс в покое немного выше (56 уд/мин) по сравнению с базовым (55 уд/мин), но это незначительное изменение.",
+            "Ваша тренировочная нагрузка (11.3) находится ниже целевого диапазона (14-18), что указывает на недотренированность."
           ]
         }
       }
@@ -1482,9 +1848,17 @@
     {
       "date": "2026-06-07",
       "recovery": {
-        "score": 67,
-        "zone": "green",
+        "score": 60,
+        "zone": "yellow",
         "drivers": [
+          {
+            "factor": "rhr",
+            "label": "Resting HR",
+            "value": 60,
+            "baseline": 55,
+            "delta": "+5 bpm",
+            "impact": "high"
+          },
           {
             "factor": "sleep",
             "label": "Sleep",
@@ -1504,14 +1878,6 @@
             "baseline": 45,
             "delta": "+0%",
             "impact": "medium"
-          },
-          {
-            "factor": "rhr",
-            "label": "Resting HR",
-            "value": 60,
-            "baseline": 58,
-            "delta": "+2 bpm",
-            "impact": "low"
           }
         ]
       },
@@ -1521,8 +1887,8 @@
         "lifestyleStrain": 8.6,
         "workoutLoad": 72,
         "lifestyleLoad": 74,
-        "targetMin": 14,
-        "targetMax": 18,
+        "targetMin": 10,
+        "targetMax": 14,
         "workouts": [
           {
             "name": "Dubai Corrida",
@@ -1679,13 +2045,13 @@
             "start": "2026-06-07T00:52"
           }
         ],
-        "debt7d": 21.2
+        "debt7d": 3.2
       },
       "vitals": {
         "hrv": 45,
         "hrvBaseline": 45,
         "rhr": 60,
-        "rhrBaseline": 58,
+        "rhrBaseline": 55,
         "stressAvg": 40,
         "stressMax": 99,
         "bodyBatteryNow": 12,
@@ -1701,7 +2067,7 @@
           "Target 3 vigorous days/week — you're averaging 1.8."
         ],
         "respirationRate": 15,
-        "readinessScore": 63,
+        "readinessScore": 58,
         "readinessZone": "moderate",
         "readinessLabel": "Moderate"
       },
@@ -1865,24 +2231,23 @@
       },
       "coach": {
         "morning": {
-          "headline": "Running on fumes today",
-          "insight": "Your body is showing signs of fatigue, primarily due to a significant lack of sleep. While your recovery score is green, it's largely driven by a high previous day's strain rather than restorative sleep. You are on track with your training load, hitting your target range today.",
-          "action": "Prioritize rest and aim for extra sleep tonight to recover your energy.",
+          "headline": "Recovery in the Yellow Zone with Elevated RHR",
+          "insight": "Your recovery is in the yellow zone today, primarily due to significantly reduced sleep and an elevated resting heart rate. This suggests your body is working harder than usual to recover from recent activity.",
+          "action": "Prioritize rest today and consider a lighter activity schedule to support recovery. Aim for a longer, higher quality sleep tonight.",
           "watchouts": [
-            "You only got 4.8 hours of sleep, creating a substantial sleep debt.",
-            "Your body battery is critically low at 12, indicating poor energy reserves.",
-            "Elevated average stress of 40 suggests your system is working hard."
+            "Lower than optimal sleep (4.8 hours vs 7.5 hours needed)",
+            "Elevated Resting Heart Rate (+5 bpm from baseline)",
+            "High prior strain (19)"
           ]
         },
         "evening": "",
         "morningRu": {
-          "headline": "Восстановление неплохое, но сон подкачал.",
-          "insight": "Сегодня твоё восстановление в зелёной зоне (67%), но качество сна оставляет желать лучшего — всего 43%. Судя по данным, ты в норме по тренировочной нагрузке. Обрати внимание на отдых, чтобы поддерживать такую активность.",
-          "action": "Сосредоточься на качественном сне сегодня, чтобы восстановить силы.",
+          "headline": "Восстановление в желтой зоне после вчерашней тренировки",
+          "insight": "Ваше восстановление снизилось до 60% из-за повышенного пульса покоя и недостаточного сна. Вчерашняя тренировка в Дубае с нагрузкой 8.4 добавила к общей нагрузке, которая превысила целевой диапазон.",
+          "action": "Сосредоточьтесь на качественном сне сегодня ночью и рассмотрите возможность снижения интенсивности тренировок, чтобы дать организму восстановиться. Ваша текущая нагрузка указывает на перетренированность.",
           "watchouts": [
-            "Сон: всего 4.8 часа при потребности в 7.5 часов. Это может сказаться на твоей энергии в течение дня.",
-            "Body Battery: сейчас на уровне 12, что очень низко. Это прямое следствие недосыпа.",
-            "Стресс: средний уровень стресса 40, с пиками до 99. Недостаток сна мог повлиять на это."
+            "Недостаточный сон (4.8 часа при потребности в 7.5 часа) значительно повлиял на восстановление.",
+            "Пульс покоя увеличился на 5 ударов в минуту по сравнению с базовым, что является признаком стресса."
           ]
         }
       }
@@ -1910,15 +2275,15 @@
           {
             "factor": "load",
             "label": "Prior strain",
-            "value": 10.3,
+            "value": 10,
             "impact": "medium"
           },
           {
             "factor": "rhr",
             "label": "Resting HR",
             "value": 54,
-            "baseline": 58,
-            "delta": "-4 bpm",
+            "baseline": 55,
+            "delta": "-1 bpm",
             "impact": "positive"
           }
         ]
@@ -2072,13 +2437,13 @@
             "start": "2026-06-06T02:28"
           }
         ],
-        "debt7d": 26
+        "debt7d": 0.5
       },
       "vitals": {
         "hrv": 45,
         "hrvBaseline": 45,
         "rhr": 54,
-        "rhrBaseline": 58,
+        "rhrBaseline": 55,
         "stressAvg": 31,
         "stressMax": 92,
         "bodyBatteryNow": 14,
@@ -2258,2648 +2623,61 @@
       },
       "coach": {
         "morning": {
-          "headline": "Running on reserves",
-          "insight": "Your recovery is strong today, driven by a good night's sleep and a lower resting heart rate. However, your body battery is very low, indicating significant fatigue. You are currently overreaching in your training, pushing beyond your target zone even with solid recovery.",
-          "action": "Prioritize rest and active recovery today to recharge your body.",
+          "headline": "Great Recovery, but Mind Your Strain!",
+          "insight": "Your recovery is excellent today, driven by good sleep and a lower resting heart rate. However, your daily strain is a bit high, exceeding your target range, indicating a potential for overtraining if this trend continues.",
+          "action": "Consider a lighter activity or active recovery if you plan to exercise again today to avoid overtraining. Prioritize adequate sleep and hydration to support your body's recovery.",
           "watchouts": [
-            "Your body battery is critically low at 14.",
-            "You have a 26-minute sleep debt over the last 7 days.",
-            "Your current training load is above your target range."
+            "Elevated daily strain (19, target 14-18)"
           ]
         },
         "evening": "",
         "morningRu": {
-          "headline": "Хорошее восстановление, но нагрузка высока",
-          "insight": "Сегодня твоё восстановление на высоком уровне (87%), пульс покоя снизился на 4 удара, что отлично. Однако тренировочная нагрузка превышает целевой диапазон: 19 вместо 14-18. Это может привести к перетренированности, несмотря на хорошее восстановление.",
-          "action": "Сегодня стоит сосредоточиться на легкой активности и восстановлении, чтобы не допустить перегрузки.",
+          "headline": "Отличное восстановление, но перетренированность!",
+          "insight": "Вы отлично восстановились (87%), но вчерашняя нагрузка (19) превысила целевой диапазон. Это привело к состоянию перетренированности. Уделите внимание балансу между нагрузками и отдыхом.",
+          "action": "Снизьте интенсивность тренировок сегодня, чтобы дать организму восстановиться. Постарайтесь лечь пораньше, чтобы компенсировать дефицит сна.",
           "watchouts": [
-            "Уровень Body Battery сейчас всего 14, что очень низко. Это может говорить о нехватке энергии.",
-            "Несмотря на хороший сон, у тебя есть 26 минут недосыпа за последнюю неделю, что может накапливаться.",
-            "Высокая тренировочная нагрузка (19) при целевом диапазоне 14-18. Стоит пересмотреть план тренировок."
+            "Перетренированность: вчерашняя нагрузка (19) выше целевой (14-18).",
+            "Недостаток сна: 7 часов при потребности в 7.5."
           ]
         }
-      }
-    },
-    {
-      "date": "2026-06-05",
-      "recovery": {
-        "score": 79,
-        "zone": "green",
-        "drivers": [
-          {
-            "factor": "rhr",
-            "label": "Resting HR",
-            "value": 64,
-            "baseline": 58,
-            "delta": "+6 bpm",
-            "impact": "high"
-          },
-          {
-            "factor": "hrv",
-            "label": "HRV",
-            "value": 45,
-            "baseline": 45,
-            "delta": "+0%",
-            "impact": "medium"
-          },
-          {
-            "factor": "sleep",
-            "label": "Sleep",
-            "value": "70%",
-            "impact": "medium"
-          },
-          {
-            "factor": "load",
-            "label": "Prior strain",
-            "value": 9.4,
-            "impact": "positive"
-          }
-        ]
-      },
-      "strain": {
-        "current": 10.3,
-        "workoutStrain": 7,
-        "lifestyleStrain": 3.3,
-        "workoutLoad": 60,
-        "lifestyleLoad": 28.2,
-        "targetMin": 14,
-        "targetMax": 18,
-        "workouts": [
-          {
-            "name": "Jogging em passadeira",
-            "type": "treadmill_running",
-            "durationMin": 30,
-            "strain": 7,
-            "avgHr": 143,
-            "activityId": 23140926119,
-            "maxHr": 160,
-            "calories": 333,
-            "distanceKm": 4.58,
-            "paceMinPerKm": 6.6,
-            "startTime": "18:50",
-            "date": "2026-06-05",
-            "hrZones": {
-              "z1": 0.4,
-              "z2": 0.2,
-              "z3": 13.4,
-              "z4": 16.3,
-              "z5": 0
-            },
-            "moderateIntensityMin": 0,
-            "vigorousIntensityMin": 29
-          }
-        ],
-        "dailyActivity": {
-          "steps": 8939,
-          "stepGoal": 10000,
-          "activeCalories": 408,
-          "bmrCalories": 1892,
-          "totalCalories": 2300,
-          "distanceKm": 7.52,
-          "moderateIntensityMin": 3,
-          "vigorousIntensityMin": 29
-        }
-      },
-      "sleep": {
-        "score": 70,
-        "hours": 0,
-        "need": 7.5,
-        "deepMin": 0,
-        "remMin": 0,
-        "lightMin": 0,
-        "awakeMin": 0,
-        "hypnogram": [],
-        "debt7d": 25.5
-      },
-      "vitals": {
-        "hrv": 45,
-        "hrvBaseline": 45,
-        "rhr": 64,
-        "rhrBaseline": 58,
-        "stressAvg": 33,
-        "stressMax": 92,
-        "bodyBatteryNow": 20,
-        "bodyBatteryMin": 20,
-        "bodyBatteryMax": 63,
-        "vo2max": 46,
-        "fitnessAge": 40,
-        "chronologicalAge": 45,
-        "achievableFitnessAge": 39,
-        "fitnessAgeSource": "garmin",
-        "fitnessAgeTips": [
-          "Add ~34 vigorous minutes per week to lower fitness age.",
-          "Target 3 vigorous days/week — you're averaging 1.3."
-        ],
-        "respirationRate": 14,
-        "readinessScore": 71,
-        "readinessZone": "moderate",
-        "readinessLabel": "Moderate"
-      },
-      "curves": {
-        "bodyBattery": [
-          {
-            "time": "10:09",
-            "value": 63
-          },
-          {
-            "time": "15:42",
-            "value": 45
-          },
-          {
-            "time": "16:00",
-            "value": 44
-          },
-          {
-            "time": "23:27",
-            "value": 20
-          }
-        ],
-        "stress": [
-          {
-            "time": "10:15",
-            "value": 11
-          },
-          {
-            "time": "10:39",
-            "value": 24
-          },
-          {
-            "time": "11:06",
-            "value": 40
-          },
-          {
-            "time": "11:27",
-            "value": 23
-          },
-          {
-            "time": "12:00",
-            "value": 33
-          },
-          {
-            "time": "12:21",
-            "value": 61
-          },
-          {
-            "time": "12:48",
-            "value": 42
-          },
-          {
-            "time": "13:09",
-            "value": 43
-          },
-          {
-            "time": "13:27",
-            "value": 25
-          },
-          {
-            "time": "13:45",
-            "value": 23
-          },
-          {
-            "time": "14:03",
-            "value": 34
-          },
-          {
-            "time": "14:21",
-            "value": 25
-          },
-          {
-            "time": "14:42",
-            "value": 46
-          },
-          {
-            "time": "15:06",
-            "value": 34
-          },
-          {
-            "time": "15:24",
-            "value": 11
-          },
-          {
-            "time": "15:57",
-            "value": 18
-          },
-          {
-            "time": "16:15",
-            "value": 25
-          },
-          {
-            "time": "16:33",
-            "value": 20
-          },
-          {
-            "time": "16:57",
-            "value": 31
-          },
-          {
-            "time": "17:36",
-            "value": 71
-          },
-          {
-            "time": "17:54",
-            "value": 25
-          },
-          {
-            "time": "18:12",
-            "value": 20
-          },
-          {
-            "time": "18:30",
-            "value": 25
-          },
-          {
-            "time": "20:27",
-            "value": 58
-          },
-          {
-            "time": "20:48",
-            "value": 44
-          },
-          {
-            "time": "21:06",
-            "value": 43
-          },
-          {
-            "time": "21:24",
-            "value": 43
-          },
-          {
-            "time": "21:42",
-            "value": 16
-          },
-          {
-            "time": "22:00",
-            "value": 16
-          },
-          {
-            "time": "22:18",
-            "value": 24
-          },
-          {
-            "time": "22:36",
-            "value": 25
-          },
-          {
-            "time": "22:54",
-            "value": 24
-          }
-        ]
-      },
-      "coach": {
-        "morning": {
-          "headline": "Running on reserves",
-          "insight": "Your recovery is decent, but your resting heart rate is up and your Body Battery is very low this morning. You're currently undertraining, staying well below your target strain, which might be impacting your overall energy levels and sleep debt.",
-          "action": "Prioritize getting enough sleep tonight to start chipping away at that debt.",
-          "watchouts": [
-            "High sleep debt of 25.5 hours over the last 7 days.",
-            "Your Body Battery is critically low at 20.",
-            "Your resting heart rate is elevated by 6 bpm compared to your baseline."
-          ]
-        },
-        "evening": "",
-        "morningRu": {
-          "headline": "Восстановление неплохое, но есть нюансы",
-          "insight": "Ваше восстановление сегодня на уровне 79%, что хорошо, но пульс покоя выше обычного на 6 ударов. Тренировочная нагрузка пока недостаточна, вы недотренированы и не достигаете целевых показателей.",
-          "action": "Сосредоточьтесь на качественном сне и постарайтесь увеличить физическую активность в течение дня, чтобы достигнуть целевой нагрузки.",
-          "watchouts": [
-            "Пульс покоя 64 удара в минуту, что выше вашей нормы. Это может говорить о легком стрессе или недостатке отдыха.",
-            "Ваша Body Battery сейчас всего 20%, что очень низко. Вероятно, вы не полностью восстановились ночью.",
-            "Недостаточная тренировочная нагрузка: вы набрали 10.3 единиц нагрузки при цели в 14-18. Вам нужно больше активности."
-          ]
-        }
-      }
-    },
-    {
-      "date": "2026-06-04",
-      "recovery": {
-        "score": 76,
-        "zone": "green",
-        "drivers": [
-          {
-            "factor": "rhr",
-            "label": "Resting HR",
-            "value": 63,
-            "baseline": 58,
-            "delta": "+5 bpm",
-            "impact": "high"
-          },
-          {
-            "factor": "load",
-            "label": "Prior strain",
-            "value": 19.6,
-            "impact": "high"
-          },
-          {
-            "factor": "hrv",
-            "label": "HRV",
-            "value": 45,
-            "baseline": 45,
-            "delta": "+0%",
-            "impact": "medium"
-          },
-          {
-            "factor": "sleep",
-            "label": "Sleep",
-            "value": "70%",
-            "impact": "medium"
-          }
-        ]
-      },
-      "strain": {
-        "current": 9.4,
-        "workoutStrain": 7,
-        "lifestyleStrain": 2.4,
-        "workoutLoad": 60,
-        "lifestyleLoad": 20.3,
-        "targetMin": 14,
-        "targetMax": 18,
-        "workouts": [
-          {
-            "name": "Jogging em passadeira",
-            "type": "treadmill_running",
-            "durationMin": 30,
-            "strain": 7,
-            "avgHr": 145,
-            "activityId": 23128137212,
-            "maxHr": 155,
-            "calories": 338,
-            "distanceKm": 4.79,
-            "paceMinPerKm": 6.33,
-            "startTime": "16:59",
-            "date": "2026-06-04",
-            "hrZones": {
-              "z1": 0.3,
-              "z2": 0.4,
-              "z3": 4.8,
-              "z4": 24.8,
-              "z5": 0
-            },
-            "moderateIntensityMin": 0,
-            "vigorousIntensityMin": 30
-          }
-        ],
-        "dailyActivity": {
-          "steps": 7343,
-          "stepGoal": 10000,
-          "activeCalories": 371,
-          "bmrCalories": 1892,
-          "totalCalories": 2263,
-          "distanceKm": 6.43,
-          "moderateIntensityMin": 3,
-          "vigorousIntensityMin": 30
-        }
-      },
-      "sleep": {
-        "score": 70,
-        "hours": 0,
-        "need": 7.5,
-        "deepMin": 0,
-        "remMin": 0,
-        "lightMin": 0,
-        "awakeMin": 0,
-        "hypnogram": [],
-        "debt7d": 18.8
-      },
-      "vitals": {
-        "hrv": 45,
-        "hrvBaseline": 45,
-        "rhr": 63,
-        "rhrBaseline": 58,
-        "stressAvg": 38,
-        "stressMax": 74,
-        "bodyBatteryNow": 30,
-        "bodyBatteryMin": 30,
-        "bodyBatteryMax": 51,
-        "vo2max": 46,
-        "fitnessAge": 40,
-        "chronologicalAge": 45,
-        "achievableFitnessAge": 39,
-        "fitnessAgeSource": "garmin",
-        "fitnessAgeTips": [
-          "Add ~39 vigorous minutes per week to lower fitness age.",
-          "Target 3 vigorous days/week — you're averaging 1.1."
-        ],
-        "respirationRate": 13,
-        "readinessScore": 71,
-        "readinessZone": "moderate",
-        "readinessLabel": "Moderate"
-      },
-      "curves": {
-        "bodyBattery": [
-          {
-            "time": "12:33",
-            "value": 51
-          },
-          {
-            "time": "15:39",
-            "value": 39
-          },
-          {
-            "time": "16:00",
-            "value": 39
-          },
-          {
-            "time": "17:27",
-            "value": 30
-          }
-        ],
-        "stress": [
-          {
-            "time": "12:42",
-            "value": 34
-          },
-          {
-            "time": "12:45",
-            "value": 31
-          },
-          {
-            "time": "12:48",
-            "value": 46
-          },
-          {
-            "time": "12:51",
-            "value": 55
-          },
-          {
-            "time": "12:54",
-            "value": 54
-          },
-          {
-            "time": "13:09",
-            "value": 48
-          },
-          {
-            "time": "13:12",
-            "value": 44
-          },
-          {
-            "time": "13:15",
-            "value": 51
-          },
-          {
-            "time": "13:18",
-            "value": 50
-          },
-          {
-            "time": "13:24",
-            "value": 37
-          },
-          {
-            "time": "13:27",
-            "value": 61
-          },
-          {
-            "time": "13:30",
-            "value": 52
-          },
-          {
-            "time": "13:33",
-            "value": 43
-          },
-          {
-            "time": "13:36",
-            "value": 43
-          },
-          {
-            "time": "13:42",
-            "value": 34
-          },
-          {
-            "time": "13:45",
-            "value": 40
-          },
-          {
-            "time": "13:48",
-            "value": 35
-          },
-          {
-            "time": "13:51",
-            "value": 41
-          },
-          {
-            "time": "13:54",
-            "value": 40
-          },
-          {
-            "time": "13:57",
-            "value": 41
-          },
-          {
-            "time": "14:00",
-            "value": 33
-          },
-          {
-            "time": "14:03",
-            "value": 36
-          },
-          {
-            "time": "14:06",
-            "value": 46
-          },
-          {
-            "time": "14:09",
-            "value": 43
-          },
-          {
-            "time": "14:12",
-            "value": 45
-          },
-          {
-            "time": "14:15",
-            "value": 46
-          },
-          {
-            "time": "14:18",
-            "value": 33
-          },
-          {
-            "time": "14:21",
-            "value": 34
-          },
-          {
-            "time": "14:24",
-            "value": 40
-          },
-          {
-            "time": "14:27",
-            "value": 30
-          },
-          {
-            "time": "14:30",
-            "value": 37
-          },
-          {
-            "time": "14:33",
-            "value": 31
-          }
-        ]
-      },
-      "coach": {
-        "morning": "",
-        "evening": ""
-      }
-    },
-    {
-      "date": "2026-06-03",
-      "recovery": {
-        "score": 80,
-        "zone": "green",
-        "drivers": [
-          {
-            "factor": "load",
-            "label": "Prior strain",
-            "value": 21,
-            "impact": "high"
-          },
-          {
-            "factor": "hrv",
-            "label": "HRV",
-            "value": 45,
-            "baseline": 45,
-            "delta": "+0%",
-            "impact": "medium"
-          },
-          {
-            "factor": "sleep",
-            "label": "Sleep",
-            "value": "79%",
-            "impact": "medium"
-          },
-          {
-            "factor": "rhr",
-            "label": "Resting HR",
-            "value": 55,
-            "baseline": 58,
-            "delta": "-3 bpm",
-            "impact": "positive"
-          }
-        ]
-      },
-      "strain": {
-        "current": 19.6,
-        "workoutStrain": 6.8,
-        "lifestyleStrain": 12.8,
-        "workoutLoad": 58,
-        "lifestyleLoad": 109.6,
-        "targetMin": 14,
-        "targetMax": 18,
-        "workouts": [
-          {
-            "name": "Jogging em passadeira",
-            "type": "treadmill_running",
-            "durationMin": 29,
-            "strain": 6.8,
-            "avgHr": 149,
-            "activityId": 23113276331,
-            "maxHr": 160,
-            "calories": 343,
-            "distanceKm": 4.5,
-            "paceMinPerKm": 6.64,
-            "startTime": "12:53",
-            "date": "2026-06-03",
-            "hrZones": {
-              "z1": 0.6,
-              "z2": 0.2,
-              "z3": 2.6,
-              "z4": 26.5,
-              "z5": 0
-            },
-            "moderateIntensityMin": 1,
-            "vigorousIntensityMin": 28
-          }
-        ],
-        "dailyActivity": {
-          "steps": 15370,
-          "stepGoal": 10000,
-          "activeCalories": 714,
-          "bmrCalories": 1892,
-          "totalCalories": 2606,
-          "distanceKm": 12.49,
-          "moderateIntensityMin": 13,
-          "vigorousIntensityMin": 31
-        }
-      },
-      "sleep": {
-        "score": 79,
-        "hours": 6.9,
-        "need": 7.5,
-        "deepMin": 82,
-        "remMin": 53,
-        "lightMin": 281,
-        "awakeMin": 0,
-        "hypnogram": [
-          {
-            "level": "light",
-            "minutes": 28,
-            "start": "2026-06-02T18:30"
-          },
-          {
-            "level": "awake",
-            "minutes": 18,
-            "start": "2026-06-02T18:58"
-          },
-          {
-            "level": "light",
-            "minutes": 10,
-            "start": "2026-06-02T19:16"
-          },
-          {
-            "level": "awake",
-            "minutes": 11,
-            "start": "2026-06-02T19:26"
-          },
-          {
-            "level": "light",
-            "minutes": 56,
-            "start": "2026-06-02T19:37"
-          },
-          {
-            "level": "awake",
-            "minutes": 22,
-            "start": "2026-06-02T20:33"
-          },
-          {
-            "level": "light",
-            "minutes": 28,
-            "start": "2026-06-02T20:55"
-          },
-          {
-            "level": "awake",
-            "minutes": 31,
-            "start": "2026-06-02T21:23"
-          },
-          {
-            "level": "light",
-            "minutes": 9,
-            "start": "2026-06-02T21:54"
-          },
-          {
-            "level": "deep",
-            "minutes": 18,
-            "start": "2026-06-02T22:03"
-          },
-          {
-            "level": "light",
-            "minutes": 28,
-            "start": "2026-06-02T22:21"
-          },
-          {
-            "level": "deep",
-            "minutes": 12,
-            "start": "2026-06-02T22:49"
-          },
-          {
-            "level": "light",
-            "minutes": 76,
-            "start": "2026-06-02T23:01"
-          },
-          {
-            "level": "deep",
-            "minutes": 23,
-            "start": "2026-06-03T00:17"
-          },
-          {
-            "level": "light",
-            "minutes": 46,
-            "start": "2026-06-03T00:40"
-          }
-        ],
-        "debt7d": 11.3
-      },
-      "vitals": {
-        "hrv": 45,
-        "hrvBaseline": 45,
-        "rhr": 55,
-        "rhrBaseline": 58,
-        "stressAvg": 34,
-        "stressMax": 99,
-        "bodyBatteryNow": 11,
-        "bodyBatteryMin": 8,
-        "bodyBatteryMax": 68,
-        "vo2max": 46,
-        "fitnessAge": 41,
-        "chronologicalAge": 45,
-        "achievableFitnessAge": 39,
-        "fitnessAgeSource": "garmin",
-        "fitnessAgeTips": [
-          "Add ~44 vigorous minutes per week to lower fitness age.",
-          "Target 3 vigorous days/week — you're averaging 1.1."
-        ],
-        "respirationRate": 14,
-        "readinessScore": 77,
-        "readinessZone": "high",
-        "readinessLabel": "High"
-      },
-      "curves": {
-        "bodyBattery": [
-          {
-            "time": "00:00",
-            "value": 8
-          },
-          {
-            "time": "05:24",
-            "value": 68
-          },
-          {
-            "time": "08:00",
-            "value": 54
-          },
-          {
-            "time": "15:51",
-            "value": 22
-          },
-          {
-            "time": "16:00",
-            "value": 22
-          },
-          {
-            "time": "21:09",
-            "value": 11
-          }
-        ],
-        "stress": [
-          {
-            "time": "00:00",
-            "value": 26
-          },
-          {
-            "time": "00:27",
-            "value": 10
-          },
-          {
-            "time": "00:54",
-            "value": 16
-          },
-          {
-            "time": "01:21",
-            "value": 13
-          },
-          {
-            "time": "01:48",
-            "value": 13
-          },
-          {
-            "time": "02:15",
-            "value": 19
-          },
-          {
-            "time": "02:42",
-            "value": 19
-          },
-          {
-            "time": "03:09",
-            "value": 7
-          },
-          {
-            "time": "03:36",
-            "value": 17
-          },
-          {
-            "time": "04:03",
-            "value": 17
-          },
-          {
-            "time": "04:30",
-            "value": 10
-          },
-          {
-            "time": "04:57",
-            "value": 8
-          },
-          {
-            "time": "05:30",
-            "value": 50
-          },
-          {
-            "time": "06:06",
-            "value": 82
-          },
-          {
-            "time": "06:33",
-            "value": 48
-          },
-          {
-            "time": "07:27",
-            "value": 54
-          },
-          {
-            "time": "08:30",
-            "value": 33
-          },
-          {
-            "time": "09:09",
-            "value": 55
-          },
-          {
-            "time": "09:45",
-            "value": 42
-          },
-          {
-            "time": "10:12",
-            "value": 56
-          },
-          {
-            "time": "10:45",
-            "value": 47
-          },
-          {
-            "time": "11:12",
-            "value": 25
-          },
-          {
-            "time": "11:42",
-            "value": 31
-          },
-          {
-            "time": "12:09",
-            "value": 51
-          },
-          {
-            "time": "12:36",
-            "value": 46
-          },
-          {
-            "time": "14:54",
-            "value": 66
-          },
-          {
-            "time": "15:27",
-            "value": 63
-          },
-          {
-            "time": "16:00",
-            "value": 39
-          },
-          {
-            "time": "16:27",
-            "value": 29
-          },
-          {
-            "time": "16:57",
-            "value": 58
-          },
-          {
-            "time": "17:33",
-            "value": 66
-          },
-          {
-            "time": "18:21",
-            "value": 19
-          }
-        ]
-      },
-      "coach": {
-        "morning": "",
-        "evening": ""
-      }
-    },
-    {
-      "date": "2026-06-02",
-      "recovery": {
-        "score": 75,
-        "zone": "green",
-        "drivers": [
-          {
-            "factor": "load",
-            "label": "Prior strain",
-            "value": 20.1,
-            "impact": "high"
-          },
-          {
-            "factor": "hrv",
-            "label": "HRV",
-            "value": 45,
-            "baseline": 45,
-            "delta": "+0%",
-            "impact": "medium"
-          },
-          {
-            "factor": "sleep",
-            "label": "Sleep",
-            "value": "74%",
-            "impact": "medium"
-          },
-          {
-            "factor": "rhr",
-            "label": "Resting HR",
-            "value": 60,
-            "baseline": 58,
-            "delta": "+2 bpm",
-            "impact": "low"
-          }
-        ]
-      },
-      "strain": {
-        "current": 21,
-        "workoutStrain": 6.8,
-        "lifestyleStrain": 17.2,
-        "workoutLoad": 58,
-        "lifestyleLoad": 147.8,
-        "targetMin": 14,
-        "targetMax": 18,
-        "workouts": [
-          {
-            "name": "Jogging em passadeira",
-            "type": "treadmill_running",
-            "durationMin": 29,
-            "strain": 6.8,
-            "avgHr": 149,
-            "activityId": 23103939290,
-            "maxHr": 172,
-            "calories": 344,
-            "distanceKm": 4.51,
-            "paceMinPerKm": 6.64,
-            "startTime": "17:50",
-            "date": "2026-06-02",
-            "hrZones": {
-              "z1": 0.3,
-              "z2": 0.2,
-              "z3": 5.8,
-              "z4": 20.6,
-              "z5": 3
-            },
-            "moderateIntensityMin": 0,
-            "vigorousIntensityMin": 29
-          }
-        ],
-        "dailyActivity": {
-          "steps": 15117,
-          "stepGoal": 10000,
-          "activeCalories": 841,
-          "bmrCalories": 1892,
-          "totalCalories": 2733,
-          "distanceKm": 12.32,
-          "moderateIntensityMin": 27,
-          "vigorousIntensityMin": 32
-        }
-      },
-      "sleep": {
-        "score": 74,
-        "hours": 6.7,
-        "need": 7.5,
-        "deepMin": 81,
-        "remMin": 63,
-        "lightMin": 260,
-        "awakeMin": 17,
-        "hypnogram": [
-          {
-            "level": "light",
-            "minutes": 22,
-            "start": "2026-06-01T18:57"
-          },
-          {
-            "level": "awake",
-            "minutes": 18,
-            "start": "2026-06-01T19:19"
-          },
-          {
-            "level": "light",
-            "minutes": 17,
-            "start": "2026-06-01T19:37"
-          },
-          {
-            "level": "awake",
-            "minutes": 17,
-            "start": "2026-06-01T19:54"
-          },
-          {
-            "level": "light",
-            "minutes": 11,
-            "start": "2026-06-01T20:11"
-          },
-          {
-            "level": "rem",
-            "minutes": 5,
-            "start": "2026-06-01T20:22"
-          },
-          {
-            "level": "light",
-            "minutes": 34,
-            "start": "2026-06-01T20:27"
-          },
-          {
-            "level": "awake",
-            "minutes": 6,
-            "start": "2026-06-01T21:01"
-          },
-          {
-            "level": "rem",
-            "minutes": 2,
-            "start": "2026-06-01T21:07"
-          },
-          {
-            "level": "light",
-            "minutes": 8,
-            "start": "2026-06-01T21:09"
-          },
-          {
-            "level": "awake",
-            "minutes": 13,
-            "start": "2026-06-01T21:17"
-          },
-          {
-            "level": "rem",
-            "minutes": 3,
-            "start": "2026-06-01T21:30"
-          },
-          {
-            "level": "light",
-            "minutes": 13,
-            "start": "2026-06-01T21:33"
-          },
-          {
-            "level": "awake",
-            "minutes": 27,
-            "start": "2026-06-01T21:46"
-          },
-          {
-            "level": "light",
-            "minutes": 14,
-            "start": "2026-06-01T22:13"
-          },
-          {
-            "level": "rem",
-            "minutes": 7,
-            "start": "2026-06-01T22:27"
-          },
-          {
-            "level": "light",
-            "minutes": 12,
-            "start": "2026-06-01T22:34"
-          },
-          {
-            "level": "deep",
-            "minutes": 5,
-            "start": "2026-06-01T22:46"
-          },
-          {
-            "level": "light",
-            "minutes": 17,
-            "start": "2026-06-01T22:51"
-          },
-          {
-            "level": "deep",
-            "minutes": 29,
-            "start": "2026-06-01T23:08"
-          },
-          {
-            "level": "light",
-            "minutes": 21,
-            "start": "2026-06-01T23:37"
-          },
-          {
-            "level": "deep",
-            "minutes": 5,
-            "start": "2026-06-01T23:58"
-          },
-          {
-            "level": "light",
-            "minutes": 38,
-            "start": "2026-06-02T00:03"
-          },
-          {
-            "level": "deep",
-            "minutes": 10,
-            "start": "2026-06-02T00:41"
-          },
-          {
-            "level": "light",
-            "minutes": 53,
-            "start": "2026-06-02T00:51"
-          },
-          {
-            "level": "deep",
-            "minutes": 14,
-            "start": "2026-06-02T01:44"
-          }
-        ],
-        "debt7d": 10.7
-      },
-      "vitals": {
-        "hrv": 45,
-        "hrvBaseline": 45,
-        "rhr": 60,
-        "rhrBaseline": 58,
-        "stressAvg": 38,
-        "stressMax": 98,
-        "bodyBatteryNow": 5,
-        "bodyBatteryMin": 5,
-        "bodyBatteryMax": 44,
-        "vo2max": 46,
-        "fitnessAge": 41,
-        "chronologicalAge": 45,
-        "achievableFitnessAge": 39,
-        "fitnessAgeSource": "garmin",
-        "fitnessAgeTips": [
-          "Add ~49 vigorous minutes per week to lower fitness age.",
-          "Target 3 vigorous days/week — you're averaging 1.0."
-        ],
-        "respirationRate": 14,
-        "readinessScore": 71,
-        "readinessZone": "moderate",
-        "readinessLabel": "Moderate"
-      },
-      "curves": {
-        "bodyBattery": [
-          {
-            "time": "00:00",
-            "value": 5
-          },
-          {
-            "time": "05:57",
-            "value": 44
-          },
-          {
-            "time": "08:00",
-            "value": 38
-          },
-          {
-            "time": "15:33",
-            "value": 17
-          },
-          {
-            "time": "16:00",
-            "value": 17
-          },
-          {
-            "time": "19:30",
-            "value": 5
-          }
-        ],
-        "stress": [
-          {
-            "time": "00:00",
-            "value": 65
-          },
-          {
-            "time": "00:30",
-            "value": 62
-          },
-          {
-            "time": "01:00",
-            "value": 36
-          },
-          {
-            "time": "01:30",
-            "value": 20
-          },
-          {
-            "time": "02:12",
-            "value": 22
-          },
-          {
-            "time": "02:42",
-            "value": 24
-          },
-          {
-            "time": "03:12",
-            "value": 21
-          },
-          {
-            "time": "03:42",
-            "value": 18
-          },
-          {
-            "time": "04:12",
-            "value": 21
-          },
-          {
-            "time": "04:42",
-            "value": 12
-          },
-          {
-            "time": "05:12",
-            "value": 13
-          },
-          {
-            "time": "05:42",
-            "value": 15
-          },
-          {
-            "time": "06:18",
-            "value": 64
-          },
-          {
-            "time": "06:51",
-            "value": 58
-          },
-          {
-            "time": "07:39",
-            "value": 43
-          },
-          {
-            "time": "08:42",
-            "value": 46
-          },
-          {
-            "time": "09:12",
-            "value": 58
-          },
-          {
-            "time": "09:42",
-            "value": 44
-          },
-          {
-            "time": "10:15",
-            "value": 47
-          },
-          {
-            "time": "10:48",
-            "value": 37
-          },
-          {
-            "time": "11:21",
-            "value": 25
-          },
-          {
-            "time": "11:54",
-            "value": 52
-          },
-          {
-            "time": "12:24",
-            "value": 43
-          },
-          {
-            "time": "13:06",
-            "value": 50
-          },
-          {
-            "time": "14:42",
-            "value": 46
-          },
-          {
-            "time": "15:24",
-            "value": 49
-          },
-          {
-            "time": "15:54",
-            "value": 33
-          },
-          {
-            "time": "16:24",
-            "value": 26
-          },
-          {
-            "time": "17:12",
-            "value": 28
-          },
-          {
-            "time": "19:24",
-            "value": 91
-          },
-          {
-            "time": "20:45",
-            "value": 64
-          },
-          {
-            "time": "21:24",
-            "value": 53
-          }
-        ]
-      },
-      "coach": {
-        "morning": "",
-        "evening": ""
-      }
-    },
-    {
-      "date": "2026-06-01",
-      "recovery": {
-        "score": 70,
-        "zone": "green",
-        "drivers": [
-          {
-            "factor": "sleep",
-            "label": "Sleep",
-            "value": "52%",
-            "impact": "high"
-          },
-          {
-            "factor": "hrv",
-            "label": "HRV",
-            "value": 45,
-            "baseline": 45,
-            "delta": "+0%",
-            "impact": "medium"
-          },
-          {
-            "factor": "load",
-            "label": "Prior strain",
-            "value": 15.5,
-            "impact": "medium"
-          },
-          {
-            "factor": "rhr",
-            "label": "Resting HR",
-            "value": 61,
-            "baseline": 58,
-            "delta": "+3 bpm",
-            "impact": "low"
-          }
-        ]
-      },
-      "strain": {
-        "current": 20.1,
-        "workoutStrain": 7,
-        "lifestyleStrain": 13.1,
-        "workoutLoad": 60,
-        "lifestyleLoad": 112.7,
-        "targetMin": 14,
-        "targetMax": 18,
-        "workouts": [
-          {
-            "name": "Jogging em passadeira",
-            "type": "treadmill_running",
-            "durationMin": 30,
-            "strain": 7,
-            "avgHr": 147,
-            "activityId": 23089629393,
-            "maxHr": 160,
-            "calories": 342,
-            "distanceKm": 4.5,
-            "paceMinPerKm": 6.72,
-            "startTime": "14:50",
-            "date": "2026-06-01",
-            "hrZones": {
-              "z1": 0.3,
-              "z2": 1.1,
-              "z3": 3.5,
-              "z4": 25.4,
-              "z5": 0
-            },
-            "moderateIntensityMin": 0,
-            "vigorousIntensityMin": 29
-          }
-        ],
-        "dailyActivity": {
-          "steps": 15146,
-          "stepGoal": 10000,
-          "activeCalories": 728,
-          "bmrCalories": 1892,
-          "totalCalories": 2620,
-          "distanceKm": 12.34,
-          "moderateIntensityMin": 8,
-          "vigorousIntensityMin": 30
-        }
-      },
-      "sleep": {
-        "score": 52,
-        "hours": 5.9,
-        "need": 7.5,
-        "deepMin": 43,
-        "remMin": 5,
-        "lightMin": 306,
-        "awakeMin": 29,
-        "hypnogram": [
-          {
-            "level": "light",
-            "minutes": 31,
-            "start": "2026-05-31T19:22"
-          },
-          {
-            "level": "awake",
-            "minutes": 13,
-            "start": "2026-05-31T19:53"
-          },
-          {
-            "level": "rem",
-            "minutes": 2,
-            "start": "2026-05-31T20:06"
-          },
-          {
-            "level": "light",
-            "minutes": 13,
-            "start": "2026-05-31T20:08"
-          },
-          {
-            "level": "rem",
-            "minutes": 4,
-            "start": "2026-05-31T20:21"
-          },
-          {
-            "level": "light",
-            "minutes": 18,
-            "start": "2026-05-31T20:25"
-          },
-          {
-            "level": "awake",
-            "minutes": 18,
-            "start": "2026-05-31T20:43"
-          },
-          {
-            "level": "light",
-            "minutes": 27,
-            "start": "2026-05-31T21:01"
-          },
-          {
-            "level": "rem",
-            "minutes": 22,
-            "start": "2026-05-31T21:28"
-          },
-          {
-            "level": "light",
-            "minutes": 34,
-            "start": "2026-05-31T21:50"
-          },
-          {
-            "level": "deep",
-            "minutes": 5,
-            "start": "2026-05-31T22:24"
-          },
-          {
-            "level": "light",
-            "minutes": 13,
-            "start": "2026-05-31T22:29"
-          },
-          {
-            "level": "rem",
-            "minutes": 1,
-            "start": "2026-05-31T22:42"
-          },
-          {
-            "level": "light",
-            "minutes": 127,
-            "start": "2026-05-31T22:43"
-          },
-          {
-            "level": "awake",
-            "minutes": 12,
-            "start": "2026-06-01T00:50"
-          },
-          {
-            "level": "light",
-            "minutes": 43,
-            "start": "2026-06-01T01:02"
-          }
-        ],
-        "debt7d": 9.9
-      },
-      "vitals": {
-        "hrv": 45,
-        "hrvBaseline": 45,
-        "rhr": 61,
-        "rhrBaseline": 58,
-        "stressAvg": 40,
-        "stressMax": 96,
-        "bodyBatteryNow": 5,
-        "bodyBatteryMin": 5,
-        "bodyBatteryMax": 48,
-        "vo2max": 46,
-        "fitnessAge": 42,
-        "chronologicalAge": 45,
-        "achievableFitnessAge": 39,
-        "fitnessAgeSource": "garmin",
-        "fitnessAgeTips": [
-          "Add ~54 vigorous minutes per week to lower fitness age.",
-          "Target 3 vigorous days/week — you're averaging 0.6."
-        ],
-        "respirationRate": 14,
-        "readinessScore": 64,
-        "readinessZone": "moderate",
-        "readinessLabel": "Moderate"
-      },
-      "curves": {
-        "bodyBattery": [
-          {
-            "time": "00:00",
-            "value": 18
-          },
-          {
-            "time": "05:42",
-            "value": 48
-          },
-          {
-            "time": "08:00",
-            "value": 40
-          },
-          {
-            "time": "15:42",
-            "value": 13
-          },
-          {
-            "time": "16:00",
-            "value": 13
-          },
-          {
-            "time": "21:06",
-            "value": 5
-          }
-        ],
-        "stress": [
-          {
-            "time": "00:00",
-            "value": 33
-          },
-          {
-            "time": "00:30",
-            "value": 36
-          },
-          {
-            "time": "01:00",
-            "value": 31
-          },
-          {
-            "time": "01:30",
-            "value": 33
-          },
-          {
-            "time": "02:00",
-            "value": 30
-          },
-          {
-            "time": "02:30",
-            "value": 25
-          },
-          {
-            "time": "03:00",
-            "value": 28
-          },
-          {
-            "time": "03:30",
-            "value": 30
-          },
-          {
-            "time": "04:00",
-            "value": 24
-          },
-          {
-            "time": "04:30",
-            "value": 27
-          },
-          {
-            "time": "05:00",
-            "value": 15
-          },
-          {
-            "time": "05:30",
-            "value": 19
-          },
-          {
-            "time": "06:03",
-            "value": 56
-          },
-          {
-            "time": "06:36",
-            "value": 39
-          },
-          {
-            "time": "07:24",
-            "value": 36
-          },
-          {
-            "time": "08:54",
-            "value": 61
-          },
-          {
-            "time": "09:24",
-            "value": 43
-          },
-          {
-            "time": "09:57",
-            "value": 46
-          },
-          {
-            "time": "12:21",
-            "value": 35
-          },
-          {
-            "time": "13:03",
-            "value": 58
-          },
-          {
-            "time": "13:33",
-            "value": 55
-          },
-          {
-            "time": "14:06",
-            "value": 43
-          },
-          {
-            "time": "16:39",
-            "value": 61
-          },
-          {
-            "time": "17:12",
-            "value": 85
-          },
-          {
-            "time": "18:42",
-            "value": 28
-          },
-          {
-            "time": "19:21",
-            "value": 45
-          },
-          {
-            "time": "19:57",
-            "value": 49
-          },
-          {
-            "time": "20:30",
-            "value": 19
-          },
-          {
-            "time": "21:27",
-            "value": 30
-          },
-          {
-            "time": "22:03",
-            "value": 43
-          },
-          {
-            "time": "22:36",
-            "value": 42
-          },
-          {
-            "time": "23:09",
-            "value": 31
-          }
-        ]
-      },
-      "coach": {
-        "morning": "",
-        "evening": ""
-      }
-    },
-    {
-      "date": "2026-05-31",
-      "recovery": {
-        "score": 83,
-        "zone": "green",
-        "drivers": [
-          {
-            "factor": "rhr",
-            "label": "Resting HR",
-            "value": 62,
-            "baseline": 58,
-            "delta": "+4 bpm",
-            "impact": "high"
-          },
-          {
-            "factor": "hrv",
-            "label": "HRV",
-            "value": 45,
-            "baseline": 45,
-            "delta": "+0%",
-            "impact": "medium"
-          },
-          {
-            "factor": "sleep",
-            "label": "Sleep",
-            "value": "70%",
-            "impact": "medium"
-          },
-          {
-            "factor": "load",
-            "label": "Prior strain",
-            "value": 6.5,
-            "impact": "positive"
-          }
-        ]
-      },
-      "strain": {
-        "current": 15.5,
-        "workoutStrain": 0,
-        "lifestyleStrain": 15.5,
-        "workoutLoad": 0,
-        "lifestyleLoad": 132.5,
-        "targetMin": 14,
-        "targetMax": 18,
-        "workouts": [],
-        "dailyActivity": {
-          "steps": 7703,
-          "stepGoal": 10000,
-          "activeCalories": 458,
-          "bmrCalories": 1892,
-          "totalCalories": 2350,
-          "distanceKm": 8.03,
-          "moderateIntensityMin": 6,
-          "vigorousIntensityMin": 31
-        }
-      },
-      "sleep": {
-        "score": 70,
-        "hours": 0,
-        "need": 7.5,
-        "deepMin": 0,
-        "remMin": 0,
-        "lightMin": 0,
-        "awakeMin": 0,
-        "hypnogram": [],
-        "debt7d": 8.3
-      },
-      "vitals": {
-        "hrv": 45,
-        "hrvBaseline": 45,
-        "rhr": 62,
-        "rhrBaseline": 58,
-        "stressAvg": 40,
-        "stressMax": 99,
-        "bodyBatteryNow": 18,
-        "bodyBatteryMin": 18,
-        "bodyBatteryMax": 69,
-        "vo2max": 46,
-        "fitnessAge": 42,
-        "chronologicalAge": 45,
-        "achievableFitnessAge": 39,
-        "fitnessAgeSource": "garmin",
-        "fitnessAgeTips": [
-          "Add ~60 vigorous minutes per week to lower fitness age.",
-          "Target 3 vigorous days/week — you're averaging 0.6."
-        ],
-        "respirationRate": 14,
-        "readinessScore": 73,
-        "readinessZone": "moderate",
-        "readinessLabel": "Moderate"
-      },
-      "curves": {
-        "bodyBattery": [
-          {
-            "time": "09:00",
-            "value": 69
-          },
-          {
-            "time": "15:30",
-            "value": 33
-          },
-          {
-            "time": "16:00",
-            "value": 33
-          },
-          {
-            "time": "23:15",
-            "value": 18
-          }
-        ],
-        "stress": [
-          {
-            "time": "09:03",
-            "value": 33
-          },
-          {
-            "time": "09:27",
-            "value": 29
-          },
-          {
-            "time": "09:54",
-            "value": 28
-          },
-          {
-            "time": "10:21",
-            "value": 27
-          },
-          {
-            "time": "10:39",
-            "value": 47
-          },
-          {
-            "time": "11:00",
-            "value": 61
-          },
-          {
-            "time": "11:21",
-            "value": 49
-          },
-          {
-            "time": "11:42",
-            "value": 37
-          },
-          {
-            "time": "12:03",
-            "value": 25
-          },
-          {
-            "time": "13:57",
-            "value": 89
-          },
-          {
-            "time": "14:15",
-            "value": 94
-          },
-          {
-            "time": "15:03",
-            "value": 64
-          },
-          {
-            "time": "15:21",
-            "value": 68
-          },
-          {
-            "time": "15:45",
-            "value": 35
-          },
-          {
-            "time": "16:21",
-            "value": 17
-          },
-          {
-            "time": "16:42",
-            "value": 42
-          },
-          {
-            "time": "17:00",
-            "value": 15
-          },
-          {
-            "time": "17:18",
-            "value": 10
-          },
-          {
-            "time": "18:00",
-            "value": 2
-          },
-          {
-            "time": "18:27",
-            "value": 23
-          },
-          {
-            "time": "18:57",
-            "value": 62
-          },
-          {
-            "time": "19:30",
-            "value": 22
-          },
-          {
-            "time": "19:51",
-            "value": 34
-          },
-          {
-            "time": "20:09",
-            "value": 30
-          },
-          {
-            "time": "20:33",
-            "value": 23
-          },
-          {
-            "time": "21:00",
-            "value": 33
-          },
-          {
-            "time": "21:18",
-            "value": 38
-          },
-          {
-            "time": "21:36",
-            "value": 64
-          },
-          {
-            "time": "21:54",
-            "value": 33
-          },
-          {
-            "time": "22:12",
-            "value": 42
-          },
-          {
-            "time": "22:30",
-            "value": 52
-          },
-          {
-            "time": "22:48",
-            "value": 67
-          }
-        ]
-      },
-      "coach": {
-        "morning": "",
-        "evening": ""
-      }
-    },
-    {
-      "date": "2026-05-30",
-      "recovery": {
-        "score": 81,
-        "zone": "green",
-        "drivers": [
-          {
-            "factor": "sleep",
-            "label": "Sleep",
-            "value": "64%",
-            "impact": "high"
-          },
-          {
-            "factor": "hrv",
-            "label": "HRV",
-            "value": 45,
-            "baseline": 45,
-            "delta": "+0%",
-            "impact": "medium"
-          },
-          {
-            "factor": "rhr",
-            "label": "Resting HR",
-            "value": 56,
-            "baseline": 58,
-            "delta": "-2 bpm",
-            "impact": "positive"
-          },
-          {
-            "factor": "load",
-            "label": "Prior strain",
-            "value": 9,
-            "impact": "positive"
-          }
-        ]
-      },
-      "strain": {
-        "current": 6.5,
-        "workoutStrain": 0,
-        "lifestyleStrain": 6.5,
-        "workoutLoad": 0,
-        "lifestyleLoad": 55.7,
-        "targetMin": 14,
-        "targetMax": 18,
-        "workouts": [],
-        "dailyActivity": {
-          "steps": 5953,
-          "stepGoal": 10000,
-          "activeCalories": 199,
-          "bmrCalories": 1892,
-          "totalCalories": 2091,
-          "distanceKm": 4.7,
-          "moderateIntensityMin": 0,
-          "vigorousIntensityMin": 0
-        }
-      },
-      "sleep": {
-        "score": 64,
-        "hours": 7.6,
-        "need": 7.5,
-        "deepMin": 68,
-        "remMin": 16,
-        "lightMin": 370,
-        "awakeMin": 20,
-        "hypnogram": [
-          {
-            "level": "light",
-            "minutes": 10,
-            "start": "2026-05-29T18:47"
-          },
-          {
-            "level": "awake",
-            "minutes": 15,
-            "start": "2026-05-29T18:57"
-          },
-          {
-            "level": "light",
-            "minutes": 74,
-            "start": "2026-05-29T19:12"
-          },
-          {
-            "level": "awake",
-            "minutes": 6,
-            "start": "2026-05-29T20:26"
-          },
-          {
-            "level": "light",
-            "minutes": 32,
-            "start": "2026-05-29T20:32"
-          },
-          {
-            "level": "awake",
-            "minutes": 18,
-            "start": "2026-05-29T21:04"
-          },
-          {
-            "level": "light",
-            "minutes": 28,
-            "start": "2026-05-29T21:22"
-          },
-          {
-            "level": "awake",
-            "minutes": 11,
-            "start": "2026-05-29T21:50"
-          },
-          {
-            "level": "light",
-            "minutes": 63,
-            "start": "2026-05-29T22:01"
-          },
-          {
-            "level": "awake",
-            "minutes": 18,
-            "start": "2026-05-29T23:04"
-          },
-          {
-            "level": "light",
-            "minutes": 10,
-            "start": "2026-05-29T23:22"
-          },
-          {
-            "level": "deep",
-            "minutes": 11,
-            "start": "2026-05-29T23:32"
-          },
-          {
-            "level": "light",
-            "minutes": 61,
-            "start": "2026-05-29T23:43"
-          },
-          {
-            "level": "rem",
-            "minutes": 20,
-            "start": "2026-05-30T00:44"
-          },
-          {
-            "level": "light",
-            "minutes": 45,
-            "start": "2026-05-30T01:04"
-          },
-          {
-            "level": "deep",
-            "minutes": 5,
-            "start": "2026-05-30T01:49"
-          },
-          {
-            "level": "light",
-            "minutes": 47,
-            "start": "2026-05-30T01:54"
-          }
-        ],
-        "debt7d": 0.8
-      },
-      "vitals": {
-        "hrv": 45,
-        "hrvBaseline": 45,
-        "rhr": 56,
-        "rhrBaseline": 58,
-        "stressAvg": 33,
-        "stressMax": 96,
-        "bodyBatteryNow": 32,
-        "bodyBatteryMin": 10,
-        "bodyBatteryMax": 69,
-        "vo2max": 46,
-        "fitnessAge": 42,
-        "chronologicalAge": 45,
-        "achievableFitnessAge": 39,
-        "fitnessAgeSource": "garmin",
-        "fitnessAgeTips": [
-          "Add ~65 vigorous minutes per week to lower fitness age.",
-          "Target 3 vigorous days/week — you're averaging 0.5."
-        ],
-        "respirationRate": 14,
-        "readinessScore": 76,
-        "readinessZone": "high",
-        "readinessLabel": "High"
-      },
-      "curves": {
-        "bodyBattery": [
-          {
-            "time": "00:00",
-            "value": 10
-          },
-          {
-            "time": "06:33",
-            "value": 69
-          },
-          {
-            "time": "08:00",
-            "value": 64
-          },
-          {
-            "time": "15:45",
-            "value": 30
-          },
-          {
-            "time": "16:00",
-            "value": 30
-          },
-          {
-            "time": "16:33",
-            "value": 32
-          }
-        ],
-        "stress": [
-          {
-            "time": "00:00",
-            "value": 29
-          },
-          {
-            "time": "00:24",
-            "value": 70
-          },
-          {
-            "time": "00:48",
-            "value": 52
-          },
-          {
-            "time": "01:12",
-            "value": 21
-          },
-          {
-            "time": "01:36",
-            "value": 10
-          },
-          {
-            "time": "02:00",
-            "value": 8
-          },
-          {
-            "time": "02:24",
-            "value": 9
-          },
-          {
-            "time": "02:48",
-            "value": 15
-          },
-          {
-            "time": "03:12",
-            "value": 13
-          },
-          {
-            "time": "03:36",
-            "value": 19
-          },
-          {
-            "time": "04:00",
-            "value": 5
-          },
-          {
-            "time": "04:24",
-            "value": 8
-          },
-          {
-            "time": "04:51",
-            "value": 46
-          },
-          {
-            "time": "05:15",
-            "value": 18
-          },
-          {
-            "time": "05:39",
-            "value": 27
-          },
-          {
-            "time": "06:03",
-            "value": 12
-          },
-          {
-            "time": "06:27",
-            "value": 16
-          },
-          {
-            "time": "06:54",
-            "value": 43
-          },
-          {
-            "time": "07:24",
-            "value": 31
-          },
-          {
-            "time": "07:48",
-            "value": 34
-          },
-          {
-            "time": "08:15",
-            "value": 25
-          },
-          {
-            "time": "08:51",
-            "value": 23
-          },
-          {
-            "time": "09:51",
-            "value": 82
-          },
-          {
-            "time": "10:15",
-            "value": 73
-          },
-          {
-            "time": "10:39",
-            "value": 61
-          },
-          {
-            "time": "11:15",
-            "value": 61
-          },
-          {
-            "time": "11:48",
-            "value": 61
-          },
-          {
-            "time": "12:18",
-            "value": 49
-          },
-          {
-            "time": "13:33",
-            "value": 65
-          },
-          {
-            "time": "14:33",
-            "value": 42
-          },
-          {
-            "time": "14:57",
-            "value": 20
-          },
-          {
-            "time": "15:27",
-            "value": 37
-          }
-        ]
-      },
-      "coach": {
-        "morning": "",
-        "evening": ""
-      }
-    },
-    {
-      "date": "2026-05-29",
-      "recovery": {
-        "score": 78,
-        "zone": "green",
-        "drivers": [
-          {
-            "factor": "hrv",
-            "label": "HRV",
-            "value": 45,
-            "baseline": 45,
-            "delta": "+0%",
-            "impact": "medium"
-          },
-          {
-            "factor": "sleep",
-            "label": "Sleep",
-            "value": "74%",
-            "impact": "medium"
-          },
-          {
-            "factor": "load",
-            "label": "Prior strain",
-            "value": 10,
-            "impact": "medium"
-          },
-          {
-            "factor": "rhr",
-            "label": "Resting HR",
-            "value": 61,
-            "baseline": 58,
-            "delta": "+3 bpm",
-            "impact": "low"
-          }
-        ]
-      },
-      "strain": {
-        "current": 9,
-        "workoutStrain": 0,
-        "lifestyleStrain": 9,
-        "workoutLoad": 0,
-        "lifestyleLoad": 77.6,
-        "targetMin": 14,
-        "targetMax": 18,
-        "workouts": [],
-        "dailyActivity": {
-          "steps": 9107,
-          "stepGoal": 10000,
-          "activeCalories": 277,
-          "bmrCalories": 1892,
-          "totalCalories": 2169,
-          "distanceKm": 7.17,
-          "moderateIntensityMin": 0,
-          "vigorousIntensityMin": 0
-        }
-      },
-      "sleep": {
-        "score": 74,
-        "hours": 6.7,
-        "need": 7.5,
-        "deepMin": 96,
-        "remMin": 60,
-        "lightMin": 244,
-        "awakeMin": 3,
-        "hypnogram": [
-          {
-            "level": "light",
-            "minutes": 69,
-            "start": "2026-05-28T19:55"
-          },
-          {
-            "level": "awake",
-            "minutes": 25,
-            "start": "2026-05-28T21:04"
-          },
-          {
-            "level": "light",
-            "minutes": 21,
-            "start": "2026-05-28T21:29"
-          },
-          {
-            "level": "awake",
-            "minutes": 11,
-            "start": "2026-05-28T21:50"
-          },
-          {
-            "level": "light",
-            "minutes": 15,
-            "start": "2026-05-28T22:01"
-          },
-          {
-            "level": "awake",
-            "minutes": 12,
-            "start": "2026-05-28T22:16"
-          },
-          {
-            "level": "light",
-            "minutes": 8,
-            "start": "2026-05-28T22:28"
-          },
-          {
-            "level": "awake",
-            "minutes": 17,
-            "start": "2026-05-28T22:36"
-          },
-          {
-            "level": "light",
-            "minutes": 14,
-            "start": "2026-05-28T22:53"
-          },
-          {
-            "level": "awake",
-            "minutes": 6,
-            "start": "2026-05-28T23:07"
-          },
-          {
-            "level": "light",
-            "minutes": 17,
-            "start": "2026-05-28T23:13"
-          },
-          {
-            "level": "awake",
-            "minutes": 25,
-            "start": "2026-05-28T23:30"
-          },
-          {
-            "level": "rem",
-            "minutes": 3,
-            "start": "2026-05-28T23:55"
-          },
-          {
-            "level": "light",
-            "minutes": 59,
-            "start": "2026-05-28T23:58"
-          },
-          {
-            "level": "deep",
-            "minutes": 34,
-            "start": "2026-05-29T00:57"
-          },
-          {
-            "level": "light",
-            "minutes": 41,
-            "start": "2026-05-29T01:31"
-          },
-          {
-            "level": "deep",
-            "minutes": 26,
-            "start": "2026-05-29T02:12"
-          }
-        ],
-        "debt7d": 0.8
-      },
-      "vitals": {
-        "hrv": 45,
-        "hrvBaseline": 45,
-        "rhr": 61,
-        "rhrBaseline": 58,
-        "stressAvg": 36,
-        "stressMax": 91,
-        "bodyBatteryNow": 8,
-        "bodyBatteryMin": 5,
-        "bodyBatteryMax": 35,
-        "vo2max": 46,
-        "fitnessAge": 42,
-        "chronologicalAge": 45,
-        "achievableFitnessAge": 39,
-        "fitnessAgeSource": "garmin",
-        "fitnessAgeTips": [
-          "Add ~65 vigorous minutes per week to lower fitness age.",
-          "Target 3 vigorous days/week — you're averaging 0.5."
-        ],
-        "respirationRate": 14,
-        "readinessScore": 72,
-        "readinessZone": "moderate",
-        "readinessLabel": "Moderate"
-      },
-      "curves": {
-        "bodyBattery": [
-          {
-            "time": "00:00",
-            "value": 5
-          },
-          {
-            "time": "06:24",
-            "value": 35
-          },
-          {
-            "time": "08:00",
-            "value": 33
-          },
-          {
-            "time": "15:30",
-            "value": 18
-          },
-          {
-            "time": "17:45",
-            "value": 25
-          },
-          {
-            "time": "22:39",
-            "value": 8
-          }
-        ],
-        "stress": [
-          {
-            "time": "00:00",
-            "value": 70
-          },
-          {
-            "time": "00:36",
-            "value": 76
-          },
-          {
-            "time": "01:12",
-            "value": 61
-          },
-          {
-            "time": "01:48",
-            "value": 30
-          },
-          {
-            "time": "02:24",
-            "value": 46
-          },
-          {
-            "time": "03:00",
-            "value": 23
-          },
-          {
-            "time": "03:36",
-            "value": 19
-          },
-          {
-            "time": "04:12",
-            "value": 20
-          },
-          {
-            "time": "04:51",
-            "value": 17
-          },
-          {
-            "time": "05:27",
-            "value": 15
-          },
-          {
-            "time": "06:03",
-            "value": 15
-          },
-          {
-            "time": "06:45",
-            "value": 54
-          },
-          {
-            "time": "07:45",
-            "value": 35
-          },
-          {
-            "time": "08:21",
-            "value": 38
-          },
-          {
-            "time": "09:12",
-            "value": 23
-          },
-          {
-            "time": "10:03",
-            "value": 36
-          },
-          {
-            "time": "10:51",
-            "value": 34
-          },
-          {
-            "time": "11:30",
-            "value": 23
-          },
-          {
-            "time": "12:15",
-            "value": 61
-          },
-          {
-            "time": "13:09",
-            "value": 25
-          },
-          {
-            "time": "13:57",
-            "value": 21
-          },
-          {
-            "time": "14:33",
-            "value": 19
-          },
-          {
-            "time": "15:24",
-            "value": 31
-          },
-          {
-            "time": "16:12",
-            "value": 24
-          },
-          {
-            "time": "16:48",
-            "value": 24
-          },
-          {
-            "time": "17:24",
-            "value": 15
-          },
-          {
-            "time": "18:03",
-            "value": 34
-          },
-          {
-            "time": "19:36",
-            "value": 30
-          },
-          {
-            "time": "20:21",
-            "value": 24
-          },
-          {
-            "time": "21:00",
-            "value": 24
-          },
-          {
-            "time": "21:39",
-            "value": 54
-          },
-          {
-            "time": "22:18",
-            "value": 35
-          }
-        ]
-      },
-      "coach": {
-        "morning": "",
-        "evening": ""
       }
     }
   ],
   "weekly": {
-    "avgRecovery": 82,
-    "avgStrain": 13.3,
-    "avgSleep": 73,
-    "greenDays": 7,
-    "balanceScore": 29,
-    "narrative": "Your body has been a recovery machine this week, consistently hitting green zones despite some higher strain days. While your sleep rhythm took a dip mid-week, you bounced back quickly, allowing your body to absorb the training load effectively. This strong recovery trend, especially with a lower resting heart rate appearing, suggests you're adapting well and are primed to tackle more challenging efforts in the coming days.",
-    "narrativeRu": "На этой неделе организм атлета демонстрировал удивительную способность к восстановлению, каждый день попадая в зеленую зону, несмотря на периодически высокие нагрузки. Хотя сон в середине недели просел, тело быстро наверстало упущенное, что позволило эффективно усваивать тренировочную нагрузку. Понижение пульса покоя и стабильно высокий показатель ВСР указывают на отличную адаптацию и готовность к новым вызовам."
+    "avgRecovery": 81,
+    "avgStrain": 14.2,
+    "avgSleep": 75,
+    "greenDays": 6,
+    "balanceScore": 0,
+    "narrative": "Your body has been a recovery machine this week, bouncing back quickly from training with consistently high recovery scores. That dip in sleep on Sunday clearly impacted Monday's numbers, but you quickly course-corrected, showing great resilience. With your HRV holding steady and RHR trending down, your body seems to be adapting well to your training load, and you're set to tackle more challenges.",
+    "narrativeRu": "На этой неделе организм атлета демонстрировал высокую степень восстановления, почти все дни были в зеленой зоне. Однако, несмотря на это, атлет накапливал дефицит сна, что к концу недели стало заметно. Высокая нагрузка чередовалась с днями отдыха, но стресс оставался на довольно стабильном уровне, что говорит о хорошей адаптации организма к тренировкам."
   },
   "monthWorkouts": {
     "month": "2026-06",
     "workouts": [
+      {
+        "name": "Treadmill Running",
+        "type": "treadmill_running",
+        "durationMin": 40,
+        "strain": 9.3,
+        "avgHr": 152,
+        "activityId": 23209016339,
+        "maxHr": 168,
+        "calories": 470,
+        "distanceKm": 6.38,
+        "paceMinPerKm": 6.33,
+        "startTime": "12:04",
+        "date": "2026-06-11",
+        "hrZones": {
+          "z1": 0.2,
+          "z2": 0.2,
+          "z3": 3.1,
+          "z4": 34.6,
+          "z5": 2.1
+        },
+        "moderateIntensityMin": 1,
+        "vigorousIntensityMin": 38
+      },
       {
         "name": "Jogging em passadeira",
         "type": "treadmill_running",
@@ -5135,6 +2913,6 @@
   "coachMeta": {
     "provider": "openrouter",
     "model": "google/gemini-2.5-flash",
-    "generatedAt": "2026-06-11T07:51:59.156Z"
+    "generatedAt": "2026-06-12T06:48:38.983Z"
   }
 }

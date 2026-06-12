@@ -324,7 +324,7 @@ def parse_body_battery(api, day: str) -> tuple[list[dict], int, int, int]:
     if merged:
         ordered = sorted(merged.items(), key=lambda item: item[0])
         points = [{"time": label, "value": val} for _, (label, val) in ordered]
-        values = [val for _, val in ordered]
+        values = [val for _, (_, val) in ordered]
         return points, values[-1], min(values), max(values)
 
     if summary_now > 0:
@@ -400,10 +400,21 @@ def parse_sleep_levels(levels: list[dict]) -> list[dict]:
     return segments
 
 
+def _sleep_seconds(dto: dict[str, Any], *keys: str) -> int:
+    for key in keys:
+        val = dto.get(key)
+        if val is not None:
+            try:
+                return int(val)
+            except (TypeError, ValueError):
+                continue
+    return 0
+
+
 def parse_sleep(api, day: str) -> dict[str, Any]:
     empty = {
-        "score": 70,
-        "hours": 7.0,
+        "score": 0,
+        "hours": 0.0,
         "need": 7.5,
         "deepMin": 0,
         "remMin": 0,
@@ -413,22 +424,64 @@ def parse_sleep(api, day: str) -> dict[str, Any]:
     }
     try:
         data = api.get_sleep_data(day)
+        if not isinstance(data, dict):
+            return empty
         dto = data.get("dailySleepDTO") or data
-        score = dto.get("sleepScores", {}).get("overall", {}).get("value") or dto.get("sleepScore") or 70
-        deep = (dto.get("deepSleepSeconds") or 0) // 60
-        rem = (dto.get("remSleepSeconds") or dto.get("dreamSleepSeconds") or 0) // 60
-        light = (dto.get("lightSleepSeconds") or 0) // 60
-        awake = (dto.get("awakeSleepSeconds") or 0) // 60
-        hours = (dto.get("sleepTimeSeconds") or dto.get("sleepingTimeSeconds") or 0) / 3600
+        if not isinstance(dto, dict):
+            return empty
+
+        scores = dto.get("sleepScores") or {}
+        overall = scores.get("overall") if isinstance(scores, dict) else {}
+        score = (
+            (overall.get("value") if isinstance(overall, dict) else None)
+            or dto.get("sleepScore")
+            or dto.get("sleepQualityScore")
+            or 0
+        )
+
+        deep_sec = _sleep_seconds(dto, "deepSleepSeconds", "deepSleepDurationInSeconds")
+        rem_sec = _sleep_seconds(dto, "remSleepSeconds", "dreamSleepSeconds", "remSleepDurationInSeconds")
+        light_sec = _sleep_seconds(dto, "lightSleepSeconds", "lightSleepDurationInSeconds")
+        awake_sec = _sleep_seconds(dto, "awakeSleepSeconds", "awakeSleepDurationInSeconds")
+        total_sec = _sleep_seconds(
+            dto,
+            "sleepTimeSeconds",
+            "sleepingTimeSeconds",
+            "totalSleepSeconds",
+            "durationInSeconds",
+        )
+        if total_sec <= 0:
+            total_sec = max(0, deep_sec + rem_sec + light_sec)
+
         levels = parse_sleep_levels(data.get("sleepLevels") or dto.get("sleepLevels") or [])
+        if not levels and isinstance(data.get("sleepMovement"), list):
+            levels = parse_sleep_levels(data.get("sleepMovement"))
+
+        if total_sec <= 0 and levels:
+            stage_seconds = {"deep": 0, "rem": 0, "light": 0, "awake": 0}
+            for seg in levels:
+                level = seg.get("level", "light")
+                minutes = int(seg.get("minutes") or 0)
+                if level in stage_seconds:
+                    stage_seconds[level] += minutes * 60
+            deep_sec = deep_sec or stage_seconds["deep"]
+            rem_sec = rem_sec or stage_seconds["rem"]
+            light_sec = light_sec or stage_seconds["light"]
+            awake_sec = awake_sec or stage_seconds["awake"]
+            total_sec = deep_sec + rem_sec + light_sec
+
+        hours = round(total_sec / 3600, 1) if total_sec > 0 else 0.0
+        if int(score) <= 0 and hours <= 0:
+            return empty
+
         return {
-            "score": int(score),
-            "hours": round(hours, 1),
+            "score": int(score) if score else 0,
+            "hours": hours,
             "need": 7.5,
-            "deepMin": deep,
-            "remMin": rem,
-            "lightMin": light,
-            "awakeMin": awake,
+            "deepMin": deep_sec // 60,
+            "remMin": rem_sec // 60,
+            "lightMin": light_sec // 60,
+            "awakeMin": awake_sec // 60,
             "hypnogram": levels,
         }
     except Exception:
@@ -745,7 +798,7 @@ def build_day(api, day: str, baselines: dict[str, float], prior_strain: float, p
         hrv_base=baselines["hrv"],
         rhr=rhr,
         rhr_base=baselines["rhr"],
-        bb_now=bb_now,
+        bb_now=int(bb_now) if bb_now else 0,
         stress_avg=stress_avg,
     )
 

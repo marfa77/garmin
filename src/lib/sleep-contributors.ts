@@ -7,6 +7,7 @@ import {
   type Status,
 } from "./interpretations";
 import type { DailySummary } from "./types";
+import { hasSleepData } from "./sleep-data";
 import { formatHoursMinutes } from "./week-history";
 
 export interface SleepTypicalRange {
@@ -17,6 +18,9 @@ export interface SleepTypicalRange {
 }
 
 export function sleepConsistencyScore(day: DailySummary, history: DailySummary[] = []) {
+  if (!hasSleepData(day)) {
+    return { pct: 0, status: "pay_attention" as Status };
+  }
   const recent = history.slice(0, 7);
   if (recent.length >= 3) {
     const scores = recent.map((d) => d.sleep.score);
@@ -34,6 +38,9 @@ export function sleepConsistencyScore(day: DailySummary, history: DailySummary[]
 }
 
 export function sleepStressScore(day: DailySummary) {
+  if (!hasSleepData(day)) {
+    return { highStressPct: 0, qualityPct: 0, status: "pay_attention" as Status };
+  }
   const highStressPct = Math.min(100, Math.round(day.vitals.stressAvg * 0.85));
   const qualityPct = Math.max(0, 100 - highStressPct);
   const status: Status =

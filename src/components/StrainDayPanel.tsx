@@ -66,9 +66,19 @@ export function StrainDayPanel({
     dailyActivity && dailyActivity.stepGoal > 0
       ? Math.round((dailyActivity.steps / dailyActivity.stepGoal) * 100)
       : null;
+  const earlyDay =
+    currentStrain <= 0 &&
+    (dailyActivity?.steps ?? 0) === 0 &&
+    (dailyActivity?.activeCalories ?? 0) === 0 &&
+    workouts.length === 0;
 
   return (
     <div className="space-y-4">
+      {earlyDay && (
+        <p className="rounded-xl border border-zinc-800/80 bg-zinc-900/40 px-4 py-3 text-xs leading-relaxed text-zinc-500">
+          {t.strain.earlyDayHint}
+        </p>
+      )}
       {(workoutStrain != null || lifestyleStrain != null) && (
         <div className="rounded-xl border border-zinc-800/80 bg-zinc-900/40 px-4 py-3">
           <p className="text-[10px] uppercase tracking-wider text-zinc-500">{t.strain.strainBreakdown}</p>
