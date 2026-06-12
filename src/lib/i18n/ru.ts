@@ -308,6 +308,7 @@ export const ru: Dictionary = {
     cloudHint:
       "Открой GitHub Actions → Run workflow → Sync Garmin data, затем обнови страницу.",
     failed: "Синк не удался — попробуй через минуту",
+    authMismatch: "Сервер синка временно недоступен — попробуй через минуту.",
   },
   coachPersona: {
     caring: "Забота",

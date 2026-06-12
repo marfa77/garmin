@@ -132,12 +132,14 @@ export function SyncPanel() {
         )}
 
         {syncError && !syncing && (
-          <p className="text-xs leading-snug text-rose-300">
+          <p className="max-w-xl text-sm leading-relaxed text-rose-300">
             {syncError === "cloud"
               ? t.sync.cloudHint
-              : syncError === "Sync failed" || syncError === "Sync worker error (500)"
-                ? t.sync.failed
-                : syncError}
+              : syncError.includes("auth mismatch")
+                ? t.sync.authMismatch
+                : syncError === "Sync failed" || syncError === "Sync worker error (500)"
+                  ? t.sync.failed
+                  : syncError}
           </p>
         )}
       </div>

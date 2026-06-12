@@ -305,6 +305,7 @@ export const en = {
     hint: "Pull Garmin data and regenerate AI coach",
     cloudHint: "Open GitHub Actions → Run workflow → Sync Garmin data, then refresh this page.",
     failed: "Sync failed — try again in a minute",
+    authMismatch: "Sync server credentials out of date — we're fixing it. Try again in a minute.",
   },
   coachPersona: {
     caring: "Care",
